@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurocortex"
+version = "0.3.0"
+description = "NeuroCortex SRDF prototype framework for bounded runtime structural adaptation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Mohammed Qaid Al-Athwary", email = "mohammedqaid.amanlift@gmail.com" }
+]
+keywords = [
+    "ai",
+    "machine-learning",
+    "srdf",
+    "structural-adaptation",
+    "runtime-adaptation",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "imbalanced-learn",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "black", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
+Repository = "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
+Documentation = "https://github.com/mohammedqaidalathwary/neurocortex-srdf/tree/main/docs"
+Tracker = "https://github.com/mohammedqaidalathwary/neurocortex-srdf/issues"

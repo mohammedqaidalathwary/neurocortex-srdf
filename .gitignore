@@ -1,0 +1,10 @@
+# Archives directory (generated locally)
+R4_ARCHIVES/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Colab
+.config/

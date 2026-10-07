@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NeuroCortex — Self-Reinforcing Development Framework (SRDF)</title>
+<meta name="description" content="NeuroCortex SRDF: a research framework for controlled runtime structural adaptation in machine learning systems. Concept paper, code, and reproducible artifacts.">
+<meta name="author" content="Mohammed Qaid Al-Athwary">
+<meta name="keywords" content="SRDF, self-reinforcing development framework, runtime structural adaptation, NeuroCortex, machine learning, AI">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="NeuroCortex — Self-Reinforcing Development Framework (SRDF)">
+<meta property="og:description" content="A research framework for bounded runtime structural adaptation in AI systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/">
+<meta property="og:image" content="assets/neurocortex_logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NeuroCortex — SRDF">
+<meta name="twitter:description" content="A research framework for bounded runtime structural adaptation in AI systems.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "NeuroCortex: Self-Reinforcing Development Framework (SRDF) — A Conceptual White Paper",
+  "author": {
+    "@type": "Person",
+    "name": "Mohammed Qaid Al-Athwary",
+    "identifier": "https://orcid.org/0009-0006-9075-072X",
+    "email": "mohammedqaid.amanlift@gmail.com"
+  },
+  "datePublished": "2026-10-08",
+  "version": "0.3.0",
+  "license": "https://opensource.org/licenses/Apache-2.0",
+  "url": "https://mohammedqaidalathwary.github.io/neurocortex-srdf/",
+  "sameAs": [
+    "https://github.com/mohammedqaidalathwary/neurocortex-srdf",
+    "https://orcid.org/0009-0006-9075-072X"
+  ],
+  }
+</script>
+
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #1a237e;
+    --border: #e0e0e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  header img {
+    max-width: 140px;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.2rem 0 0.8rem;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+  .subtitle {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  p { margin: 0.8rem 0; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 1.5rem 0;
+  }
+  .meta strong { color: var(--fg); }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    font-size: 0.95rem;
+    transition: all 0.15s ease;
+  }
+  .btn:hover {
+    background: var(--accent);
+    color: #fff;
+    border-bottom-color: var(--accent);
+  }
+  .doi {
+    background: #f0f2f8;
+    padding: 0.7rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  code {
+    background: #eef0f5;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <img src="assets/neurocortex_logo.png" alt="NeuroCortex logo">
+  <h1>NeuroCortex</h1>
+  <p class="subtitle">Self-Reinforcing Development Framework (SRDF)</p>
+  <p class="subtitle">A Conceptual White Paper</p>
+</header>
+
+<div class="meta">
+  <span><strong>Author:</strong> Mohammed Qaid Al-Athwary</span>
+  <span><strong>ORCID:</strong> <a href="https://orcid.org/0009-0006-9075-072X">0009-0006-9075-072X</a></span>
+  <span><strong>Date:</strong> October 2026</span>
+</div>
+
+<h2>Overview</h2>
+<p>
+NeuroCortex is a research framework centered on the <strong>Self-Reinforcing
+Development Framework (SRDF)</strong>. SRDF proposes a controlled, auditable
+approach to <strong>runtime structural adaptation</strong> in machine learning
+systems. Rather than allowing unbounded self-modification, SRDF separates the
+adaptation process into explicit stages: observation, analysis, candidate
+generation, evaluation, authorization, and controlled state transition.
+</p>
+<p>
+The framework is organized around three principal components:
+<strong>Trawler</strong>, <strong>Generator</strong>, and <strong>Arbiter</strong>.
+</p>
+
+<h2>White Paper</h2>
+<p>
+The conceptual white paper describes the framework, its design principles,
+and its scope. It is a conceptual document: it does not report experimental
+results, does not present quantitative evaluation, and does not constitute
+prior publication of any future manuscript.
+</p>
+<div class="actions">
+  <a class="btn" href="whitepaper/NeuroCortex_SRDF_White_Paper_v1.0.pdf">Download PDF</a>
+</div>
+
+<h2>Repository</h2>
+<p>
+The full repository — including reference implementation, phase
+documentation (S01, S03), protocols, and artifacts —
+is available on GitHub.
+</p>
+<div class="actions">
+  <a class="btn" href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">View on GitHub</a>
+</div>
+
+<h2>Research Scope</h2>
+<p>
+NeuroCortex is an ongoing research project. The material in this repository
+is presented as a conceptual and methodological foundation, not as a finished
+claim about capability or superiority. The repository does not claim general
+or universal performance improvement, statistical significance of any result,
+self-evolving artificial general intelligence, unrestricted or unbounded
+self-modification, or superiority over any existing method or architecture.
+</p>
+
+<h2>License</h2>
+<p>
+Released under the <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a>.
+</p>
+
+<footer>
+  NeuroCortex SRDF · Version 0.3.0 · October 2026<br>
+  <a href="https://orcid.org/0009-0006-9075-072X">ORCID</a> ·
+  <a href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">GitHub</a>
+</footer>
+
+</div>
+</body>
+</html>

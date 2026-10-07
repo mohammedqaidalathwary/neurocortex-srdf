@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "NeuroCortex — Self-Reinforcing Development Framework (SRDF)"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Al-Athwary"
+    given-names: "Mohammed Qaid"
+    orcid: "https://orcid.org/0009-0006-9075-072X"
+    email: "mohammedqaid.amanlift@gmail.com"
+repository-code: "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
+license: "Apache-2.0"
+version: "0.3.0"
+date-released: "2026-10-08"
+keywords:
+  - self-reinforcing development framework
+  - runtime structural adaptation
+  - SRDF
+  - generator-arbiter
+  - machine learning
+abstract: >
+  NeuroCortex SRDF is a research framework for bounded runtime structural
+  adaptation in AI systems. The framework separates observation, candidate
+  generation, evaluation, authorization, and controlled state transition
+  into explicit, auditable stages.

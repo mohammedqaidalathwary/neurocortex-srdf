@@ -1,0 +1,19 @@
+# NeuroCortex — General project dependencies
+#
+# This file defines the general project dependencies required to
+# run the reference implementation in src/ and the S01 prototype
+# notebook.
+#
+# Experiment-specific reproducibility environments (e.g. the
+# protocol-controlled R4 execution) are governed by the
+# corresponding execution configuration and are not replaced by
+# this file.
+#
+# See: experiments/S04_OPENML_GENERALIZATION/protocol/R4_EXECUTION_CONFIGURATION.json
+
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
