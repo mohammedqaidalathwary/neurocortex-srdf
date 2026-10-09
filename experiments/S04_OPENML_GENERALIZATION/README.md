@@ -100,14 +100,14 @@ See the cohort lock, source lock, and run manifest for the recorded details.
 ## 6. Evidence and Artifact Map
 
 - `protocol/R4_PROTOCOL.json` — Protocol rules and experiment design.
-- `protocol/protocol_lock.json` — Protocol lock artifact, if present in the checked-out revision.
+- `protocol/protocol_lock.json` — Committed protocol-lock artifact for the recorded protocol.
 - `cohort/cohort_lock.json` — Cohort hash and recorded cohort audit.
 - `source_lock/source_lock.json` — Locked source commit, source hashes, and environment versions.
 - `evidence/R4_RUN_MANIFEST.json` — Run identity, status, hashes, environment, and recorded test summary.
 - `evidence/forensic_lock.json` — Recorded forensic checks and lock information.
-- `evidence/repository_pytest_report.json` — Recorded repository test report, if present.
+- `evidence/repository_pytest_report.json` — Committed repository pytest report; the result is recorded evidence and is not an independent rerun.
 - `statistics/r4_summary.json` — Recorded outcomes and statistical summaries.
-- `results/` — Results artifacts, if present in the checked-out revision.
+- `results/r4_case_results.jsonl` — Committed case-level results for the 1,125 planned cases.
 
 The manifest records repository tests as **17 passed in 8.05 seconds** and the forensic status as **PASS**. These are statements recorded in the manifest; this README update does not rerun those tests or forensic checks.
 
