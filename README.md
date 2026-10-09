@@ -223,6 +223,52 @@ A persistent identifier will be assigned at the final release.
 
 ---
 
+
+## Phase S04 — OpenML Generalization (R4)
+
+**Phase identifier**: S04
+**Phase name**: OpenML Generalization
+**Status**: Completed — 2026-10-09
+**Artifacts**: [`experiments/S04_OPENML_GENERALIZATION/`](experiments/S04_OPENML_GENERALIZATION/)
+
+### Overview
+
+This phase evaluates NeuroCortex SRDF under a fully pre-registered protocol on a deterministic cohort drawn from the OpenML active binary classification universe. All thresholds, seeds, folds, and the cohort itself were frozen by SHA-256 before any model was trained. No post-hoc tuning was performed.
+
+### Key results
+
+| Metric | Value |
+|---|---|
+| Cohort datasets | 45 |
+| Execution cases | 1,125 (45 datasets × 5 seeds × 5 folds) |
+| SUCCESS | 373 |
+| NOT_TRIGGERED | 750 |
+| REJECTED | 2 |
+| Technical failures | 0 |
+| Mean ΔbAcc (case-level, SUCCESS only) | +2.89 pp |
+| 95% CI (t) | [+0.0239, +0.0338] |
+| Relative improvement | +3.78% |
+| Cohen's d | 0.60 |
+| Win rate (positive Δ) | 62.2% (232/373) |
+| Wilcoxon signed-rank p (dataset-level, n=15) | 0.00116 |
+| Bootstrap 95% CI (dataset-level) | [+0.0148, +0.0443] |
+
+### Execution identifiers
+
+| Identifier | Value |
+|---|---|
+| Run ID | `S04-R4-20261009T004210Z-88bcf6717e5e` |
+| Cohort SHA-256 | `88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d` |
+| Summary SHA-256 | `c06fec4d9741cc622e861fe0b11536182993a74e8a33db412a76476cba9bda10` |
+| Forensic SHA-256 | `3fea6f3863096c10081f58d081afdd46f759148abc1172d748167a64889f106e` |
+| Pushed commit | `5e1af6865bbb915b0b5f1ebc7ec4d44e3851c8bf` |
+
+### Reproducibility
+
+The full pre-registered pipeline is reproducible from the frozen artifacts in the directory linked above. The forensic verification (15 independent checks) returns PASS and is confirmed by a post-push verification that compares SHA-256 of every packaged file against a fresh clone of the public repository.
+
+---
+
 ## License
 
 This project is released under the Apache License 2.0. See
