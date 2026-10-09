@@ -39,6 +39,7 @@ The framework is organized around three principal components — **Trawler**, **
 - [Reproducibility](#reproducibility)
 - [Data and Code Availability](#data-and-code-availability)
 - [Citation](#citation)
+- [Phase S04 — OpenML Generalization (R4)](#phase-s04--openml-generalization-r4)
 - [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -81,6 +82,7 @@ The project currently hosts the following experimental phases:
 |-------|-----------|------|
 | **S01** | `experiments/S01_PROTOTYPE_VALIDATION/` | Foundational executable prototype |
 | **S03** | `experiments/S03_GENERATOR_ARBITER/` | Functional SRDF validation |
+| **S04** | `experiments/S04_OPENML_GENERALIZATION/` | Pre-registered OpenML generalization (R4) |
 
 Each phase directory contains its own `README.md` describing scope,
 artifacts, and claim boundaries.
@@ -112,6 +114,18 @@ controlled setting.
 Multirun artifacts documenting functional execution of the SRDF cycle
 across fixed seeds.
 
+### S04 — OpenML Generalization (R4)
+
+- `experiments/S04_OPENML_GENERALIZATION/protocol/R4_PROTOCOL.json`
+- `experiments/S04_OPENML_GENERALIZATION/cohort/cohort_manifest.json`
+- `experiments/S04_OPENML_GENERALIZATION/statistics/r4_summary.json`
+- `experiments/S04_OPENML_GENERALIZATION/evidence/forensic_lock.json`
+
+Pre-registered evaluation on 45 OpenML binary classification
+datasets (1,125 execution cases). All thresholds, seeds, folds,
+and the cohort were frozen by SHA-256 before execution. See the
+phase directory for the full artifact set.
+
 ## Repository Layout
 
 The repository is organized into the following principal directories:
@@ -119,7 +133,7 @@ The repository is organized into the following principal directories:
 - `src/` — Reference implementation of the SRDF components
   (Trawler, Generator, Arbiter, Core).
 - `experiments/` — Experimental phases, each in its own directory
-  (S01, S03).
+  (S01, S03, S04).
 - `protocols/` — Protocol artifacts aligned with each phase.
 - `docs/` — Project documentation and the conceptual white paper.
 - `examples/` — Minimal illustrative examples of the SRDF workflow.
@@ -223,7 +237,6 @@ A persistent identifier will be assigned at the final release.
 
 ---
 
-
 ## Phase S04 — OpenML Generalization (R4)
 
 **Phase identifier**: S04
@@ -302,11 +315,17 @@ superiority.
 The repository does **not** claim:
 
 - general or universal performance improvement,
-- statistical significance of any result,
+- statistical significance of any result outside a pre-registered
+  protocol,
 - self-evolving artificial general intelligence,
 - unrestricted or unbounded self-modification,
 - superiority over any existing method or architecture,
 - production readiness.
+
+Where a pre-registered protocol was executed (for example, S04),
+the reported statistics are bounded by that protocol and are
+reproducible from the frozen artifacts in the phase directory.
+No statistical claim extends beyond the scope of its protocol.
 
 Any empirical claim, if pursued, will be reported separately in a
 peer-reviewed publication. This repository preserves the framework,
