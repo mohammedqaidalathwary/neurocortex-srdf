@@ -2,22 +2,27 @@
 
 <p align="center">
   <img src="assets/neurocortex_logo.png" alt="NeuroCortex Logo" width="220">
+</p>
+
+<p align="center">
   <a href="https://doi.org/10.5281/zenodo.23252917">
-    <img src="https://zenodo.org/badge/1409481362.svg" alt="DOI">
+    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23252917.svg"
+         alt="DOI: 10.5281/zenodo.23252917">
   </a>
 </p>
 
 <p align="center">
   <a href="https://orcid.org/0009-0006-9075-072X">
-    <img src="https://img.shields.io/badge/ORCID-0009--0006--9075--072X-a6ce39.svg" alt="ORCID">
+    <img src="https://img.shields.io/badge/ORCID-0009--0006--9075--072X-a6ce39.svg"
+         alt="ORCID">
   </a>
   <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"
+         alt="License">
   </a>
-  <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python">
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue"
+       alt="Python">
 </p>
-
----
 
 ## Overview
 
