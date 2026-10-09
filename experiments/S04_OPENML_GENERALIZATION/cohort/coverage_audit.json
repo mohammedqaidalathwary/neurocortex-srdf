@@ -1,0 +1,132 @@
+{
+  "criteria": {
+    "coverage_fraction_definition": "bins_covered / min(number_of_eligible_deciles, number_of_final_datasets)",
+    "dimensions": [
+      "n_samples(log10)",
+      "n_features(log10)",
+      "ir(log10)",
+      "minority_fraction",
+      "fs_ratio(log10)"
+    ],
+    "min_decile_coverage_fraction": 0.8,
+    "on_failure": "ABORT (thresholds are never tuned after the outcome is known)",
+    "range_rule": "cohort min <= eligible q05 and cohort max >= eligible q95 on every dimension"
+  },
+  "dimensions": {
+    "fs_ratio_log10": {
+      "bins": 10,
+      "bins_covered": 10,
+      "coverage_fraction": 1.0,
+      "eligible_quantiles": {
+        "0.05": -2.6020599913279625,
+        "0.25": -2.3010299956639813,
+        "0.5": -1.8860566476931633,
+        "0.75": -1.4436974992327127,
+        "0.95": -1.0
+      },
+      "final_quantiles": {
+        "0.05": -2.8091612948256675,
+        "0.25": -2.2596373105057563,
+        "0.5": -1.6289321377282637,
+        "0.75": -1.2799873929244037,
+        "0.95": -0.6989700043360187
+      },
+      "ks_statistic_informational": 0.18082942097026605,
+      "pass": true,
+      "range_rule_ok": true
+    },
+    "ir_log10": {
+      "bins": 7,
+      "bins_covered": 7,
+      "coverage_fraction": 1.0,
+      "eligible_quantiles": {
+        "0.05": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.044928499176509984,
+        "0.75": 0.2795849364345043,
+        "0.95": 1.0775961514901922
+      },
+      "final_quantiles": {
+        "0.05": 0.0,
+        "0.25": 0.005248335556345529,
+        "0.5": 0.11532670167576073,
+        "0.75": 0.6989700043360189,
+        "0.95": 1.2292777095498983
+      },
+      "ks_statistic_informational": 0.20672926447574336,
+      "pass": true,
+      "range_rule_ok": true
+    },
+    "minority_fraction": {
+      "bins": 7,
+      "bins_covered": 7,
+      "coverage_fraction": 1.0,
+      "eligible_quantiles": {
+        "0.05": 0.07718491795647621,
+        "0.25": 0.3444065574250826,
+        "0.5": 0.4741601208459214,
+        "0.75": 0.5,
+        "0.95": 0.5
+      },
+      "final_quantiles": {
+        "0.05": 0.0558,
+        "0.25": 0.16666666666666666,
+        "0.5": 0.434,
+        "0.75": 0.49697885196374625,
+        "0.95": 0.5
+      },
+      "ks_statistic_informational": 0.20672926447574336,
+      "pass": true,
+      "range_rule_ok": true
+    },
+    "n_features_log10": {
+      "bins": 9,
+      "bins_covered": 8,
+      "coverage_fraction": 0.8888888888888888,
+      "eligible_quantiles": {
+        "0.05": 0.6020599913279624,
+        "0.25": 0.8450980400142568,
+        "0.5": 1.1300356939925373,
+        "0.75": 1.568201724066995,
+        "0.95": 1.7323937598229686
+      },
+      "final_quantiles": {
+        "0.05": 0.47712125471966244,
+        "0.25": 0.6989700043360189,
+        "0.5": 1.3222192947339193,
+        "0.75": 1.6812412373755872,
+        "0.95": 2.0
+      },
+      "ks_statistic_informational": 0.16189358372456963,
+      "pass": true,
+      "range_rule_ok": true
+    },
+    "n_samples_log10": {
+      "bins": 7,
+      "bins_covered": 7,
+      "coverage_fraction": 1.0,
+      "eligible_quantiles": {
+        "0.05": 2.3979400086720375,
+        "0.25": 2.6989700043360187,
+        "0.5": 3.1104283656005,
+        "0.75": 3.3010299956639813,
+        "0.95": 3.359778864221285
+      },
+      "final_quantiles": {
+        "0.05": 2.3764422915517964,
+        "0.25": 2.670245853074124,
+        "0.5": 3.0,
+        "0.75": 3.3010299956639813,
+        "0.95": 3.3768913893477137
+      },
+      "ks_statistic_informational": 0.16314553990610328,
+      "pass": true,
+      "range_rule_ok": true
+    }
+  },
+  "eligible_count": 284,
+  "final_candidate_count": 45,
+  "primary_groups_in_eligible_universe": 63,
+  "primary_groups_represented_in_final": 43,
+  "status": "PASS"
+}

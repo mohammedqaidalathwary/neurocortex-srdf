@@ -1,0 +1,9 @@
+{
+  "ran_at_utc": "2026-10-09T00:10:17.868972+00:00",
+  "returncode": 0,
+  "scope": "repository unit tests (NOT an S04 experiment result)",
+  "status": "PASS",
+  "stderr_tail": "",
+  "stdout_tail": ".................                                                        [100%]\n17 passed in 8.05s\n",
+  "summary_line": "17 passed in 8.05s"
+}

@@ -1,0 +1,86 @@
+{
+  "artifact_sha256": {
+    "coverage": "1639b7f256facdbbd344a634709afb513a8dc53b3eea25593565e64044ea4b24",
+    "distribution": "2c2cbe0c935847b7a0467c6770ca31c0f0467611642675ab9fd96b08a0663903",
+    "eligibility": "5c52ef5aa49137fd7e6fc15fbb761d489e8d192eef0bc2680c005c06684a3de9",
+    "inspection": "8590317548aed3ef65a1f54326fc723159c69767cf05c7e22c25c74c9efcaa52",
+    "manifest": "88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d",
+    "secondary_audit": "e0b601d22fc7d8cbb890b29bd6b6db86e543f256897f32dcb26beb035e2aced5",
+    "secondary_tie_break": "b2d222d553d6d040502534b787558a41e9a64e7684dc45c820eac69616805ca1",
+    "snapshot": "1ada74d5f0c378e9062a8e8cdf399b9305ccdad2359723e567011af43320c201",
+    "tie_break": "e1b068fc1c2a58b9a45f41e2f167cf87f5ac52fa87d909dab8a7ff6fe1a126cb"
+  },
+  "cohort_sha256": "88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d",
+  "coverage_status": "PASS",
+  "independent_audit": {
+    "audited_at_utc": "2026-10-09T00:40:32.619119+00:00",
+    "checks": [
+      {
+        "check": "cohort_not_empty",
+        "detail": "45",
+        "pass": true
+      },
+      {
+        "check": "no_duplicate_dataset_id",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "all_in_openml_universe",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "all_selected_scientifically_eligible",
+        "detail": "{}",
+        "pass": true
+      },
+      {
+        "check": "selected_subset_of_eligibility_table",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "eligibility_table_matches_independent_recomputation",
+        "detail": "independent=284 table=284",
+        "pass": true
+      },
+      {
+        "check": "five_fold_and_inner_split_feasible_for_all_seeds",
+        "detail": "[]",
+        "pass": true
+      },
+      {
+        "check": "no_exact_content_duplicates",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "no_unjustified_near_duplicates_same_shape_and_class_counts",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "no_execution_results_exist_at_selection_time",
+        "detail": "[]",
+        "pass": true
+      },
+      {
+        "check": "selection_tables_contain_no_model_output_columns",
+        "detail": "",
+        "pass": true
+      },
+      {
+        "check": "coverage_audit_pass",
+        "detail": "PASS",
+        "pass": true
+      }
+    ],
+    "n_selected": 45,
+    "status": "PASS"
+  },
+  "locked_at_utc": "2026-10-09T00:41:18.507974+00:00",
+  "openml_snapshot_sha256": "1ada74d5f0c378e9062a8e8cdf399b9305ccdad2359723e567011af43320c201",
+  "protocol_sha256": "c5206507a7b75575a828f5acdfd5e3814e0abe808bc33173e2b24bd03910b16a",
+  "source_lock_sha256": "83b9f42f6f1db42d7204070900eb00b004fd50f06a6d736f656de648288c4623"
+}

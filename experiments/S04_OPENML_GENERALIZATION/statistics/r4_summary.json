@@ -1,0 +1,113 @@
+{
+  "adapted_bacc_on_success_cases": {
+    "ci95_t": [
+      0.7756810410831518,
+      0.8098649032106888
+    ],
+    "max": 1.0,
+    "mean": 0.7927729721469203,
+    "median": 0.7927163198247535,
+    "min": 0.47368421052631576,
+    "n": 373,
+    "std": 0.16787351548141666
+  },
+  "baseline_bacc_on_not_triggered_cases": {
+    "ci95_t": [
+      0.8055514837080751,
+      0.8252253910665983
+    ],
+    "max": 1.0,
+    "mean": 0.8153884373873367,
+    "median": 0.8492052396498168,
+    "min": 0.38636363636363635,
+    "n": 750,
+    "std": 0.13722739223558228
+  },
+  "baseline_bacc_on_success_cases": {
+    "ci95_t": [
+      0.7460205635597656,
+      0.781815893547597
+    ],
+    "max": 1.0,
+    "mean": 0.7639182285536813,
+    "median": 0.7687590187590188,
+    "min": 0.47368421052631576,
+    "n": 373,
+    "std": 0.17578727238178077
+  },
+  "cohort_sha256": "88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d",
+  "counts": {
+    "by_status": {
+      "NOT_TRIGGERED": 750,
+      "REJECTED": 2,
+      "SUCCESS": 373
+    },
+    "datasets": 45,
+    "failure_cases": 0,
+    "not_triggered_cases": 750,
+    "planned_cases": 1125,
+    "rejected_by_arbiter": 2,
+    "terminal_records": 1125,
+    "triggered_cases": 375,
+    "valid_delta_cases": 373
+  },
+  "delta_bacc_case_level_success_only": {
+    "ci95_t": [
+      0.02392056094685844,
+      0.03378892623961979
+    ],
+    "max": 0.25,
+    "mean": 0.028854743593239116,
+    "median": 0.01733333333333331,
+    "min": -0.08333333333333326,
+    "n": 373,
+    "std": 0.048462551351566886
+  },
+  "delta_bacc_dataset_level": {
+    "bootstrap_ci95": [
+      0.014811034569797023,
+      0.04427780017585607
+    ],
+    "ci95_t": [
+      0.012099241251481999,
+      0.04550999532940382
+    ],
+    "max": 0.09727893332114972,
+    "mean": 0.02880461829044291,
+    "median": 0.01945624931894955,
+    "min": -0.012400000000000012,
+    "n": 15,
+    "std": 0.03016600551864175,
+    "wilcoxon_signed_rank": {
+      "n_nonzero_datasets": 15,
+      "p_value": 0.00115966796875,
+      "statistic": 7.0
+    }
+  },
+  "delta_sign_counts_success_only": {
+    "negative": 82,
+    "positive": 232,
+    "zero": 59
+  },
+  "execution_plan_sha256": "167e4fa73dc7ec0d78e4a1f805fbb962e832e49c62208de932f81a7ab7e9a235",
+  "notes": [
+    "NOT_TRIGGERED cases are never counted as Delta = 0.",
+    "Cases within a dataset are not independent; dataset-level figures are the conservative view.",
+    "These are observed results; this notebook asserts no superiority claim."
+  ],
+  "protocol_sha256": "c5206507a7b75575a828f5acdfd5e3814e0abe808bc33173e2b24bd03910b16a",
+  "run_id": "S04-R4-20261009T004210Z-88bcf6717e5e",
+  "run_status": "COMPLETE",
+  "secondary_itt_triggered_success_or_rejected_rejected_as_zero": {
+    "ci95_t": [
+      0.023788455677718853,
+      0.03361324757709816
+    ],
+    "max": 0.25,
+    "mean": 0.028700851627408507,
+    "median": 0.016879761065807575,
+    "min": -0.08333333333333326,
+    "n": 375,
+    "std": 0.04837859097181625
+  }
+}

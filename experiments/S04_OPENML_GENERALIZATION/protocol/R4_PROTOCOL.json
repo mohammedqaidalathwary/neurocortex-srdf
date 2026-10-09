@@ -1,0 +1,203 @@
+{
+  "coverage": {
+    "coverage_fraction_definition": "bins_covered / min(number_of_eligible_deciles, number_of_final_datasets)",
+    "dimensions": [
+      "n_samples(log10)",
+      "n_features(log10)",
+      "ir(log10)",
+      "minority_fraction",
+      "fs_ratio(log10)"
+    ],
+    "min_decile_coverage_fraction": 0.8,
+    "on_failure": "ABORT (thresholds are never tuned after the outcome is known)",
+    "range_rule": "cohort min <= eligible q05 and cohort max >= eligible q95 on every dimension"
+  },
+  "eligibility": {
+    "allow_missing_values": false,
+    "allow_nonfinite_values": false,
+    "binary_target_required": true,
+    "cv_folds": 5,
+    "inner_validation_fraction": 0.2,
+    "max_cells": 150000,
+    "max_constant_feature_fraction": 0.5,
+    "max_duplicate_rate": 0.3,
+    "max_feature_sample_ratio": 0.5,
+    "max_features": 100,
+    "max_samples": 5000,
+    "min_features": 2,
+    "min_minority_count": 30,
+    "min_nonconstant_features": 2,
+    "min_samples": 200,
+    "numeric_features_only": true,
+    "smote_min_minority_in_inner_train": 6
+  },
+  "equivalence": {
+    "exact_content_duplicates": "datasets with identical data_sha256 collapse to one (tier cascade decides)",
+    "primary_ir_edges": [
+      1.5,
+      3.0,
+      6.0,
+      12.0,
+      25.0,
+      50.0,
+      100.0
+    ],
+    "primary_key": [
+      "floor(log2(n_samples))",
+      "floor(log2(n_features))",
+      "ir_bin",
+      "floor(log2(minority_count))"
+    ],
+    "representatives_rule": "k = 1 + floor(log2(group_size) / 2)"
+  },
+  "execution": {
+    "baseline": "RandomForestClassifier(n_estimators=100, random_state=seed)",
+    "cv": "StratifiedKFold(shuffle=True, random_state=seed)",
+    "cv_folds": 5,
+    "framework": "src.core.SRDFFramework(config={'random_seed': seed}) - Trawler/Generator/Arbiter and _evaluate_candidate used unchanged; run_cycle is NOT used because it evaluates candidates on the test split",
+    "inner_validation": "train_test_split(stratify, test_size=0.2, random_state=seed) INSIDE the training partition; candidate selection uses ONLY this inner validation split",
+    "max_cases_per_execution_batch": 400,
+    "metric": "balanced_accuracy_score on the held-out test fold",
+    "non_terminal_statuses_retried_on_resume": [
+      "INTERRUPTED",
+      "INFRASTRUCTURE_ERROR"
+    ],
+    "per_case_timeout_seconds": 1800,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "status_taxonomy": [
+      "SUCCESS",
+      "NOT_TRIGGERED",
+      "GENERATOR_EMPTY",
+      "REJECTED",
+      "SYSTEM_FAILURE",
+      "INCOMPLETE",
+      "HANG",
+      "INTERRUPTED",
+      "INFRASTRUCTURE_ERROR",
+      "EXPERIMENT_HARNESS_ERROR",
+      "DATA_ERROR",
+      "DEPENDENCY_ERROR"
+    ]
+  },
+  "forbidden": [
+    "fixed cohort size",
+    "first-N selection",
+    "random sampling in cohort selection",
+    "use of any NeuroCortex output in cohort selection",
+    "post-hoc threshold changes"
+  ],
+  "ir_definition": "IR = majority_class_count / minority_class_count (dataset-level for description; TRAIN_IR is computed inside each training partition at execution time)",
+  "metadata_prefilter": {
+    "max_cells": 150000,
+    "max_features": 100,
+    "max_instances": 5000,
+    "max_symbolic_features_including_target": 1,
+    "min_features": 2,
+    "min_instances": 200,
+    "min_minority_class_size": 30,
+    "number_of_classes": 2,
+    "number_of_missing_values": 0,
+    "rule_for_missing_metadata": "dataset is not eligible"
+  },
+  "protocol_id": "NC-S04-R4",
+  "protocol_version": "1.0.0",
+  "repository": {
+    "branch": "main",
+    "url": "https://github.com/mohammedqaidalathwary/neurocortex-srdf.git"
+  },
+  "secondary": {
+    "capacity_rule": "k2 = 1 + floor(log2(group_size)); same cascade as primary",
+    "ir_edges": [
+      3.0,
+      6.0,
+      25.0
+    ],
+    "key": [
+      "floor(log2(n_samples)/2)",
+      "floor(log2(n_features)/2)",
+      "ir_bin_secondary"
+    ]
+  },
+  "signature_fields": [
+    "n_samples",
+    "n_features",
+    "class_0_count",
+    "class_1_count",
+    "minority_count",
+    "majority_count",
+    "ir",
+    "minority_fraction",
+    "fs_ratio",
+    "missingness",
+    "duplicate_rate",
+    "const_frac",
+    "feasibility_margin"
+  ],
+  "statistics": {
+    "bootstrap": {
+      "n_boot": 10000,
+      "seed": 12345
+    },
+    "ci": "t-interval over cases (95%); dataset-level bootstrap percentile CI",
+    "confidence": 0.95,
+    "primary": "Delta bAcc over SUCCESS cases only (NOT_TRIGGERED is never counted as Delta = 0)",
+    "secondary_itt": "triggered cases with SUCCESS or REJECTED; REJECTED counted as Delta = 0 (framework keeps the baseline structure); labeled separately"
+  },
+  "tie_break_tiers": [
+    {
+      "criterion": "lowest duplicate_rate (rounded 2 dp)",
+      "tier": 1
+    },
+    {
+      "criterion": "lowest missingness (rounded 4 dp)",
+      "tier": 2
+    },
+    {
+      "criterion": "lowest const_frac (rounded 2 dp)",
+      "tier": 3
+    },
+    {
+      "criterion": "highest feasibility_margin",
+      "tier": 4
+    },
+    {
+      "criterion": "highest minority_count",
+      "tier": 5
+    },
+    {
+      "criterion": "lowest fs_ratio (rounded 4 dp)",
+      "tier": 6
+    },
+    {
+      "criterion": "highest n_samples",
+      "tier": 7
+    },
+    {
+      "criterion": "structural diversity: for representatives beyond the first, maximize min Euclidean distance in (log2 n_samples, log2 n_features, log2 ir, log2 minority_count) to representatives already chosen",
+      "tier": 8
+    },
+    {
+      "criterion": "dataset_id ascending (final deterministic tie-break only)",
+      "tier": 9
+    }
+  ],
+  "title": "OpenML generalization experiment - clean rebuild",
+  "trigger": {
+    "component": "src.trawler.Trawler (unchanged)",
+    "computed_on": "training partition only",
+    "rule": "TRAIN_IR >= threshold",
+    "threshold": 3.0
+  },
+  "universe": {
+    "listing": "openml.datasets.list_datasets",
+    "ordering": "dataset_id ascending",
+    "source": "OpenML",
+    "status": "active"
+  }
+}

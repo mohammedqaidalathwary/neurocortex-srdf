@@ -1,0 +1,30 @@
+{
+  "branch": "main",
+  "commit_sha": "873e19358815d41a68768c41f8fa8bb55af6be84",
+  "locked_at_utc": "2026-10-09T00:10:17.939249+00:00",
+  "package_versions": {
+    "imblearn": "0.14.2",
+    "numpy": "2.1.3",
+    "openml": "0.15.1",
+    "pandas": "2.2.3",
+    "pytest": "8.4.2",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1"
+  },
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "protocol_sha256": "c5206507a7b75575a828f5acdfd5e3814e0abe808bc33173e2b24bd03910b16a",
+  "python_version": "3.13.16",
+  "repo_url": "https://github.com/mohammedqaidalathwary/neurocortex-srdf.git",
+  "repository_tests": {
+    "status": "PASS",
+    "summary_line": "17 passed in 8.05s"
+  },
+  "src_files_sha256": {
+    "src/__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+    "src/arbiter.py": "eca757f3f21585d013c1479431344278e64f4a20ea549a8c2c935ba67c7d155e",
+    "src/core.py": "902e5ddbb02b45d77450f7514493d4949a00b10bbb1ac5bacf06fa6909f00280",
+    "src/generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+    "src/trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  },
+  "src_tree_sha256": "1b955e950e32245553df6850d114d9bc4dc86d514e83c401cf634495a5b2b9e2"
+}
