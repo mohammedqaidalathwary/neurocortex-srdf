@@ -22,3 +22,11 @@ abstract: >
   adaptation in AI systems. The framework separates observation, candidate
   generation, evaluation, authorization, and controlled state transition
   into explicit, auditable stages.
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23252917
+    description: "Concept DOI — always resolves to the latest release"
+  - type: doi
+    value: 10.5281/zenodo.23252916
+    description: "Version DOI — points specifically to v1.0.0"

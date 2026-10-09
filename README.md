@@ -2,6 +2,9 @@
 
 <p align="center">
   <img src="assets/neurocortex_logo.png" alt="NeuroCortex Logo" width="220">
+  <a href="https://doi.org/10.5281/zenodo.23252917">
+    <img src="https://zenodo.org/badge/1409481362.svg" alt="DOI">
+  </a>
 </p>
 
 <p align="center">
@@ -233,7 +236,7 @@ work, please cite it using the metadata in `CITATION.cff`:
 > Development Framework (SRDF)*. GitHub.
 > https://github.com/mohammedqaidalathwary/neurocortex-srdf
 
-A persistent identifier will be assigned at the final release.
+Published with a persistent DOI: [10.5281/zenodo.23252917](https://doi.org/10.5281/zenodo.23252917)
 
 ---
 
