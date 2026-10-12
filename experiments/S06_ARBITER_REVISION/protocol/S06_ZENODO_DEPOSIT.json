@@ -1,0 +1,16 @@
+{
+  "deposited_at_utc": "2026-10-12",
+  "doi": "10.5281/zenodo.23308347",
+  "doi_url": "https://doi.org/10.5281/zenodo.23308347",
+  "files_in_deposit": [
+    "S06_PROTOCOL.json",
+    "protocol_freeze_addendum.json",
+    "S06_PREREGISTRATION_CHECKLIST.md",
+    "S06_deposit_metadata.json",
+    "README.txt",
+    "hashes.txt"
+  ],
+  "note": "The DOI above is the definitive pre-registration reference for this study. Any deviation from the deposited protocol must be recorded in deviations.json with a timestamp and rationale; silent changes are not permitted.",
+  "platform": "Zenodo",
+  "recorded_locally_utc": "2026-10-12T03:52:04.661494+00:00"
+}

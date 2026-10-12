@@ -1,0 +1,6 @@
+{
+  "protocol_id": "NC-S06b",
+  "protocol_sha256": "14f33e3e42f67c75843e3422c8d7a15c3053053b32e5bdc9c442df840de105c9",
+  "locked_at_utc": "2026-10-12T09:43:29.182663+00:00",
+  "note": "Any modification to S06b_PROTOCOL.json after this lock invalidates the study."
+}

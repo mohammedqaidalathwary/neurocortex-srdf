@@ -1,0 +1,29 @@
+{
+  "n_total": 4950,
+  "n_triggered": 600,
+  "n_triggered_datasets": 24,
+  "v1_framework_mean": 0.05172246062325356,
+  "v2_framework_mean": 0.03823076341185867,
+  "v3_framework_mean": 0.07482657465306537,
+  "v3_minus_v1": 0.023104114029811818,
+  "v3_minus_v2": 0.0365958112412067,
+  "p_v3_vs_v1": 2.467632293701172e-05,
+  "p_v3_vs_v2": 0.0006549583433856954,
+  "v1_status_counts": {
+    "NOT_TRIGGERED": 4300,
+    "null": 50,
+    "SUCCESS": 600
+  },
+  "v2_status_counts": {
+    "NOT_TRIGGERED": 4300,
+    "null": 50,
+    "SUCCESS": 358,
+    "REJECTED": 242
+  },
+  "v3_status_counts": {
+    "NOT_TRIGGERED": 4300,
+    "DATA_ERROR": 50,
+    "SUCCESS": 595,
+    "REJECTED": 5
+  }
+}

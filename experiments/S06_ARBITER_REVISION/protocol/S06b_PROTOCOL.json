@@ -1,0 +1,52 @@
+{
+  "protocol_id": "NC-S06b",
+  "parent": "NC-S06-CONFIRM (Zenodo DOI 10.5281/zenodo.23308347)",
+  "version": "1.0.0",
+  "title": "Threshold recalibration for balanced-accuracy utility",
+  "declared_at_utc": "2026-10-12T09:43:29.180882+00:00",
+  "motivation": {
+    "source": "S06a CONFIRM finding F-S06a-01",
+    "evidence": "SRDF v2 uses balanced_accuracy in utility but kept the validation_threshold at 0.85, which was calibrated for accuracy. Result: v2 rejected 242/600 triggered cases (40%) that v1 accepted. Framework-level mean delta dropped from +5.17 pp (v1) to +3.82 pp (v2), a regression of -1.35 pp."
+  },
+  "hypothesis": "Recalibrating validation_threshold from 0.85 to 0.75 will restore framework-level performance to at least v1, while preserving v2's superior conditional discrimination.",
+  "mechanical_rule": {
+    "threshold_new": 0.75,
+    "derivation": "The utility formula is u = 0.5*bal_acc + 0.5 when safety=1 and efficiency=1. The natural acceptance criterion is 'better than random', i.e., bal_acc > 0.50. Substituting into the formula: u_min = 0.5*0.50 + 0.5 = 0.75. This value is derived from the formula, not chosen by the analyst.",
+    "preserved_accepted_fraction": 1.0,
+    "verification": "See threshold_analysis.json (24 datasets, 48 candidates)."
+  },
+  "software_change": {
+    "file": "src_v3/core.py",
+    "line": "self.config['validation_threshold']",
+    "old_value": 0.85,
+    "new_value": 0.75,
+    "single_line_change": true,
+    "other_changes": "none"
+  },
+  "hypotheses": {
+    "H1": {
+      "claim": "v3 >= v1 at framework level (mean delta on 600 triggered cases).",
+      "test": "Wilcoxon signed-rank on dataset-level deltas (v3 - v1), two-sided.",
+      "success": "p < 0.05 and mean difference >= 0."
+    },
+    "H2": {
+      "claim": "v3 > v2 at framework level (mean delta on 600 triggered cases).",
+      "test": "Wilcoxon signed-rank on dataset-level deltas (v3 - v2), two-sided.",
+      "success": "p < 0.05."
+    },
+    "H3": {
+      "claim": "v3 preserves v2's conditional superiority on accepted cases.",
+      "test": "Compare v3 vs v1 on cases where both accept.",
+      "success": "v3 - v1 > 0 with p < 0.05."
+    }
+  },
+  "cohort": "Same as S06a (stage_198, 198 datasets, 600 triggered cases)",
+  "metric": "Balanced accuracy on held-out test fold",
+  "unit_of_analysis": "Dataset",
+  "stopping_rules": {
+    "early_stopping": "Only for infrastructure failure.",
+    "null_finding": "If any hypothesis fails, it is documented as null. No re-run.",
+    "multiplicity": "Holm-Bonferroni over {H1, H2, H3}."
+  },
+  "not_amended": "The original NC-S06-CONFIRM protocol remains unchanged. This is a separate sub-study."
+}

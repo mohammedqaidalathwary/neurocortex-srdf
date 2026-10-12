@@ -1,0 +1,30 @@
+{
+  "checklist_file": "protocol/S06_PREREGISTRATION_CHECKLIST.md",
+  "checklist_sha256": "4eb5c52cc95a8a415a53c001afb3184308e2f39a60b0f3050e31108f49884226",
+  "expected_head": "4157089",
+  "frozen_at_utc": "2026-10-12T03:28:16.556208+00:00",
+  "head_commit": "41570895c2c3fce5334e69eb5dab9895b9e42c94",
+  "head_matches_expected": true,
+  "note": "Any subsequent edit to any file listed in this addendum invalidates the freeze. The addendum is deposited together with the protocol before any confirmatory dataset is downloaded or run.",
+  "protocol_expected": "32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759",
+  "protocol_file": "protocol/S06_PROTOCOL.json",
+  "protocol_id": "NC-S06-CONFIRM",
+  "protocol_matches": true,
+  "protocol_sha256": "32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759",
+  "repository": "https://github.com/mohammedqaidalathwary/neurocortex-srdf",
+  "src_v1_files": {
+    "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+    "arbiter.py": "eca757f3f21585d013c1479431344278e64f4a20ea549a8c2c935ba67c7d155e",
+    "core.py": "902e5ddbb02b45d77450f7514493d4949a00b10bbb1ac5bacf06fa6909f00280",
+    "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+    "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  },
+  "src_v2_files": {
+    "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+    "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+    "core.py": "bd9462020cff2a187399942604a802b8654158570f1b6e07abd763ff43d4a981",
+    "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+    "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+    "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  }
+}

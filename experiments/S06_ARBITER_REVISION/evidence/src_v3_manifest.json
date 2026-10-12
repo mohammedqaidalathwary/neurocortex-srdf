@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-12T09:44:10.479469+00:00",
+  "src_v3_hashes": {
+    "__init__.py": "56f4ac73b320695049d3c5bc993c2cad9553ca7641b350582d716b888748af7d",
+    "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+    "core.py": "b28f5dc895973ab75caee055ae0e4de9f547ff5d7f713191b09b31a3114aa4e0",
+    "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+    "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+    "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  },
+  "src_v2_hashes": {
+    "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+    "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+    "core.py": "bd9462020cff2a187399942604a802b8654158570f1b6e07abd763ff43d4a981",
+    "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+    "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+    "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  },
+  "change": "validation_threshold: 0.85 \u2192 0.75 in core.py",
+  "protocol_doi_pending": true
+}

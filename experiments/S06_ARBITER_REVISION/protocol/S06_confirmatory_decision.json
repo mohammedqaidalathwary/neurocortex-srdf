@@ -1,0 +1,29 @@
+{
+  "confirmatory_cohort_size": 198,
+  "confirmatory_stage": "stage_198",
+  "decision_at_utc": "2026-10-12T04:36:39.676105+00:00",
+  "deposit_doi": "10.5281/zenodo.23308347",
+  "expected_triggered_cases": 600,
+  "expected_triggered_datasets": 24,
+  "hypotheses_active": [
+    "H1"
+  ],
+  "hypotheses_declared_not_testable": [
+    "H2"
+  ],
+  "not_amended": "Zenodo deposit remains unchanged. No Amendment 1 filed. The protocol's own text permits running at the achieved size. The manuscript will state this choice explicitly.",
+  "power_h1_50pct_effect": 0.122,
+  "power_h1_full_effect": 0.896,
+  "reasons": [
+    "stage_32 yields 9 triggered datasets; power at full effect = 54.6% < 80%.",
+    "stage_62 yields 14 triggered datasets; power at full effect = 71.5% < 80%.",
+    "stage_198 yields 24 triggered datasets; power at full effect = 89.6% >= 80%.",
+    "The protocol specifies no minimum size; the size is an outcome of the frozen procedure.",
+    "No model result of any variant had been viewed at decision time."
+  ],
+  "study_id": "NC-S06-CONFIRM",
+  "sub_analyses_declared": [
+    "stage_62",
+    "stage_32"
+  ]
+}

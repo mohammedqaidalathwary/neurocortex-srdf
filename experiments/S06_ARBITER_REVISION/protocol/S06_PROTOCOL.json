@@ -1,0 +1,164 @@
+{
+  "allowed_claims_after_success": [
+    "v2 improves on v1 on an independent cohort (H1)",
+    "v2 preserves the accuracy of the best fixed policy within 0.005 (H2)"
+  ],
+  "cohort_specification": {
+    "cohort_size": "an outcome of the procedure, never a parameter; no first-N, no random sampling",
+    "data_check": "each dataset is re-downloaded and its data_sha256 must equal the S04 inspection record; mismatch => DATA_ERROR, recorded, not replaced",
+    "exclusions_in_order": [
+      "the 45 S04 cohort dataset ids",
+      "any dataset whose data_sha256 equals that of a S04 cohort member (exact content duplicate)",
+      "any dataset sharing an OpenML name with a S04 cohort member (version families; independence rule)",
+      "exact-content duplicates within the remaining set (keep one by the S04 tier cascade)"
+    ],
+    "inputs_frozen_by_hash": [
+      "S04 eligibility_table.csv",
+      "S04 dataset_inspection.jsonl",
+      "S04 cohort_manifest.json"
+    ],
+    "no_outcome_use": "no model output of any version may enter cohort selection",
+    "selection": "apply the S04 deterministic primary-group and secondary-refinement procedure UNCHANGED (same bins, k1/k2 rules, tier cascade, diversity step, coverage audit, independent audit) to the remaining set",
+    "universe": "S04 eligibility_table.csv rows with eligible == True (frozen OpenML snapshot; no re-query of OpenML metadata)"
+  },
+  "disallowed_claims": [
+    "SRDF outperforms EasyEnsemble",
+    "the architecture, rather than the candidate library, drives performance",
+    "any claim from the S04-cohort v2 numbers as confirmatory"
+  ],
+  "estimands": {
+    "E1": "mu1 = mean over triggered datasets of [bAcc(v2) - bAcc(v1)]",
+    "E2": "mu2 = mean over triggered datasets of [bAcc(v2) - bAcc(Always-SMOTE+RF)]",
+    "E3": "mu3 = mean over triggered datasets of [bAcc(v2) - bAcc(RF baseline)]  (replication of the S04 effect)",
+    "case_inclusion": "cases with training IR >= 3.0 for which BOTH compared variants produced a committed structure; NOT_TRIGGERED never counted as zero; REJECTED reported separately",
+    "unit": "dataset (mean over the SUCCESS cases of the dataset); case-level results are descriptive only"
+  },
+  "evidence_chain": {
+    "locks": [
+      "PROTOCOL_SHA256",
+      "FREEZE_ADDENDUM_SHA256",
+      "SOURCE_LOCK_SHA256",
+      "COHORT_SHA256",
+      "EXECUTION_PLAN_SHA256",
+      "SUMMARY_SHA256",
+      "FORENSIC_SHA256"
+    ],
+    "rule": "each lock is recomputed from the file on disk before use; mismatch aborts"
+  },
+  "execution": {
+    "cv": "StratifiedKFold(shuffle=True, random_state=seed)",
+    "cv_folds": 5,
+    "metric": "balanced accuracy on the held-out fold",
+    "one_run_per_variant": true,
+    "per_case_timeout_seconds": 1800,
+    "resumable": true,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "selection_data": "inner validation split of the training partition only (test fold untouched until the structure is fixed)",
+    "trigger": "training-partition IR >= 3.0 (unchanged)",
+    "variants_run_on_every_case": [
+      "RF baseline",
+      "SRDF v1 (frozen S04 code)",
+      "SRDF v2 (frozen)",
+      "Always-SMOTE+RF",
+      "Oracle (better of the two library candidates, evaluated on the test fold; diagnostic only, never used for selection)"
+    ]
+  },
+  "external_registration": {
+    "cite_in_paper": "registration identifier, deposit date, SHA-256",
+    "deposit": "this JSON + its SHA-256 + the freeze addendum, before the first confirmatory download",
+    "platforms": [
+      "OSF Registries (preferred)",
+      "Zenodo record with DOI"
+    ]
+  },
+  "frozen_code": {
+    "forbidden": [
+      "any edit to src_v2 after freeze",
+      "changing seeds, folds, thresholds, weights after freeze"
+    ],
+    "freeze_rule": "SHA-256 of every file in src/ and src_v2/ is computed and written to an addendum (protocol_freeze_addendum.json) that is deposited with the registration BEFORE the first confirmatory download. No code change is allowed afterwards.",
+    "repository": "https://github.com/mohammedqaidalathwary/neurocortex-srdf",
+    "v1_reference": "src/ at the S04 source lock",
+    "v2_commit": "4157089",
+    "v2_directory": "src_v2/"
+  },
+  "hypotheses_and_decision_rules": {
+    "H1": {
+      "claim": "v2 improves on v1",
+      "success": "Holm-adjusted p < 0.05 AND lower bound of the dataset-level bootstrap 95% CI of mu1 >= SESOI",
+      "test": "exact Wilcoxon signed-rank on dataset means, two-sided"
+    },
+    "H2": {
+      "claim": "v2 is non-inferior to Always-SMOTE+RF (governance does not cost accuracy)",
+      "reading": "success means 'the Arbiter preserves the accuracy of the best fixed policy', not 'the architecture outperforms it'",
+      "success": "95% bootstrap CI of mu2 lies within [-0.005, +0.005]; superiority is NOT claimed even if mu2 > 0 unless a separate pre-specified superiority test (same Holm family) passes",
+      "test": "TOST at the dataset level with margin delta = 0.005 (two one-sided Wilcoxon/t checks, bootstrap CI inside [-0.005, +0.005] is the decision criterion)"
+    },
+    "H3": {
+      "claim": "v2 improves on the RF baseline (replication of S04)",
+      "status": "replication check, not part of the Holm family",
+      "test": "same as H1 with mu3"
+    },
+    "SESOI": 0.01,
+    "alpha_family": 0.05,
+    "claim_rule": "'significant' only if the rule above is met; otherwise 'no significant difference detected' / 'not demonstrated'",
+    "multiplicity": "Holm-Bonferroni over {H1, H2}; H3 is a replication check reported separately",
+    "null_policy": "a failed hypothesis is reported as a null finding; no re-run, no alternative configuration"
+  },
+  "operational_definitions": {
+    "Mode_A": "utility_tied AND negative_case",
+    "Mode_B": "NOT utility_tied AND negative_case",
+    "Mode_B_counts": "computed by a script from the JSONL records; counts and rates reported per variant and per IR tercile",
+    "Mode_C": "NOT utility_tied AND delta_bacc > 0",
+    "negative_case": "SUCCESS case with delta_bacc < 0 relative to the RF baseline",
+    "unclassified": "delta_bacc == 0 cases are counted separately",
+    "utility_tied": "|U(GB) - U(SMOTE_RF)| < 1e-12 on the inner validation split"
+  },
+  "power_analysis": {
+    "decision": "cohort size is NOT adjusted to the power result. If the procedure yields fewer triggered datasets than required, the study is run anyway and the achieved power is reported.",
+    "inputs": {
+      "SESOI": 0.01,
+      "alpha": 0.025,
+      "effect_scenarios": [
+        "100% and 50% of the v2 dataset-level mean difference observed on the S04 cohort (50% = optimism discount)"
+      ],
+      "sd": "dataset-level SD of v2-v1 differences from the S04-cohort v2 artifacts, read at run time from files",
+      "trigger_rate": "share of datasets with at least one triggered case in S04 (read from files)"
+    },
+    "method": "Monte-Carlo simulation, 10000 replicates, executed and saved BEFORE the confirmatory run",
+    "outputs": [
+      "power of H1 vs number of triggered datasets",
+      "minimum triggered datasets for 90% power under the 50% scenario",
+      "expected eligible cohort size = required triggered datasets / trigger_rate"
+    ]
+  },
+  "pre_specified_secondary_and_diagnostic_analyses": [
+    "selection-shift table: v1 choice x v2 choice with mean delta per cell, per dataset and per IR tercile",
+    "Oracle regret: bAcc(Oracle) - bAcc(v2) and - bAcc(v1)",
+    "negative control: replace the tie-break by a fixed-seed random choice and report the effect",
+    "leave-one-dataset-out Wilcoxon for H1",
+    "leakage check: confirm every record has test_used_before_selection == false and recompute utility inputs from inner-split fields",
+    "REJECTED rate per variant (the balanced-accuracy gate is expected to be more selective than the accuracy gate)",
+    "gap to EasyEnsemble reported descriptively (no test, no claim)"
+  ],
+  "protocol_id": "NC-S06-CONFIRM",
+  "status_statement": {
+    "deferred": "S06b (cross-validated utility) and S06c (EasyEnsemble candidate) are NOT part of this protocol; they belong to a separate S07 protocol on a third cohort.",
+    "this_study": "Confirmatory: v2 code and all analysis rules are frozen and deposited BEFORE any confirmatory dataset is downloaded or run.",
+    "v2_origin": "SRDF v2 (changes S06a + S06d) was derived AFTER inspecting failures of v1 on the 45 S04 datasets. Its effect on those datasets is exploratory and optimistic by construction."
+  },
+  "stopping_and_deviation_rules": {
+    "deviation_log": "every deviation is written to deviations.json with timestamp and reason; an empty list is reported as such",
+    "early_stopping": "only for technical infrastructure failure, never for observed results",
+    "interim_analyses": "none",
+    "retries": "a case/dataset with INFRASTRUCTURE_ERROR or INTERRUPTED is resumed; any other status is terminal"
+  },
+  "title": "Confirmatory evaluation of SRDF v2 (tie-break + balanced-accuracy utility) on an independent cohort",
+  "version": "1.0.0"
+}

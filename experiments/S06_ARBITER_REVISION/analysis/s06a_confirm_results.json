@@ -1,0 +1,26 @@
+{
+  "n_total": 4950,
+  "n_data_error": 50,
+  "n_triggered_cases_v1": 600,
+  "n_triggered_datasets_v1": 24,
+  "v1_success": 600,
+  "v2_success": 358,
+  "v2_rejected": 242,
+  "n_paired_success": 358,
+  "paired_datasets": 24,
+  "v1_mean_delta_paired": 0.054678891233718184,
+  "v2_mean_delta_paired": 0.06950243624148843,
+  "improvement_paired": 0.01482354500777025,
+  "wilcoxon_p": 0.0149661863394141,
+  "cohen_d": 0.5499610072763975,
+  "bootstrap_ci": [
+    0.004687515050238517,
+    0.025642152212495654
+  ],
+  "n_improved_cases": 99,
+  "n_worsened_cases": 41,
+  "n_tied_cases": 218,
+  "v1_framework_mean": 0.05172246062325356,
+  "v2_framework_mean": 0.03823076341185867,
+  "framework_difference": -0.013491697211394885
+}

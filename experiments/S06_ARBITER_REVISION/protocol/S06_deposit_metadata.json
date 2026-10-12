@@ -1,0 +1,162 @@
+{
+  "analysis_plan": {
+    "power_analysis": {
+      "decision": "cohort size is NOT adjusted to the power result. If the procedure yields fewer triggered datasets than required, the study is run anyway and the achieved power is reported.",
+      "inputs": {
+        "SESOI": 0.01,
+        "alpha": 0.025,
+        "effect_scenarios": [
+          "100% and 50% of the v2 dataset-level mean difference observed on the S04 cohort (50% = optimism discount)"
+        ],
+        "sd": "dataset-level SD of v2-v1 differences from the S04-cohort v2 artifacts, read at run time from files",
+        "trigger_rate": "share of datasets with at least one triggered case in S04 (read from files)"
+      },
+      "method": "Monte-Carlo simulation, 10000 replicates, executed and saved BEFORE the confirmatory run",
+      "outputs": [
+        "power of H1 vs number of triggered datasets",
+        "minimum triggered datasets for 90% power under the 50% scenario",
+        "expected eligible cohort size = required triggered datasets / trigger_rate"
+      ]
+    },
+    "primary_analyses": {
+      "H1": {
+        "claim": "v2 improves on v1",
+        "success": "Holm-adjusted p < 0.05 AND lower bound of the dataset-level bootstrap 95% CI of mu1 >= SESOI",
+        "test": "exact Wilcoxon signed-rank on dataset means, two-sided"
+      },
+      "H2": {
+        "claim": "v2 is non-inferior to Always-SMOTE+RF (governance does not cost accuracy)",
+        "reading": "success means 'the Arbiter preserves the accuracy of the best fixed policy', not 'the architecture outperforms it'",
+        "success": "95% bootstrap CI of mu2 lies within [-0.005, +0.005]; superiority is NOT claimed even if mu2 > 0 unless a separate pre-specified superiority test (same Holm family) passes",
+        "test": "TOST at the dataset level with margin delta = 0.005 (two one-sided Wilcoxon/t checks, bootstrap CI inside [-0.005, +0.005] is the decision criterion)"
+      },
+      "H3": {
+        "claim": "v2 improves on the RF baseline (replication of S04)",
+        "status": "replication check, not part of the Holm family",
+        "test": "same as H1 with mu3"
+      },
+      "SESOI": 0.01,
+      "alpha_family": 0.05,
+      "claim_rule": "'significant' only if the rule above is met; otherwise 'no significant difference detected' / 'not demonstrated'",
+      "multiplicity": "Holm-Bonferroni over {H1, H2}; H3 is a replication check reported separately",
+      "null_policy": "a failed hypothesis is reported as a null finding; no re-run, no alternative configuration"
+    },
+    "secondary_analyses": [
+      "selection-shift table: v1 choice x v2 choice with mean delta per cell, per dataset and per IR tercile",
+      "Oracle regret: bAcc(Oracle) - bAcc(v2) and - bAcc(v1)",
+      "negative control: replace the tie-break by a fixed-seed random choice and report the effect",
+      "leave-one-dataset-out Wilcoxon for H1",
+      "leakage check: confirm every record has test_used_before_selection == false and recompute utility inputs from inner-split fields",
+      "REJECTED rate per variant (the balanced-accuracy gate is expected to be more selective than the accuracy gate)",
+      "gap to EasyEnsemble reported descriptively (no test, no claim)"
+    ]
+  },
+  "author": "Mohammed Qaid Al-Athwary",
+  "background": "SRDF is a runtime framework for controlled structural adaptation. v2 of the framework (S06a+d) modified the Arbiter tie-break rule and replaced accuracy with balanced accuracy inside the utility signal. v2 was derived AFTER inspecting failures of v1 on the 45 S04 datasets; its effect on those datasets is therefore exploratory and optimistic by construction. This protocol specifies a confirmatory evaluation on a fully independent cohort.",
+  "cohort_specification": {
+    "cohort_size": "an outcome of the procedure, never a parameter; no first-N, no random sampling",
+    "data_check": "each dataset is re-downloaded and its data_sha256 must equal the S04 inspection record; mismatch => DATA_ERROR, recorded, not replaced",
+    "exclusions_in_order": [
+      "the 45 S04 cohort dataset ids",
+      "any dataset whose data_sha256 equals that of a S04 cohort member (exact content duplicate)",
+      "any dataset sharing an OpenML name with a S04 cohort member (version families; independence rule)",
+      "exact-content duplicates within the remaining set (keep one by the S04 tier cascade)"
+    ],
+    "inputs_frozen_by_hash": [
+      "S04 eligibility_table.csv",
+      "S04 dataset_inspection.jsonl",
+      "S04 cohort_manifest.json"
+    ],
+    "no_outcome_use": "no model output of any version may enter cohort selection",
+    "selection": "apply the S04 deterministic primary-group and secondary-refinement procedure UNCHANGED (same bins, k1/k2 rules, tier cascade, diversity step, coverage audit, independent audit) to the remaining set",
+    "universe": "S04 eligibility_table.csv rows with eligible == True (frozen OpenML snapshot; no re-query of OpenML metadata)"
+  },
+  "deposit_prepared_at_utc": "2026-10-12T03:28:54.551931+00:00",
+  "email": "mohammedqaidalathwary@gmail.com",
+  "estimands": {
+    "E1": "mu1 = mean over triggered datasets of [bAcc(v2) - bAcc(v1)]",
+    "E2": "mu2 = mean over triggered datasets of [bAcc(v2) - bAcc(Always-SMOTE+RF)]",
+    "E3": "mu3 = mean over triggered datasets of [bAcc(v2) - bAcc(RF baseline)]  (replication of the S04 effect)",
+    "case_inclusion": "cases with training IR >= 3.0 for which BOTH compared variants produced a committed structure; NOT_TRIGGERED never counted as zero; REJECTED reported separately",
+    "unit": "dataset (mean over the SUCCESS cases of the dataset); case-level results are descriptive only"
+  },
+  "execution_plan": {
+    "cv": "StratifiedKFold(shuffle=True, random_state=seed)",
+    "cv_folds": 5,
+    "metric": "balanced accuracy on the held-out fold",
+    "one_run_per_variant": true,
+    "per_case_timeout_seconds": 1800,
+    "resumable": true,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "selection_data": "inner validation split of the training partition only (test fold untouched until the structure is fixed)",
+    "trigger": "training-partition IR >= 3.0 (unchanged)",
+    "variants_run_on_every_case": [
+      "RF baseline",
+      "SRDF v1 (frozen S04 code)",
+      "SRDF v2 (frozen)",
+      "Always-SMOTE+RF",
+      "Oracle (better of the two library candidates, evaluated on the test fold; diagnostic only, never used for selection)"
+    ]
+  },
+  "frozen_code": {
+    "checklist_sha256": "4eb5c52cc95a8a415a53c001afb3184308e2f39a60b0f3050e31108f49884226",
+    "head_commit": "41570895c2c3fce5334e69eb5dab9895b9e42c94",
+    "protocol_sha256": "32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759",
+    "src_v1_hashes": {
+      "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+      "arbiter.py": "eca757f3f21585d013c1479431344278e64f4a20ea549a8c2c935ba67c7d155e",
+      "core.py": "902e5ddbb02b45d77450f7514493d4949a00b10bbb1ac5bacf06fa6909f00280",
+      "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    },
+    "src_v2_hashes": {
+      "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+      "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+      "core.py": "bd9462020cff2a187399942604a802b8654158570f1b6e07abd763ff43d4a981",
+      "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+      "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    }
+  },
+  "how_to_cite": "Cite the OSF/Zenodo DOI together with the SHA-256 of S06_PROTOCOL.json as recorded in the deposit.",
+  "hypotheses": {
+    "H1": {
+      "claim": "v2 improves on v1",
+      "success": "Holm-adjusted p < 0.05 AND lower bound of the dataset-level bootstrap 95% CI of mu1 >= SESOI",
+      "test": "exact Wilcoxon signed-rank on dataset means, two-sided"
+    },
+    "H2": {
+      "claim": "v2 is non-inferior to Always-SMOTE+RF (governance does not cost accuracy)",
+      "reading": "success means 'the Arbiter preserves the accuracy of the best fixed policy', not 'the architecture outperforms it'",
+      "success": "95% bootstrap CI of mu2 lies within [-0.005, +0.005]; superiority is NOT claimed even if mu2 > 0 unless a separate pre-specified superiority test (same Holm family) passes",
+      "test": "TOST at the dataset level with margin delta = 0.005 (two one-sided Wilcoxon/t checks, bootstrap CI inside [-0.005, +0.005] is the decision criterion)"
+    },
+    "H3": {
+      "claim": "v2 improves on the RF baseline (replication of S04)",
+      "status": "replication check, not part of the Holm family",
+      "test": "same as H1 with mu3"
+    },
+    "SESOI": 0.01,
+    "alpha_family": 0.05,
+    "claim_rule": "'significant' only if the rule above is met; otherwise 'no significant difference detected' / 'not demonstrated'",
+    "multiplicity": "Holm-Bonferroni over {H1, H2}; H3 is a replication check reported separately",
+    "null_policy": "a failed hypothesis is reported as a null finding; no re-run, no alternative configuration"
+  },
+  "orcid": "0009-0006-9075-072X",
+  "repository": "https://github.com/mohammedqaidalathwary/neurocortex-srdf",
+  "stopping_rules": {
+    "deviation_log": "every deviation is written to deviations.json with timestamp and reason; an empty list is reported as such",
+    "early_stopping": "only for technical infrastructure failure, never for observed results",
+    "interim_analyses": "none",
+    "retries": "a case/dataset with INFRASTRUCTURE_ERROR or INTERRUPTED is resumed; any other status is terminal"
+  },
+  "study_id": "NC-S06-CONFIRM",
+  "title": "Confirmatory evaluation of SRDF v2 (tie-break + balanced-accuracy utility) on an independent cohort",
+  "version": "1.0.0"
+}

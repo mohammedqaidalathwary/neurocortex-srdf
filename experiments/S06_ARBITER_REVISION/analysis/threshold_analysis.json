@@ -1,0 +1,401 @@
+{
+  "n_candidates_sampled": 48,
+  "n_datasets_sampled": 24,
+  "utility_min": 0.75,
+  "utility_median": 0.8682873305269317,
+  "utility_max": 0.9828188701223064,
+  "utility_q10": 0.7902521929824561,
+  "utility_q90": 0.938948747815958,
+  "bal_acc_min": 0.5,
+  "bal_acc_median": 0.7365746610538637,
+  "bal_acc_max": 0.9656377402446127,
+  "current_threshold": 0.85,
+  "accepted_at_085": 27,
+  "theta_derived": 0.75,
+  "records": [
+    {
+      "dataset_id": 1049,
+      "candidate": "GradientBoosting",
+      "utility": 0.8372919556171983,
+      "balanced_accuracy": 0.6745839112343966,
+      "accuracy": 0.8888888888888888,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1049,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.875866851595007,
+      "balanced_accuracy": 0.7517337031900139,
+      "accuracy": 0.8888888888888888,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1050,
+      "candidate": "GradientBoosting",
+      "utility": 0.8258070054945055,
+      "balanced_accuracy": 0.651614010989011,
+      "accuracy": 0.924,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1050,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8175652472527473,
+      "balanced_accuracy": 0.6351304945054945,
+      "accuracy": 0.864,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1065,
+      "candidate": "GradientBoosting",
+      "utility": 0.8139658848614073,
+      "balanced_accuracy": 0.6279317697228145,
+      "accuracy": 0.9054054054054054,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1065,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8347547974413645,
+      "balanced_accuracy": 0.6695095948827292,
+      "accuracy": 0.8648648648648649,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1071,
+      "candidate": "GradientBoosting",
+      "utility": 0.7874999999999999,
+      "balanced_accuracy": 0.575,
+      "accuracy": 0.8923076923076924,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1071,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.7916666666666667,
+      "balanced_accuracy": 0.5833333333333334,
+      "accuracy": 0.9076923076923077,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1443,
+      "candidate": "GradientBoosting",
+      "utility": 0.7761479591836735,
+      "balanced_accuracy": 0.5522959183673469,
+      "accuracy": 0.9150943396226415,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1443,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8048469387755102,
+      "balanced_accuracy": 0.6096938775510203,
+      "accuracy": 0.9150943396226415,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1444,
+      "candidate": "GradientBoosting",
+      "utility": 0.7704931972789115,
+      "balanced_accuracy": 0.5409863945578232,
+      "accuracy": 0.8383233532934131,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1444,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8409863945578231,
+      "balanced_accuracy": 0.6819727891156462,
+      "accuracy": 0.8203592814371258,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1446,
+      "candidate": "GradientBoosting",
+      "utility": 0.7678571428571428,
+      "balanced_accuracy": 0.5357142857142857,
+      "accuracy": 0.8125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1446,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8095238095238095,
+      "balanced_accuracy": 0.6190476190476191,
+      "accuracy": 0.8333333333333334,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1453,
+      "candidate": "GradientBoosting",
+      "utility": 0.7914317042606516,
+      "balanced_accuracy": 0.5828634085213033,
+      "accuracy": 0.8439306358381503,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1453,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8681860902255638,
+      "balanced_accuracy": 0.7363721804511278,
+      "accuracy": 0.861271676300578,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1467,
+      "candidate": "GradientBoosting",
+      "utility": 0.75,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.9195402298850575,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1467,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8151785714285713,
+      "balanced_accuracy": 0.6303571428571428,
+      "accuracy": 0.9195402298850575,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1600,
+      "candidate": "GradientBoosting",
+      "utility": 0.9019607843137254,
+      "balanced_accuracy": 0.803921568627451,
+      "accuracy": 0.8837209302325582,
+      "accepted": false
+    },
+    {
+      "dataset_id": 1600,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8668300653594772,
+      "balanced_accuracy": 0.7336601307189543,
+      "accuracy": 0.8372093023255814,
+      "accepted": false
+    },
+    {
+      "dataset_id": 40994,
+      "candidate": "GradientBoosting",
+      "utility": 0.8183035714285714,
+      "balanced_accuracy": 0.6366071428571429,
+      "accuracy": 0.9310344827586207,
+      "accepted": false
+    },
+    {
+      "dataset_id": 40994,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8834821428571429,
+      "balanced_accuracy": 0.7669642857142858,
+      "accuracy": 0.9310344827586207,
+      "accepted": false
+    },
+    {
+      "dataset_id": 41946,
+      "candidate": "GradientBoosting",
+      "utility": 0.9631297964631298,
+      "balanced_accuracy": 0.9262595929262596,
+      "accuracy": 0.9801324503311258,
+      "accepted": false
+    },
+    {
+      "dataset_id": 41946,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.977084227084227,
+      "balanced_accuracy": 0.9541684541684542,
+      "accuracy": 0.9850993377483444,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44489,
+      "candidate": "GradientBoosting",
+      "utility": 0.9395263055717336,
+      "balanced_accuracy": 0.8790526111434673,
+      "accuracy": 0.98125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44489,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9639875752281111,
+      "balanced_accuracy": 0.9279751504562221,
+      "accuracy": 0.96875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44490,
+      "candidate": "GradientBoosting",
+      "utility": 0.9256455057270432,
+      "balanced_accuracy": 0.8512910114540866,
+      "accuracy": 0.98125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44490,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9084643758493496,
+      "balanced_accuracy": 0.8169287516986993,
+      "accuracy": 0.96875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44491,
+      "candidate": "GradientBoosting",
+      "utility": 0.9387012230634828,
+      "balanced_accuracy": 0.8774024461269656,
+      "accuracy": 0.978125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44491,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9828188701223064,
+      "balanced_accuracy": 0.9656377402446127,
+      "accuracy": 0.9875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44492,
+      "candidate": "GradientBoosting",
+      "utility": 0.9256455057270432,
+      "balanced_accuracy": 0.8512910114540866,
+      "accuracy": 0.98125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44492,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9231702582022907,
+      "balanced_accuracy": 0.8463405164045816,
+      "accuracy": 0.971875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44549,
+      "candidate": "GradientBoosting",
+      "utility": 0.8208333333333333,
+      "balanced_accuracy": 0.6416666666666666,
+      "accuracy": 0.940625,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44549,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8799999999999999,
+      "balanced_accuracy": 0.76,
+      "accuracy": 0.94375,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44550,
+      "candidate": "GradientBoosting",
+      "utility": 0.8074999999999999,
+      "balanced_accuracy": 0.615,
+      "accuracy": 0.934375,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44550,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9158333333333333,
+      "balanced_accuracy": 0.8316666666666667,
+      "accuracy": 0.946875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44551,
+      "candidate": "GradientBoosting",
+      "utility": 0.8174999999999999,
+      "balanced_accuracy": 0.635,
+      "accuracy": 0.928125,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44551,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8516666666666666,
+      "balanced_accuracy": 0.7033333333333334,
+      "accuracy": 0.925,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44552,
+      "candidate": "GradientBoosting",
+      "utility": 0.8333333333333333,
+      "balanced_accuracy": 0.6666666666666666,
+      "accuracy": 0.94375,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44552,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8733333333333333,
+      "balanced_accuracy": 0.7466666666666667,
+      "accuracy": 0.91875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44568,
+      "candidate": "GradientBoosting",
+      "utility": 0.9106702032669782,
+      "balanced_accuracy": 0.8213404065339566,
+      "accuracy": 0.871875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44568,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9012815799149114,
+      "balanced_accuracy": 0.8025631598298231,
+      "accuracy": 0.85,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44569,
+      "candidate": "GradientBoosting",
+      "utility": 0.8937575502915069,
+      "balanced_accuracy": 0.7875151005830139,
+      "accuracy": 0.859375,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44569,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8937575502915069,
+      "balanced_accuracy": 0.7875151005830139,
+      "accuracy": 0.859375,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44571,
+      "candidate": "GradientBoosting",
+      "utility": 0.904288565575923,
+      "balanced_accuracy": 0.8085771311518462,
+      "accuracy": 0.871875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44571,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.9031986974105783,
+      "balanced_accuracy": 0.8063973948211566,
+      "accuracy": 0.875,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44572,
+      "candidate": "GradientBoosting",
+      "utility": 0.8683885708282997,
+      "balanced_accuracy": 0.7367771416565996,
+      "accuracy": 0.840625,
+      "accepted": false
+    },
+    {
+      "dataset_id": 44572,
+      "candidate": "SMOTE_RandomForest",
+      "utility": 0.8832790587740953,
+      "balanced_accuracy": 0.7665581175481906,
+      "accuracy": 0.840625,
+      "accepted": false
+    }
+  ]
+}
