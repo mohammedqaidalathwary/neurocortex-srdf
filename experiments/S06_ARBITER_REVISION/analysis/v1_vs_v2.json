@@ -1,0 +1,15 @@
+{
+  "cohen_d_paired": 0.6281074785161884,
+  "mean_improvement": 0.026312808556336383,
+  "median_improvement": 0.0,
+  "n_improved": 185,
+  "n_paired_success": 373,
+  "n_unchanged": 188,
+  "n_worsened": 0,
+  "v1_mean_adapted": 0.7927729721469203,
+  "v1_mean_delta": 0.028854743593239116,
+  "v2_mean_adapted": 0.8190857807032568,
+  "v2_mean_delta": 0.0551675521495755,
+  "wilcoxon_dataset_level_p": 6.103515625e-05,
+  "wilcoxon_p_per_case": 4.1330777120554183e-32
+}
