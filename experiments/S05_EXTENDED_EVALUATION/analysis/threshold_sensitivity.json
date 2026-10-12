@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "mean_delta_bacc_success_only": 0.028854743593239116,
+      "success_with_delta_n": 373,
+      "threshold": 2.0,
+      "win_rate_delta_gt_zero": 0.6219839142091153,
+      "would_trigger_cases": 450
+    },
+    {
+      "mean_delta_bacc_success_only": 0.028854743593239116,
+      "success_with_delta_n": 373,
+      "threshold": 2.5,
+      "win_rate_delta_gt_zero": 0.6219839142091153,
+      "would_trigger_cases": 450
+    },
+    {
+      "mean_delta_bacc_success_only": 0.028854743593239116,
+      "success_with_delta_n": 373,
+      "threshold": 3.0,
+      "win_rate_delta_gt_zero": 0.6219839142091153,
+      "would_trigger_cases": 375
+    },
+    {
+      "mean_delta_bacc_success_only": 0.030809221096986333,
+      "success_with_delta_n": 325,
+      "threshold": 3.5,
+      "win_rate_delta_gt_zero": 0.6030769230769231,
+      "would_trigger_cases": 325
+    },
+    {
+      "mean_delta_bacc_success_only": 0.0321580588553467,
+      "success_with_delta_n": 300,
+      "threshold": 4.0,
+      "win_rate_delta_gt_zero": 0.6066666666666667,
+      "would_trigger_cases": 300
+    }
+  ],
+  "source": "frozen S04 records; descriptive counterfactual trigger counts only"
+}

@@ -1,0 +1,116 @@
+{
+  "inference_unit": "dataset",
+  "n_datasets": 15,
+  "note": "Exploratory sensitivity; no multiplicity-adjusted confirmatory interpretation.",
+  "p_value_range": [
+    0.0003662109375,
+    0.0023193359375
+  ],
+  "rows": [
+    {
+      "mean_delta": 0.026037669636807346,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 311,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.03096670863009215,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 958,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0008544921875
+    },
+    {
+      "mean_delta": 0.030830344993728515,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 962,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.001220703125
+    },
+    {
+      "mean_delta": 0.029715265628649148,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 995,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.03174780531118883,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 1004,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0003662109375
+    },
+    {
+      "mean_delta": 0.027179551342934864,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 1020,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.029817579025712974,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 1063,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.029280548347899785,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 1068,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.026859375904338373,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 1447,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.030681203598947583,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 1451,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.001708984375
+    },
+    {
+      "mean_delta": 0.029472358931263865,
+      "median_delta": 0.019098576520801092,
+      "omitted_dataset_id": 1464,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.02779274637345559,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 40983,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.023913595788249566,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 44488,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.02777622630196277,
+      "median_delta": 0.017755902437252558,
+      "omitted_dataset_id": 44548,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.0023193359375
+    },
+    {
+      "mean_delta": 0.02999829454141228,
+      "median_delta": 0.020798923402498084,
+      "omitted_dataset_id": 44570,
+      "remaining_datasets": 14,
+      "wilcoxon_p": 0.001708984375
+    }
+  ]
+}

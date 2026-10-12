@@ -1,0 +1,24 @@
+{
+  "arbiter_actual_mean": 0.7927729721469203,
+  "arbiter_value_delta": -0.01944992229554976,
+  "choice_breakdown": {
+    "gb_only": 250,
+    "smote_only": 123,
+    "unmapped": 0
+  },
+  "counterfactual_smote_rf_mean": 0.8122228944424701,
+  "gb_only_subanalysis": {
+    "actual_mean": 0.7593358270658621,
+    "arbiter_value": -0.029019284064960335,
+    "counterfactual_mean": 0.7883551111308224,
+    "n": 250,
+    "win_rate": 0.256
+  },
+  "missing": 0,
+  "n_cases": 373,
+  "utility_analysis": {
+    "correct_choices": 291,
+    "incorrect_choices": 0,
+    "tied": 82
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ablations": [
+    "no_arbiter",
+    "forced_trigger",
+    "gb_only",
+    "smote_only"
+  ],
+  "baseline_scope": "all available cases; paired primary comparison restricted to exact S04 SUCCESS case_keys",
+  "baselines": [
+    "smote_rf",
+    "cost_sensitive_rf",
+    "adasyn_rf",
+    "easyensemble"
+  ],
+  "case_unit": "dataset_id \u00d7 seed \u00d7 fold",
+  "created_at_utc": "2026-10-11T23:51:07.183347+00:00",
+  "cv_folds": 5,
+  "frozen_s04_immutable": true,
+  "important_limitations": [
+    "Baseline splits are reconstructed from the frozen S04 protocol and must be checked against case metadata.",
+    "S04 has 45 datasets and 1125 cases; the independent unit for primary inference is dataset, not fold-case.",
+    "No confirmatory claim is made from exploratory S05 analyses."
+  ],
+  "metric": "balanced_accuracy",
+  "multiple_comparison_correction": "holm-bonferroni",
+  "primary_inference_unit": "dataset",
+  "protocol_id": "NC-S05",
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "sensitivity_thresholds": [
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "source_phase": "S04_OPENML_GENERALIZATION",
+  "statistical_tests": [
+    "wilcoxon",
+    "cohen_d",
+    "cliffs_delta",
+    "bootstrap_ci"
+  ],
+  "title": "Extended Comparative Evaluation",
+  "version": "1.0.0"
+}

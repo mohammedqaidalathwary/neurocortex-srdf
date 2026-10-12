@@ -1,0 +1,181 @@
+{
+  "alpha": 0.05,
+  "correction_within_view": "Holm-Bonferroni",
+  "inference_unit": "dataset",
+  "pairing": "exact case_key",
+  "view_a_system": [
+    {
+      "baseline": "smote_rf",
+      "bootstrap_ci95": [
+        -0.014241821675309036,
+        -0.004478008026614545
+      ],
+      "cliffs_delta": -0.6444444444444445,
+      "cohen_d_paired": -0.5174018823297248,
+      "mean_paired_diff": -0.008774568519265957,
+      "median_paired_diff": -0.003199999999999985,
+      "n_cases_paired": 1125,
+      "n_datasets": 45,
+      "note": null,
+      "p_holm": 1.8587363001643098e-05,
+      "p_raw": 4.6468407504107745e-06,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.016958903357205388,
+      "wilcoxon_statistic": 137.0
+    },
+    {
+      "baseline": "cost_sensitive_rf",
+      "bootstrap_ci95": [
+        0.006774663645063303,
+        0.023045642375828707
+      ],
+      "cliffs_delta": 0.24444444444444444,
+      "cohen_d_paired": 0.49287112261387755,
+      "mean_paired_diff": 0.014280979963600046,
+      "median_paired_diff": 0.0014182637001241628,
+      "n_cases_paired": 1125,
+      "n_datasets": 45,
+      "note": null,
+      "p_holm": 0.008772318635124066,
+      "p_raw": 0.004386159317562033,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.028975079505292857,
+      "wilcoxon_statistic": 269.0
+    },
+    {
+      "baseline": "adasyn_rf",
+      "bootstrap_ci95": [
+        -0.016251326370568,
+        -0.0024309206863396223
+      ],
+      "cliffs_delta": -0.4864864864864865,
+      "cohen_d_paired": -0.40757049069494355,
+      "mean_paired_diff": -0.008895834450867692,
+      "median_paired_diff": -0.003199999999999985,
+      "n_cases_paired": 817,
+      "n_datasets": 37,
+      "note": null,
+      "p_holm": 0.003836768154319446,
+      "p_raw": 0.001278922718106482,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.02182649297229422,
+      "wilcoxon_statistic": 128.0
+    },
+    {
+      "baseline": "easyensemble",
+      "bootstrap_ci95": [
+        -0.04554233871834011,
+        -0.011046007516536975
+      ],
+      "cliffs_delta": -0.4222222222222222,
+      "cohen_d_paired": -0.4526164832282088,
+      "mean_paired_diff": -0.027562624285562432,
+      "median_paired_diff": -0.010282502443792776,
+      "n_cases_paired": 1125,
+      "n_datasets": 45,
+      "note": null,
+      "p_holm": 0.008772318635124066,
+      "p_raw": 0.004916397720194254,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.06089620088286839,
+      "wilcoxon_statistic": 272.0
+    }
+  ],
+  "view_b_conditional": [
+    {
+      "baseline": "smote_rf",
+      "bootstrap_ci95": [
+        -0.032898537361001734,
+        -0.008065631466466624
+      ],
+      "cliffs_delta": -0.6,
+      "cohen_d_paired": -0.7547021298841964,
+      "mean_paired_diff": -0.01921168645266362,
+      "median_paired_diff": -0.012631578947368436,
+      "n_cases_paired": 375,
+      "n_datasets": 15,
+      "note": null,
+      "p_holm": 0.0052490234375,
+      "p_raw": 0.00262451171875,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.025455985470203345,
+      "wilcoxon_statistic": 10.0
+    },
+    {
+      "baseline": "cost_sensitive_rf",
+      "bootstrap_ci95": [
+        0.02245699089917958,
+        0.059492685456247626
+      ],
+      "cliffs_delta": 0.7333333333333333,
+      "cohen_d_paired": 1.0601115868237325,
+      "mean_paired_diff": 0.04042480814992495,
+      "median_paired_diff": 0.04566666666666666,
+      "n_cases_paired": 375,
+      "n_datasets": 15,
+      "note": null,
+      "p_holm": 0.0025634765625,
+      "p_raw": 0.0008544921875,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.038132597221245616,
+      "wilcoxon_statistic": 6.0
+    },
+    {
+      "baseline": "adasyn_rf",
+      "bootstrap_ci95": [
+        -0.03346594267028037,
+        0.00023310710509351267
+      ],
+      "cliffs_delta": -0.42857142857142855,
+      "cohen_d_paired": -0.4853307095614299,
+      "mean_paired_diff": -0.016089457907934368,
+      "median_paired_diff": -0.014920766148025465,
+      "n_cases_paired": 350,
+      "n_datasets": 14,
+      "note": null,
+      "p_holm": 0.0494384765625,
+      "p_raw": 0.0494384765625,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.03315153480082404,
+      "wilcoxon_statistic": 21.0
+    },
+    {
+      "baseline": "easyensemble",
+      "bootstrap_ci95": [
+        -0.11223271365256487,
+        -0.0439163138509158
+      ],
+      "cliffs_delta": -1.0,
+      "cohen_d_paired": -1.0977476386956921,
+      "mean_paired_diff": -0.07646539847348333,
+      "median_paired_diff": -0.05540935672514619,
+      "n_cases_paired": 375,
+      "n_datasets": 15,
+      "note": null,
+      "p_holm": 0.000244140625,
+      "p_raw": 6.103515625e-05,
+      "significant_after_holm": true,
+      "std_paired_diff": 0.06965662760553692,
+      "wilcoxon_statistic": 0.0
+    }
+  ],
+  "view_c_counterfactual": {
+    "baseline": "always_SMOTE+RF",
+    "bootstrap_ci95": [
+      -0.03304795771268149,
+      -0.008325067688704573
+    ],
+    "cliffs_delta": -0.6,
+    "cohen_d_paired": -0.7611389734371479,
+    "mean_paired_diff": -0.019296170609916653,
+    "median_paired_diff": -0.012631578947368436,
+    "n_cases_paired": 373,
+    "n_datasets": 15,
+    "note": null,
+    "p_holm": 0.00262451171875,
+    "p_raw": 0.00262451171875,
+    "significant_after_holm": true,
+    "std_paired_diff": 0.025351704857234016,
+    "wilcoxon_statistic": 10.0
+  }
+}

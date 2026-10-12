@@ -1,0 +1,16 @@
+{
+  "case_count": 1125,
+  "cohort_lock_sha256": "c33936fe8f5d9efeab204cf59a523a7f6bec1fab50f9771c7fa38a4ced260ddb",
+  "cohort_manifest_sha256": "88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d",
+  "dataset_count": 45,
+  "protocol_lock_sha256": "534b9bd0daa4817ceca33039bbef83dc67ae9f686e84d2639f84625235a4d94d",
+  "results_sha256": "2d21ab294e9cc9c799cb8e5ddd52922ce2f29482167d64cd1dd82485794c580e",
+  "reuse_policy": "S04 artifacts read-only; no cohort or result regeneration",
+  "source_repo_url": "https://github.com/mohammedqaidalathwary/neurocortex-srdf.git",
+  "status_counts": {
+    "NOT_TRIGGERED": 750,
+    "REJECTED": 2,
+    "SUCCESS": 373
+  },
+  "summary_sha256": "c06fec4d9741cc622e861fe0b11536182993a74e8a33db412a76476cba9bda10"
+}

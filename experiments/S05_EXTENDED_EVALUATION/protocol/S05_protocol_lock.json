@@ -1,0 +1,6 @@
+{
+  "lock_note": "Lock records the generated protocol; do not edit protocol after execution begins.",
+  "locked_at_utc": "2026-10-11T23:51:07.184752+00:00",
+  "protocol_file": "protocol/S05_PROTOCOL.json",
+  "protocol_sha256": "58c3a93990f6ed92f1c17d527db87e03f55ff2039151d37f8e3ddda08d6c5d56"
+}

@@ -1,0 +1,33 @@
+{
+  "interpretation": {
+    "mode_a": "Utility tied -> no discriminating signal -> often leads to loss.",
+    "mode_b": "Utility decisive but wrong -> inner-validation utility does not generalize.",
+    "mode_c": "Utility decisive and correct -> the intended behavior of the Arbiter."
+  },
+  "mode_a_tied_negative": {
+    "mean_delta": -0.024387196283371708,
+    "mean_train_ir": 6.764115025642295,
+    "n": 20,
+    "selected_candidates": {
+      "GradientBoosting": 20
+    }
+  },
+  "mode_b_decisive_negative": {
+    "mean_delta": -0.021526795586091916,
+    "mean_train_ir": 8.858266879213666,
+    "n": 62,
+    "selected_candidates": {
+      "GradientBoosting": 44,
+      "SMOTE_RandomForest": 18
+    }
+  },
+  "mode_c_decisive_positive": {
+    "mean_delta": 0.04641499416104556,
+    "mean_train_ir": 10.546248285849204,
+    "n": 229,
+    "selected_candidates": {
+      "GradientBoosting": 124,
+      "SMOTE_RandomForest": 105
+    }
+  }
+}
