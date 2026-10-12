@@ -1,0 +1,39 @@
+{
+  "finding_id": "F-S06c-01",
+  "timestamp_utc": "2026-10-12T12:09:51.591072+00:00",
+  "title": "SRDF v4 (with EasyEnsemble candidate) is outperformed by EasyEnsemble standalone: the Arbiter harms on 11% of cases.",
+  "stage": "S06c CONFIRM",
+  "framework_means": {
+    "v1": 0.0517,
+    "v2": 0.0382,
+    "v3": 0.0748,
+    "v4": 0.1577,
+    "ee_standalone": 0.1673
+  },
+  "critical_comparison": {
+    "v4_minus_ee": -0.0095,
+    "wilcoxon_p": 0.000438,
+    "cohen_d": -0.8497,
+    "ci95": [
+      -0.0142,
+      -0.0054
+    ]
+  },
+  "arbiter_harm_analysis": {
+    "n_cases_non_ee_selected": 67,
+    "v4_mean_on_these": 0.0659,
+    "ee_would_have_mean": 0.1511,
+    "harm_per_case": -0.0852
+  },
+  "selection_distribution_v4": {
+    "EasyEnsemble": 533,
+    "GradientBoosting": 21,
+    "SMOTE_RandomForest": 46
+  },
+  "interpretation": "When a strong candidate (EasyEnsemble) is available, the SRDF Arbiter systematically underperforms it. The Arbiter selects the strong candidate in 88.83% of cases, but on the remaining 11% (67 cases) it selects a weaker candidate and loses 8.52 pp relative to always-choosing EE. This is a fundamental limitation of utility-based runtime arbitration when a dominant candidate exists.",
+  "implications": {
+    "for_framework": "The Arbiter needs a \"when to arbitrate\" gate. A trivial baseline (always-select-highest-mean-candidate) outperforms the Arbiter on this cohort.",
+    "for_paper": "This becomes the central negative result. Combined with v1-v2-v3 positive progression, it tells a complete story: Arbiter helps on comparable candidates, harms on dominant ones.",
+    "for_future_work": "S07 should investigate: (a) per-candidate calibration, (b) abstention mechanism, (c) candidate-specific thresholds."
+  }
+}

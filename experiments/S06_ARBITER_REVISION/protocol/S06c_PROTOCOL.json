@@ -1,0 +1,54 @@
+{
+  "protocol_id": "NC-S06c",
+  "parent": "NC-S06b (v3, threshold=0.75)",
+  "version": "1.0.0",
+  "title": "Adding EasyEnsemble as a third candidate in the SRDF pool",
+  "declared_at_utc": "2026-10-12T10:39:58.074966+00:00",
+  "motivation": {
+    "source": "S05 baseline comparison",
+    "evidence": "In the S05 conditional view (375 triggered cases), EasyEnsemble achieved balanced accuracy 0.8684, the highest among all baselines and significantly above SRDF v1 (0.7919). SRDF v1/v2/v3 used only {GradientBoosting, SMOTE_RandomForest}. The Arbiter had no opportunity to select EasyEnsemble."
+  },
+  "hypothesis": "Adding EasyEnsemble to the SRDF candidate pool will increase the framework-level mean delta on the 600 triggered cases above v3, because the Arbiter will select EasyEnsemble on cases where it outperforms the existing candidates.",
+  "software_changes": {
+    "files": [
+      "src_v4/generator.py",
+      "src_v4/core.py",
+      "src_v4/arbiter.py"
+    ],
+    "generator_change": "Add a third candidate dict: {'name': 'EasyEnsemble', 'graph': ['Input','EasyEnsemble','Output'], 'resource_cost': 2.0, 'description': 'EasyEnsemble balanced bagging.'}",
+    "core_change": "In _evaluate_candidate, add branch for 'EasyEnsemble' using imblearn.ensemble.EasyEnsembleClassifier(n_estimators=10, random_state=seed, n_jobs=-1).",
+    "arbiter_change": "Add 'EasyEnsemble' to ALLOWED_NODES set.",
+    "single_line_threshold": "Unchanged: 0.75 (as in v3)."
+  },
+  "hypotheses": {
+    "H1": {
+      "claim": "v4 framework mean > v3 framework mean on 600 triggered cases.",
+      "test": "Wilcoxon signed-rank on dataset-level deltas (v4 - v3), two-sided.",
+      "success": "p < 0.05 AND mean diff > 0."
+    },
+    "H2": {
+      "claim": "v4 framework mean is within 0.005 of standalone EasyEnsemble on the same 600 triggered cases.",
+      "test": "Bootstrap 95% CI of (v4 - EE_standalone) inside [-0.005, +0.005].",
+      "success": "CI within margin."
+    },
+    "H3": {
+      "claim": "The Arbiter selects EasyEnsemble on at least 30% of SUCCESS cases.",
+      "test": "Selection frequency of 'EasyEnsemble' among v4 SUCCESS cases.",
+      "success": "frequency >= 0.30."
+    }
+  },
+  "cohort": "Same as S06a/S06b (stage_198, 600 triggered cases, 24 datasets)",
+  "metric": "Balanced accuracy on held-out test fold",
+  "unit": "Dataset",
+  "multiplicity": "Holm-Bonferroni over {H1, H2, H3}",
+  "stopping_rules": {
+    "one_run": true,
+    "early_stopping": "Only for infrastructure failure.",
+    "null_finding": "Any failed hypothesis is documented; no re-run with different parameters."
+  },
+  "expected_outcomes": {
+    "optimistic": "v4 adds +1 to +2 pp over v3.",
+    "neutral": "v4 ~ v3 (Arbiter ignores EE).",
+    "pessimistic": "v4 < v3 (Arbiter chooses EE incorrectly)."
+  }
+}
