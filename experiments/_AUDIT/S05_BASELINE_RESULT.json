@@ -1,0 +1,31 @@
+{
+  "baselines": {
+    "adasyn_rf": {
+      "complete": 817,
+      "errors": 0,
+      "n_records": 1125,
+      "skipped": 308
+    },
+    "cost_sensitive_rf": {
+      "complete": 1125,
+      "errors": 0,
+      "n_records": 1125,
+      "skipped": 0
+    },
+    "easyensemble": {
+      "complete": 1125,
+      "errors": 0,
+      "n_records": 1125,
+      "skipped": 0
+    },
+    "smote_rf": {
+      "complete": 1125,
+      "errors": 0,
+      "n_records": 1125,
+      "skipped": 0
+    }
+  },
+  "check": "S05_BASELINE_INTEGRITY",
+  "expected_record_count": 1125,
+  "expected_triggered_count": 375
+}

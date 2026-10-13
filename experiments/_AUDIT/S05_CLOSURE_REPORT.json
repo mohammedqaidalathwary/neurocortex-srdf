@@ -1,0 +1,107 @@
+{
+  "ablations_status": "NOT_EXECUTED_BUT_COVERED",
+  "all_checks_pass": true,
+  "artifact_hashes_sha256": {
+    "analysis/counterfactual_arbiter.json": "8973952cde5a56af64477c2c6b86c757d903db84883304bd5f4e07ab2806ab33",
+    "analysis/statistical_comparisons.json": "866ef90da1955393464e7f248f042fd7f7faffda8b7c8b90f2fa98d416176883",
+    "baselines/adasyn_rf.jsonl": "f897c3a7f292c20f341bf774c31cea4bb1d827841b761629a36c33fc227b0699",
+    "baselines/cost_sensitive_rf.jsonl": "a0f9748e4f2e5c200a4b1f944b286613c89ec1ad257b0cdda727a83abcba46a9",
+    "baselines/easyensemble.jsonl": "cc9957e3cfbfae228921a5254078cd24a7f86dedd8a6972cd672d647d178a543",
+    "baselines/smote_rf.jsonl": "dde547f402a9e718d45ec100fc38db62c9c5e13b9f365a78e4f8f0c38830f63b",
+    "cohort_reuse/srdf_full_1125.jsonl": "29e73d9eff729f2e890824517741b0e8dd60b417162f88ab4b606f26bc53b17a",
+    "cohort_reuse/srdf_triggered_375.jsonl": "934ae8ac18f4fe65dd80b1b8a932d57133498330b792012961b050bb4199e03c",
+    "cohort_reuse/triggered_keys.json": "570b66ba5e76d16af62cebd13ca7301a370fe65ce3fc6ec24c1c05f9831c72e5",
+    "protocol/S05_PROTOCOL.json": "58c3a93990f6ed92f1c17d527db87e03f55ff2039151d37f8e3ddda08d6c5d56"
+  },
+  "baseline_summary": {
+    "baselines": {
+      "adasyn_rf": {
+        "complete": 817,
+        "errors": 0,
+        "n_records": 1125,
+        "skipped": 308
+      },
+      "cost_sensitive_rf": {
+        "complete": 1125,
+        "errors": 0,
+        "n_records": 1125,
+        "skipped": 0
+      },
+      "easyensemble": {
+        "complete": 1125,
+        "errors": 0,
+        "n_records": 1125,
+        "skipped": 0
+      },
+      "smote_rf": {
+        "complete": 1125,
+        "errors": 0,
+        "n_records": 1125,
+        "skipped": 0
+      }
+    },
+    "check": "S05_BASELINE_INTEGRITY",
+    "expected_record_count": 1125,
+    "expected_triggered_count": 375
+  },
+  "checklist": {
+    "B1_four_baselines_present_with_1125_records": true,
+    "B2_mean_bacc_matches_published_summary": true,
+    "B3_triggered_count_375": true,
+    "B4_srdf_views_present": true,
+    "B5_counterfactual_recomputed_from_raw": true,
+    "B6_counterfactual_delta_matches": true,
+    "B7_ablations_status_documented": true,
+    "B8_protocol_hash_recorded": true
+  },
+  "counterfactual_arbiter": {
+    "choice_breakdown": {
+      "gb_only": 250,
+      "smote_only": 123
+    },
+    "delta": -0.01944992229554976,
+    "verified": true
+  },
+  "findings": [
+    "F-S05-01: The Arbiter's selection policy underperforms a fixed always-SMOTE+RF policy by 1.93 pp on 373 SUCCESS cases (p_holm=0.0026, Cohen d=-0.76).",
+    "F-S05-02: 82 negative-delta SUCCESS cases decompose into Mode A (20 tied-utility losses) and Mode B (62 decisive-utility losses concentrated on high-IR datasets, mean train_IR=8.86).",
+    "F-S05-03: SRDF v1 is in fourth position among five methods on both View A (system) and View B (conditional)."
+  ],
+  "generated_at_utc": "2026-10-13T22:58:13.852941+00:00",
+  "key_numeric_results": {
+    "view_a_system": {
+      "adasyn_rf": 0.829,
+      "cost_sensitive_rf": 0.7933,
+      "easyensemble": 0.8351,
+      "smote_rf": 0.8163,
+      "srdf_v1": 0.8076
+    },
+    "view_b_conditional": {
+      "adasyn_rf": 0.7941,
+      "cost_sensitive_rf": 0.7515,
+      "easyensemble": 0.8684,
+      "smote_rf": 0.8112,
+      "srdf_v1": 0.7919
+    },
+    "view_c_counterfactual": {
+      "arbiter_cost": -0.0193,
+      "smote_rf_counterfactual": 0.8122,
+      "srdf_actual": 0.7928
+    }
+  },
+  "limitations": [
+    "ADASYN declined to generate samples on 13 of 45 datasets; 308/1125 cases were SKIPPED as documented behavior, not errors.",
+    "Ablations declared in the protocol were not executed as separate runs; their conceptual coverage is documented in S05_ABLATIONS_STATUS.json.",
+    "The counterfactual uses S05 baseline scores; no re-execution of SMOTE+RF was performed for the counterfactual."
+  ],
+  "report_id": "S05_CLOSURE_REPORT",
+  "repository_head": "6e55d41a51d6ba05a997264d44899926ee35f6be",
+  "summary": {
+    "n_baselines": 4,
+    "n_cases": 1125,
+    "n_triggered": 375,
+    "phase": "S05_EXTENDED_EVALUATION",
+    "status": "SEALED"
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "check": "S05_COUNTERFACTUAL_AND_STATISTICS",
+  "choice_breakdown": {
+    "gb_only": 250,
+    "smote_only": 123
+  },
+  "counterfactual_verified": true,
+  "expected_delta": -0.01945,
+  "n_analyzed": 373,
+  "recomputed_delta": -0.01944992229554976,
+  "triggered_count": 375
+}

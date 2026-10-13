@@ -1,0 +1,35 @@
+{
+  "check": "S06_RESULTS_VERIFICATION",
+  "ee_records": 600,
+  "ee_statuses": {
+    "SUCCESS": 600
+  },
+  "ee_subset_of_v4": true,
+  "v1_statuses": {
+    "NOT_TRIGGERED": 4300,
+    "None": 50,
+    "SUCCESS": 600
+  },
+  "v1v2_keys_equal_v3": true,
+  "v1v2_keys_equal_v4": true,
+  "v1v2_records": 4950,
+  "v2_statuses": {
+    "NOT_TRIGGERED": 4300,
+    "None": 50,
+    "REJECTED": 242,
+    "SUCCESS": 358
+  },
+  "v3_records": 4950,
+  "v3_statuses": {
+    "DATA_ERROR": 50,
+    "NOT_TRIGGERED": 4300,
+    "REJECTED": 5,
+    "SUCCESS": 595
+  },
+  "v4_records": 4950,
+  "v4_statuses": {
+    "DATA_ERROR": 50,
+    "NOT_TRIGGERED": 4300,
+    "SUCCESS": 600
+  }
+}

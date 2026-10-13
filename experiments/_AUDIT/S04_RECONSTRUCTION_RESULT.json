@@ -1,0 +1,9 @@
+{
+  "check": "S04_PROCEDURE_RECONSTRUCTION",
+  "exact_match": true,
+  "in_manifest_only": [],
+  "in_reproduction_only": [],
+  "manifest_count": 45,
+  "reproduced_count": 45,
+  "verdict": "PASS"
+}

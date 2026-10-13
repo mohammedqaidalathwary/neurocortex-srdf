@@ -1,0 +1,127 @@
+{
+  "all_checks_pass": true,
+  "artifact_hashes_sha256": {
+    "analysis/s06c_final_v1_v2_v3_v4.json": "e0b35f9107509b8ed7483579d7b51f70f009bc1e59ee3e9d618476d5af14e748",
+    "cohort_reuse/stage_198.json": "a31ca8f21dc3eebaff121084ff6847f2557e08c389acea8d5c8e90b306e1384f",
+    "protocol/S06_PROTOCOL.json": "32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759",
+    "protocol/S06_ZENODO_DEPOSIT.json": "231b48705feba5152f5d6412932de1fd04ee8efdca2a388d4799e489765a5f1d",
+    "protocol/S06b_PROTOCOL.json": "14f33e3e42f67c75843e3422c8d7a15c3053053b32e5bdc9c442df840de105c9",
+    "protocol/S06c_PROTOCOL.json": "a44ae91e8d5d883283988f95f4bdb0655e231432341e805feb3a22c66b11b0b0",
+    "protocol/protocol_freeze_addendum.json": "9367790b006b2c8a50d2e9d5e2acbb6df0d3112022f41f48154211939337e878",
+    "results/ee_standalone_stage198.jsonl": "881b4c40a650d91a6c2239671da806829896f62987d9e9421961eeeed487d0c0",
+    "results/s06_confirmatory_stage198.jsonl": "9fa4658c4e3efb20971d863c71f1d1a5a622fa04fa5058eb6f6ec153f4d49f2b",
+    "results/s06_confirmatory_stage198_v3.jsonl": "f0a36a6c8029a884cedffa78f38e60a4916ec61976b1db45e30e471ac524c255",
+    "results/s06_confirmatory_stage198_v4.jsonl": "f73c47a9f86b612ce066b316532a6b6c2253604a7a77600d892f38f51533084e"
+  },
+  "checklist": {
+    "C10_all_result_files_hashed": true,
+    "C1_nested_stages_correct": true,
+    "C2_nested_property_holds": true,
+    "C3_confirmatory_is_stage_198": true,
+    "C4_all_results_files_present": true,
+    "C5_case_key_consistency": true,
+    "C6_statistical_recomputation_matches": true,
+    "C7_protocol_hashes_locked": true,
+    "C8_zenodo_doi_recorded": true,
+    "C9_code_versions_verified": true
+  },
+  "findings": [
+    "F-S06a-01: v2 threshold (0.85, calibrated for accuracy) became overly selective when utility switched to balanced_accuracy. Framework-level regression of -1.35 pp.",
+    "F-S06b-01: Mathematical recalibration (u_min = 0.5*0.5+0.5 = 0.75) restored and exceeded v1 by +2.31 pp (p=0.000025, d=+0.97).",
+    "F-S06c-01: When a dominant candidate (EasyEnsemble) is available, the Arbiter selects it in 88.83% of cases but harms on the remaining 11%. Net -0.95 pp versus always-selecting EE."
+  ],
+  "generated_at_utc": "2026-10-13T23:01:28.588563+00:00",
+  "hypotheses_outcomes": {
+    "S06a_H1_v3_ge_v1": "SUPPORTED (p=0.000025, diff=+0.0231)",
+    "S06a_H2_v3_gt_v2": "SUPPORTED (p=0.000655, diff=+0.0366)",
+    "S06c_H1_v4_gt_v3": "SUPPORTED (p<1e-6, diff=+0.0829, d=+1.75)",
+    "S06c_H2_v4_ge_ee": "NOT SUPPORTED (v4 = EE - 0.95 pp)"
+  },
+  "key_results": {
+    "ee_standalone": 0.16726027803888863,
+    "framework_means": {
+      "v1": 0.05172246062325356,
+      "v2": 0.03823076341185867,
+      "v3": 0.07482657465306537,
+      "v4": 0.15774129054714622
+    },
+    "paired_tests": {
+      "v3_vs_v1": {
+        "ci": [
+          0.013979558860454473,
+          0.03234841608238353
+        ],
+        "cohen_d": 0.9657691452294982,
+        "diff": 0.023104114029811818,
+        "n": 24,
+        "p": 2.467632293701172e-05
+      },
+      "v3_vs_v2": {
+        "ci": [
+          0.021827099356233254,
+          0.051881642055617724
+        ],
+        "cohen_d": 0.9411867781204949,
+        "diff": 0.0365958112412067,
+        "n": 24,
+        "p": 0.0006549583433856954
+      },
+      "v4_vs_ee": {
+        "ci": [
+          -0.014218351723705334,
+          -0.005429761926034844
+        ],
+        "cohen_d": -0.8497425171147512,
+        "diff": -0.009518987491742384,
+        "n": 24,
+        "p": 0.00043777719457466354
+      },
+      "v4_vs_v1": {
+        "ci": [
+          0.08072432476433745,
+          0.13089275678545426
+        ],
+        "cohen_d": 1.62447763525978,
+        "diff": 0.10601882992389268,
+        "n": 24,
+        "p": 1.1920928955078125e-07
+      },
+      "v4_vs_v3": {
+        "ci": [
+          0.06445064257954419,
+          0.10025906248831504
+        ],
+        "cohen_d": 1.7486315298491393,
+        "diff": 0.08291471589408086,
+        "n": 24,
+        "p": 1.1920928955078125e-07
+      }
+    }
+  },
+  "limitations": [
+    "Single development cohort (stage_198, 24 triggered datasets).",
+    "Ablations declared in S05 protocol were not executed as separate runs in S05; coverage is documented in S05_ABLATIONS_STATUS.json.",
+    "OpenML cache was on local Colab disk and is not preserved in the repository (only JSONL results are).",
+    "Generalization to a fresh independent cohort is planned in S07."
+  ],
+  "report_id": "S06_CLOSURE_REPORT",
+  "repository_head": "6e55d41a51d6ba05a997264d44899926ee35f6be",
+  "summary": {
+    "confirmatory_cohort": "stage_198",
+    "n_cases": 4950,
+    "n_datasets": 198,
+    "n_triggered_cases": 600,
+    "n_triggered_datasets": 24,
+    "phase": "S06_ARBITER_REVISION",
+    "stages_executed": [
+      "v1",
+      "v2",
+      "v3",
+      "v4",
+      "ee_standalone"
+    ],
+    "status": "SEALED",
+    "zenodo_doi": "10.5281/zenodo.23308347"
+  },
+  "verdict": "PASS"
+}

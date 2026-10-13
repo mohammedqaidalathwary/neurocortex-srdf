@@ -1,0 +1,23 @@
+{
+  "check": "S04_COHORT_INTEGRITY",
+  "field_coverage": {
+    "data_sha256": 45,
+    "dataset_id": 45,
+    "ir": 45,
+    "majority_count": 45,
+    "minority_count": 45,
+    "n_features": 45,
+    "n_samples": 45,
+    "name": 45,
+    "primary_group": 45,
+    "version": 45
+  },
+  "inspection_matches": 45,
+  "inspection_mismatches": 0,
+  "inspection_missing": 0,
+  "lock_match": true,
+  "n_datasets": 45,
+  "unique_hashes": 45,
+  "unique_ids": 45,
+  "unique_names": 45
+}

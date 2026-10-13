@@ -426,5 +426,12 @@
   "protocol": "NC-S06-CONFIRM (DOI 10.5281/zenodo.23308347)",
   "remaining_after_exclusions": 226,
   "source": "S06 confirmatory selection on S04 eligible universe minus exclusions",
-  "stage": "confirmatory_cohort"
+  "stage": "confirmatory_cohort",
+  "_note": "This file corresponds to stage_32 (the smallest nested stage of the S04-derived confirmatory procedure). It was named \"s06_confirmatory_cohort_manifest\" during early S06, before the confirmatory cohort was finalized as stage_198. It is retained unchanged for the historical record. See s06_confirmatory_cohort_manifest_stage198.json for the actual confirmatory cohort.",
+  "_historical_marker": {
+    "created_at_utc": "2026-10-13T23:03:37.026817+00:00",
+    "reason": "filename/content mismatch identified during S04-S06 audit",
+    "audit_reference": "Notebook 1, CELL 19"
+  },
+  "_original_filename": "s06_confirmatory_cohort_manifest.json"
 }

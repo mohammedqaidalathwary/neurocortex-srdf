@@ -1,0 +1,16 @@
+{
+  "check": "S06_PROTOCOL_LOCKS",
+  "freeze_addendum_present": true,
+  "s06_protocol_hash_match": true,
+  "src_v2_verified": true,
+  "src_v3_verified": true,
+  "src_v4_hashes": {
+    "__init__.py": "c7ed068891fc4fee6f42eda45620b57990388281912ed6996245ecc322236cc0",
+    "arbiter.py": "03f570edc509b13afd0e297cd394610da267184b15cfb02756449ad276b708ad",
+    "core.py": "9ac0f6e87b35788224ab3d8a4803960d40fd900fbd4dd033cb4b76ac9d77cb63",
+    "generator.py": "166ac28ec269896283fa83df0c966e4a0446f89ced28d9ec0901bf6230b1383b",
+    "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+    "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+  },
+  "zenodo_doi": "10.5281/zenodo.23308347"
+}

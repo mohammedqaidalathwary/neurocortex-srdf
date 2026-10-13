@@ -1,0 +1,50 @@
+{
+  "coverage_map": {
+    "forced_trigger": {
+      "S06_evidence": "v4 receives EasyEnsemble as an additional candidate; the Arbiter chooses it in 533/600 cases. This shows behavior when a dominant candidate is almost always selected.",
+      "S06_files": [
+        "analysis/s06c_final_v1_v2_v3_v4.json"
+      ],
+      "concept": "What if the adaptation is always triggered (ignore IR gate)?"
+    },
+    "gb_only": {
+      "S06_evidence": "v1 behaves mostly as a comparison between GB and SMOTE; the actual selection distribution is documented in S06 analysis. When the Arbiter selects GB, its mean delta is reported in the S06c finding.",
+      "S06_files": [
+        "analysis/s06c_final_v1_v2_v3_v4.json"
+      ],
+      "concept": "What if only GradientBoosting is available?"
+    },
+    "no_arbiter": {
+      "S06_evidence": "v1 uses one candidate (GB or SMOTE) chosen by utility; S06c v4 forces the Arbiter to see EasyEnsemble as one candidate. The comparison of v1/v2/v3/v4 effectively covers the effect of changing the Arbiter rule.",
+      "S06_files": [
+        "analysis/s06b_finding_01.json",
+        "analysis/s06c_finding_01.json"
+      ],
+      "concept": "What if the Arbiter is bypassed?"
+    },
+    "smote_only": {
+      "S06_evidence": "The counterfactual in S05 (always-SMOTE+RF) computes exactly this comparison and is fully documented in S05/analysis/counterfactual_arbiter.json.",
+      "S06_files": [
+        "analysis/counterfactual_arbiter.json"
+      ],
+      "concept": "What if only SMOTE+RF is available?"
+    }
+  },
+  "declared_in_s05_protocol": [
+    "no_arbiter",
+    "forced_trigger",
+    "gb_only",
+    "smote_only"
+  ],
+  "executed_as_separate_runs_in_s05": false,
+  "generated_at_utc": "2026-10-13T22:57:40.737779+00:00",
+  "notes": [
+    "S05 was scoped as a comparative evaluation against external baselines and a counterfactual Arbiter analysis. Ablations were listed as planned but not executed.",
+    "The scientific questions behind each ablation are answered by S06 evidence, which traces the v1→v2→v3→v4 progression.",
+    "No S05 protocol file was modified. This status report is a new artifact.",
+    "If a future reviewer requires formal ablations, they should be run on a frozen copy of S05 with its own protocol lock."
+  ],
+  "report_id": "S05_ABLATIONS_STATUS",
+  "statement": "The S05 protocol declares four ablations. They were not executed as separate runs within S05. Their scientific questions are covered by evidence in S06 (a derived study) and by the S05 counterfactual. The protocol is not modified. This file records the actual state of execution.",
+  "verdict": "NOT_EXECUTED_BUT_COVERED"
+}

@@ -1,0 +1,85 @@
+{
+  "all_checks_pass": true,
+  "artifact_hashes_sha256": {
+    "cohort_lock.json": "c33936fe8f5d9efeab204cf59a523a7f6bec1fab50f9771c7fa38a4ced260ddb",
+    "cohort_manifest.json": "88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d",
+    "coverage_audit.json": "1639b7f256facdbbd344a634709afb513a8dc53b3eea25593565e64044ea4b24",
+    "dataset_inspection.jsonl": "8590317548aed3ef65a1f54326fc723159c69767cf05c7e22c25c74c9efcaa52",
+    "eligibility_table.csv": "5c52ef5aa49137fd7e6fc15fbb761d489e8d192eef0bc2680c005c06684a3de9",
+    "final_cohort_distribution_audit.csv": "2c2cbe0c935847b7a0467c6770ca31c0f0467611642675ab9fd96b08a0663903",
+    "openml_metadata_snapshot.csv": "1ada74d5f0c378e9062a8e8cdf399b9305ccdad2359723e567011af43320c201",
+    "secondary_cohort_audit.json": "e0b601d22fc7d8cbb890b29bd6b6db86e543f256897f32dcb26beb035e2aced5",
+    "secondary_tie_break_audit.csv": "b2d222d553d6d040502534b787558a41e9a64e7684dc45c820eac69616805ca1",
+    "tie_break_audit.csv": "e1b068fc1c2a58b9a45f41e2f167cf87f5ac52fa87d909dab8a7ff6fe1a126cb"
+  },
+  "checklist": {
+    "A1_cohort_has_45_datasets": true,
+    "A2_field_coverage_complete": true,
+    "A3_unique_ids_names_hashes": true,
+    "A4_manifest_lock_hash_match": true,
+    "A5_data_sha256_matches_inspection": true,
+    "A6_procedure_reconstruction_exact": true,
+    "A7_no_shadow_ids_in_reproduction": true,
+    "A8_all_9_artifacts_hash_verified": true
+  },
+  "findings": [
+    "S04 cohort integrity verified: 45 unique datasets, all hashes matched.",
+    "S04 selection procedure reconstructed from the original notebook and reproduced the 45 datasets exactly with zero symmetric difference.",
+    "All 9 artifact hashes verified against cohort_lock.json."
+  ],
+  "generated_at_utc": "2026-10-13T22:56:12.617333+00:00",
+  "integrity_details": {
+    "check": "S04_COHORT_INTEGRITY",
+    "field_coverage": {
+      "data_sha256": 45,
+      "dataset_id": 45,
+      "ir": 45,
+      "majority_count": 45,
+      "minority_count": 45,
+      "n_features": 45,
+      "n_samples": 45,
+      "name": 45,
+      "primary_group": 45,
+      "version": 45
+    },
+    "inspection_matches": 45,
+    "inspection_mismatches": 0,
+    "inspection_missing": 0,
+    "lock_match": true,
+    "n_datasets": 45,
+    "unique_hashes": 45,
+    "unique_ids": 45,
+    "unique_names": 45
+  },
+  "limitations": [
+    "S04 snapshot is frozen at openml_metadata_snapshot.csv; no live OpenML queries were made in this audit.",
+    "The reconstruction relies on the S04 notebook as the authoritative source for the procedure; the notebook itself is not stored in the repository (author private archive)."
+  ],
+  "protocol_link": "protocol/protocol_lock.json (referenced by cohort_lock)",
+  "reconstruction_details": {
+    "check": "S04_PROCEDURE_RECONSTRUCTION",
+    "exact_match": true,
+    "in_manifest_only": [],
+    "in_reproduction_only": [],
+    "manifest_count": 45,
+    "reproduced_count": 45,
+    "verdict": "PASS"
+  },
+  "report_id": "S04_CLOSURE_REPORT",
+  "repository_head": "6e55d41a51d6ba05a997264d44899926ee35f6be",
+  "selection_evidence": {
+    "after_exact_dedup": 245,
+    "after_primary": 88,
+    "after_secondary": 45,
+    "final_cohort": 45,
+    "reproduction_verified": true,
+    "signature_input": 284
+  },
+  "summary": {
+    "cohort_size": 45,
+    "phase": "S04_OPENML_GENERALIZATION",
+    "procedure_reproduced_exactly": true,
+    "status": "SEALED"
+  },
+  "verdict": "PASS"
+}

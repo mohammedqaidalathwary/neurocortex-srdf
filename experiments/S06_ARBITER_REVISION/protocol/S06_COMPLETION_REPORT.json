@@ -1,0 +1,149 @@
+{
+  "checklist_status": [
+    {
+      "evidence": "protocol/S06_PROTOCOL.json (hash 32bb9acd...)",
+      "item": "S06_PROTOCOL.json read in full; SHA-256 recorded",
+      "section": "A. Protocol",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "protocol/S06_PROTOCOL.json (hypotheses_and_decision_rules)",
+      "item": "SESOI (0.01), non-inferiority margin (0.005), alpha (0.05)",
+      "section": "A. Protocol",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "protocol/S06_PROTOCOL.json (operational_definitions)",
+      "item": "Mode A/B/C definitions fixed",
+      "section": "A. Protocol",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "protocol/S06_deviations.json (empty list = no deviations)",
+      "item": "Deviation policy understood",
+      "section": "A. Protocol",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "v2 commit 4157089; v3 ca709d4; v4 6e55d41",
+      "item": "Repository at commit 4157089 (v2); git status clean",
+      "section": "B. Code freeze",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "protocol/protocol_freeze_addendum.json",
+      "item": "SHA-256 of src/ and src_v2/ written to freeze addendum",
+      "section": "B. Code freeze",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "Existing tests cover src/ only. Test coverage for src_v2, src_v3, src_v4 is a documented gap planned for post-S07.",
+      "item": "Repository tests run and result recorded",
+      "section": "B. Code freeze",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence": "cohort_reuse/s04_exclusion_sets.json",
+      "item": "Universe = eligibility_table eligible rows (284)",
+      "section": "C. Cohort",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "cohort_reuse/s06_remaining_after_exclusions.json",
+      "item": "Removed: 45 S04 IDs; duplicates; same-name families",
+      "section": "C. Cohort",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "Reconstructed from S04 notebook. Reproduced the 45 S04 datasets exactly (verified in Notebook 1, CELL 06).",
+      "item": "S04 selection procedure applied unchanged",
+      "section": "C. Cohort",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "cohort_reuse/stage_32.json, stage_62.json, stage_198.json",
+      "item": "Cohort size recorded as outcome",
+      "section": "C. Cohort",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "analysis/power_analysis.json",
+      "item": "Simulation run with SD and trigger rate from S04 data",
+      "section": "D. Power",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "analysis/power_analysis.json (power_by_n)",
+      "item": "Effect scenarios 100% and 50% reported",
+      "section": "D. Power",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "DOI 10.5281/zenodo.23308347",
+      "item": "Protocol + freeze addendum deposited on Zenodo",
+      "section": "E. Registration",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "results/s06_confirmatory_stage198*.jsonl",
+      "item": "One run per variant; resumable JSONL",
+      "section": "F. Execution",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "Grep-verified in all result JSONLs",
+      "item": "Every record carries test_used_before_selection = false",
+      "section": "F. Execution",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "analysis/s06b_finding_01.json",
+      "item": "H1/H2 reported per decision rules",
+      "section": "G. Reporting",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "analysis/s06c_finding_01.json (finding is v4 < EE)",
+      "item": "No superiority claim over EasyEnsemble",
+      "section": "G. Reporting",
+      "status": "COMPLETE"
+    },
+    {
+      "evidence": "analysis/s06b_v1_v2_v3_results.json",
+      "item": "Units written as pp; p-values at dataset level",
+      "section": "G. Reporting",
+      "status": "COMPLETE"
+    }
+  ],
+  "deposit_doi": "10.5281/zenodo.23308347",
+  "deviations": [
+    {
+      "description": "Runtime restart performed once during S06a execution to continue a long-running batch. State preserved on Drive; no methodological change.",
+      "impact": "None on results. Confirmed via audit (Notebook 1, CELL 14).",
+      "stage": "S06a execution",
+      "timestamp_utc": "2026-10-12T00:00:00Z"
+    },
+    {
+      "description": "Cohort size was below the pre-protocol planning estimate. Protocol specifies no minimum; documented in S06_pre_execution_notes.json as \"size below planning estimate\" not as a deviation.",
+      "impact": "None on results. Documented per protocol.",
+      "stage": "S05 to S06 transition",
+      "timestamp_utc": "2026-10-12T00:00:00Z"
+    }
+  ],
+  "deviations_count": 2,
+  "generated_at_utc": "2026-10-13T23:04:10.354745+00:00",
+  "notes": [
+    "This report is a post-execution record and does not modify the frozen checklist or any protocol file.",
+    "The only PARTIAL item is test coverage for src_v2/src_v3/src_v4; this is a documented gap and will be addressed after S07.",
+    "Two documented deviations are recorded above; both are technical, with no impact on the reported results."
+  ],
+  "report_id": "S06_COMPLETION_REPORT",
+  "repository_head": "6e55d41a51d6ba05a997264d44899926ee35f6be",
+  "statement": "This is a separate completion report. The original S06_PREREGISTRATION_CHECKLIST.md is retained unchanged as part of the deposit. This file records which checklist items were executed, where their evidence is stored, and whether any deviations occurred.",
+  "summary": {
+    "complete": 18,
+    "not_executed": 0,
+    "partial": 1,
+    "total_items": 19
+  }
+}

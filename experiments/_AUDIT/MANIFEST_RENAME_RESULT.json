@@ -1,0 +1,11 @@
+{
+  "action": "RENAME_AND_CREATE",
+  "created_at_utc": "2026-10-13T23:03:37.042879+00:00",
+  "historical_file": "experiments/S06_ARBITER_REVISION/cohort_reuse/stage_32_cohort_manifest_historical.json",
+  "historical_sha256": "cd7ae28388be3e0fdcd112549f79d5f7a97ab2a32aade63f1c9b2207cc48abe9",
+  "n_datasets_in_new": 198,
+  "new_file": "experiments/S06_ARBITER_REVISION/cohort_reuse/s06_confirmatory_cohort_manifest_stage198.json",
+  "new_sha256": "2fd06bd22445c049485a3f3eadc6050188a6817a0f97e306b45d972348ca632e",
+  "old_file_present": true,
+  "old_file_removed": true
+}

@@ -1,0 +1,10 @@
+{
+  "check": "S06_COHORT_INTEGRITY",
+  "confirmatory_stage": "stage_198",
+  "nested_32_in_62": true,
+  "nested_62_in_198": true,
+  "remaining_count": 226,
+  "stage_198_size": 198,
+  "stage_32_size": 32,
+  "stage_62_size": 62
+}

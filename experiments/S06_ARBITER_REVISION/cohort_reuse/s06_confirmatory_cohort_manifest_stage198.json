@@ -1,0 +1,1999 @@
+{
+  "manifest_version": 1,
+  "stage": "stage_198",
+  "description": "Confirmatory cohort used for S06 execution (198 datasets). This is the widest nested stage among {stage_32, stage_62, stage_198}.",
+  "derivation": "Selected by applying the frozen S04 procedure to the 226 datasets remaining after four declared exclusion rules (S04 IDs, S04 hashes, S04 names, duplicate content).",
+  "n_datasets": 198,
+  "dataset_ids": [
+    37,
+    337,
+    715,
+    717,
+    721,
+    723,
+    730,
+    737,
+    740,
+    743,
+    744,
+    746,
+    749,
+    750,
+    751,
+    763,
+    766,
+    769,
+    770,
+    774,
+    778,
+    779,
+    792,
+    793,
+    794,
+    795,
+    797,
+    805,
+    806,
+    813,
+    824,
+    830,
+    832,
+    837,
+    838,
+    841,
+    845,
+    855,
+    863,
+    866,
+    869,
+    870,
+    873,
+    877,
+    879,
+    880,
+    886,
+    895,
+    896,
+    900,
+    903,
+    904,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    917,
+    918,
+    920,
+    925,
+    926,
+    931,
+    933,
+    935,
+    936,
+    937,
+    943,
+    970,
+    996,
+    997,
+    1005,
+    1011,
+    1048,
+    1049,
+    1050,
+    1065,
+    1071,
+    1073,
+    1443,
+    1444,
+    1446,
+    1453,
+    1467,
+    1510,
+    1524,
+    1547,
+    1600,
+    40994,
+    41945,
+    41946,
+    43973,
+    43980,
+    44345,
+    44349,
+    44350,
+    44351,
+    44352,
+    44362,
+    44363,
+    44364,
+    44365,
+    44366,
+    44368,
+    44369,
+    44370,
+    44371,
+    44372,
+    44373,
+    44374,
+    44375,
+    44376,
+    44377,
+    44378,
+    44379,
+    44380,
+    44381,
+    44382,
+    44383,
+    44384,
+    44385,
+    44386,
+    44388,
+    44389,
+    44390,
+    44391,
+    44392,
+    44393,
+    44394,
+    44395,
+    44396,
+    44397,
+    44398,
+    44399,
+    44400,
+    44401,
+    44402,
+    44403,
+    44404,
+    44405,
+    44406,
+    44408,
+    44409,
+    44410,
+    44411,
+    44412,
+    44413,
+    44414,
+    44415,
+    44416,
+    44417,
+    44418,
+    44419,
+    44420,
+    44421,
+    44423,
+    44424,
+    44425,
+    44426,
+    44427,
+    44428,
+    44429,
+    44430,
+    44431,
+    44432,
+    44489,
+    44490,
+    44491,
+    44492,
+    44493,
+    44494,
+    44495,
+    44496,
+    44497,
+    44549,
+    44550,
+    44551,
+    44552,
+    44568,
+    44569,
+    44571,
+    44572,
+    44678,
+    44679,
+    44680,
+    44681,
+    44682,
+    46279,
+    46416,
+    46502,
+    46532,
+    46562,
+    46921,
+    46951,
+    47150
+  ],
+  "datasets": [
+    {
+      "dataset_id": 37,
+      "name": "diabetes",
+      "n_samples": 768,
+      "n_features": 8,
+      "minority_count": 268,
+      "majority_count": 500,
+      "data_sha256": "bad39c41c5d840a3783fafdefefb0fa6148e2e155628e1cc6c65315190897b8d"
+    },
+    {
+      "dataset_id": 337,
+      "name": "SPECTF",
+      "n_samples": 349,
+      "n_features": 44,
+      "minority_count": 95,
+      "majority_count": 254,
+      "data_sha256": "57cd65b053a76966dd7960c1bf1c532704ede1791a157c5e36131f9df938a38d"
+    },
+    {
+      "dataset_id": 715,
+      "name": "fri_c3_1000_25",
+      "n_samples": 1000,
+      "n_features": 25,
+      "minority_count": 443,
+      "majority_count": 557,
+      "data_sha256": "75b17d4432c24bf8e4acbc2c763e37aa29620db194cedc282dde86ae15f563e1"
+    },
+    {
+      "dataset_id": 717,
+      "name": "rmftsa_ladata",
+      "n_samples": 508,
+      "n_features": 10,
+      "minority_count": 222,
+      "majority_count": 286,
+      "data_sha256": "6653017f86bddcafb4634f1f22c447739f9b5a59a56ee0f70f7f843978fd0d36"
+    },
+    {
+      "dataset_id": 721,
+      "name": "pwLinear",
+      "n_samples": 200,
+      "n_features": 10,
+      "minority_count": 97,
+      "majority_count": 103,
+      "data_sha256": "0e8a7cd90979d109ab8a2c48131811f9ee2011a1a076cc4d569b5668b79dc857"
+    },
+    {
+      "dataset_id": 723,
+      "name": "fri_c4_1000_25",
+      "n_samples": 1000,
+      "n_features": 25,
+      "minority_count": 453,
+      "majority_count": 547,
+      "data_sha256": "c755e12e5516d7c205e8fd03554e7c3219c3483a89081c9f35dfb74cf4c9ca54"
+    },
+    {
+      "dataset_id": 730,
+      "name": "fri_c1_250_5",
+      "n_samples": 250,
+      "n_features": 5,
+      "minority_count": 119,
+      "majority_count": 131,
+      "data_sha256": "d6130c944ba803967f64a7a07fb6699e2c8d9ec59776cb33715f379e89f89dd1"
+    },
+    {
+      "dataset_id": 737,
+      "name": "space_ga",
+      "n_samples": 3107,
+      "n_features": 6,
+      "minority_count": 1541,
+      "majority_count": 1566,
+      "data_sha256": "e4d2f9964971c82b5815add5c20f541c8afd7424c2d312dd575fe1e510b5f4c9"
+    },
+    {
+      "dataset_id": 740,
+      "name": "fri_c3_1000_10",
+      "n_samples": 1000,
+      "n_features": 10,
+      "minority_count": 440,
+      "majority_count": 560,
+      "data_sha256": "353aba6a06dd857921bbd89c5c1e6efe05a68a473a17c6f26bd6971217450b3d"
+    },
+    {
+      "dataset_id": 743,
+      "name": "fri_c1_1000_5",
+      "n_samples": 1000,
+      "n_features": 5,
+      "minority_count": 457,
+      "majority_count": 543,
+      "data_sha256": "00a22f3e8612bb2214181d8eb10e485952d7b87c784c880f129ddd6eac1a2740"
+    },
+    {
+      "dataset_id": 744,
+      "name": "fri_c3_250_5",
+      "n_samples": 250,
+      "n_features": 5,
+      "minority_count": 109,
+      "majority_count": 141,
+      "data_sha256": "d139f5cc71c707f94c79fe2cf071a5a0f04a00dc2d7a781201718b1fa607205f"
+    },
+    {
+      "dataset_id": 746,
+      "name": "fri_c1_250_25",
+      "n_samples": 250,
+      "n_features": 25,
+      "minority_count": 107,
+      "majority_count": 143,
+      "data_sha256": "2b6b7b0f401745f04eef160e09ffedc817f8e1fb2fd3c62483fdc2c8ecba4cad"
+    },
+    {
+      "dataset_id": 749,
+      "name": "fri_c3_500_5",
+      "n_samples": 500,
+      "n_features": 5,
+      "minority_count": 237,
+      "majority_count": 263,
+      "data_sha256": "36e3154e1ea256a5579d3229357461e7d5f3804d6c60f1972a3256fa459ff91e"
+    },
+    {
+      "dataset_id": 750,
+      "name": "pm10",
+      "n_samples": 500,
+      "n_features": 7,
+      "minority_count": 246,
+      "majority_count": 254,
+      "data_sha256": "66f14b1d77eec1294cd6482d8479a8e9fdec3e6b9309da4c2afc78811075448e"
+    },
+    {
+      "dataset_id": 751,
+      "name": "fri_c4_1000_10",
+      "n_samples": 1000,
+      "n_features": 10,
+      "minority_count": 440,
+      "majority_count": 560,
+      "data_sha256": "33a3b25c87d8c7a452901f608facfbe3f4b692598485be83803a1045d66fea09"
+    },
+    {
+      "dataset_id": 763,
+      "name": "fri_c0_250_10",
+      "n_samples": 250,
+      "n_features": 10,
+      "minority_count": 125,
+      "majority_count": 125,
+      "data_sha256": "9cae31ca8d6ea8e8d97d7a2c0b90b0a889993c3d9bc301cc0ab27acfb22f9520"
+    },
+    {
+      "dataset_id": 766,
+      "name": "fri_c1_500_50",
+      "n_samples": 500,
+      "n_features": 50,
+      "minority_count": 238,
+      "majority_count": 262,
+      "data_sha256": "bd7b08e6e44e92e3f8321eccecefefdae0b6ce61ee2eea1f254751572920caca"
+    },
+    {
+      "dataset_id": 769,
+      "name": "fri_c1_250_50",
+      "n_samples": 250,
+      "n_features": 50,
+      "minority_count": 113,
+      "majority_count": 137,
+      "data_sha256": "8960c28fc80d25db02ea7bfae337ea83ff7105e86e7477020d2c5cd3fa9d93a6"
+    },
+    {
+      "dataset_id": 770,
+      "name": "strikes",
+      "n_samples": 625,
+      "n_features": 6,
+      "minority_count": 310,
+      "majority_count": 315,
+      "data_sha256": "6af1590666a3004504ba1ee3feabb1d6b88d5f1765ad79ea107002c79975f909"
+    },
+    {
+      "dataset_id": 774,
+      "name": "disclosure_x_bias",
+      "n_samples": 662,
+      "n_features": 3,
+      "minority_count": 317,
+      "majority_count": 345,
+      "data_sha256": "1a23f14e14226a5c77d567be0407ac3b5b17ef371b5d4cb819ac5a953d37d989"
+    },
+    {
+      "dataset_id": 778,
+      "name": "bodyfat",
+      "n_samples": 252,
+      "n_features": 14,
+      "minority_count": 124,
+      "majority_count": 128,
+      "data_sha256": "56b2da107db2997903b4de9339a6335f9475dd80d736ae861b59f7ed97350149"
+    },
+    {
+      "dataset_id": 779,
+      "name": "fri_c1_500_25",
+      "n_samples": 500,
+      "n_features": 25,
+      "minority_count": 233,
+      "majority_count": 267,
+      "data_sha256": "e1010787a42bf72057353463332c4884d5bc7ae9addf63464948139992dd962b"
+    },
+    {
+      "dataset_id": 792,
+      "name": "fri_c2_500_5",
+      "n_samples": 500,
+      "n_features": 5,
+      "minority_count": 202,
+      "majority_count": 298,
+      "data_sha256": "b1b900ef9ba442969398e067fe6bcb1739de4be7722230356565fe5d4d3cc4e7"
+    },
+    {
+      "dataset_id": 793,
+      "name": "fri_c3_250_10",
+      "n_samples": 250,
+      "n_features": 10,
+      "minority_count": 115,
+      "majority_count": 135,
+      "data_sha256": "263f712fb6e5617edca96696e631d8dcceb3e4bb8090989fffcfc7a2835698cd"
+    },
+    {
+      "dataset_id": 794,
+      "name": "fri_c2_250_25",
+      "n_samples": 250,
+      "n_features": 25,
+      "minority_count": 111,
+      "majority_count": 139,
+      "data_sha256": "4cc3b18a3d7a08bc1a669f44ea1573ad3b36bd741dfa00085934e68c38c58614"
+    },
+    {
+      "dataset_id": 795,
+      "name": "disclosure_x_tampered",
+      "n_samples": 662,
+      "n_features": 3,
+      "minority_count": 327,
+      "majority_count": 335,
+      "data_sha256": "1cf3cb70f0320298c0f407a0c5bb8590cdd66373fa982a64bd47746a808d78f9"
+    },
+    {
+      "dataset_id": 797,
+      "name": "fri_c4_1000_50",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 440,
+      "majority_count": 560,
+      "data_sha256": "416f84b11b62249e044ec7060c8a3555d9fd27d897cf87951ec1ae2ace7fa01d"
+    },
+    {
+      "dataset_id": 805,
+      "name": "fri_c4_500_50",
+      "n_samples": 500,
+      "n_features": 50,
+      "minority_count": 236,
+      "majority_count": 264,
+      "data_sha256": "db3bd716443ed4ce1bebb811d497afc6b366276e107b4c790d01e108ad0c3ef7"
+    },
+    {
+      "dataset_id": 806,
+      "name": "fri_c3_1000_50",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 445,
+      "majority_count": 555,
+      "data_sha256": "b4e9731050671b0c68b256e3712ce1c9f53f655f14472878f63ecf541fb3318d"
+    },
+    {
+      "dataset_id": 813,
+      "name": "fri_c3_1000_5",
+      "n_samples": 1000,
+      "n_features": 5,
+      "minority_count": 437,
+      "majority_count": 563,
+      "data_sha256": "3273426df9a0f37b0962904aa59cffb8ec48e4c6b759b292d9f0db2c8dcfa3c4"
+    },
+    {
+      "dataset_id": 824,
+      "name": "fri_c1_500_10",
+      "n_samples": 500,
+      "n_features": 10,
+      "minority_count": 226,
+      "majority_count": 274,
+      "data_sha256": "4ac6904b9d173b3e6423062a03f33657e758e592beb7216ecd9fccfbd96706ad"
+    },
+    {
+      "dataset_id": 830,
+      "name": "fri_c2_250_10",
+      "n_samples": 250,
+      "n_features": 10,
+      "minority_count": 91,
+      "majority_count": 159,
+      "data_sha256": "be345815c7c17af7193063131c16b798d2c8b692ff423a2a51348f3a6e82f326"
+    },
+    {
+      "dataset_id": 832,
+      "name": "fri_c3_250_25",
+      "n_samples": 250,
+      "n_features": 25,
+      "minority_count": 111,
+      "majority_count": 139,
+      "data_sha256": "8a0abe0d27b9bf29bc759972b86c10bdc14d4654b8d7e93bb0d86f5be5e6c7fe"
+    },
+    {
+      "dataset_id": 837,
+      "name": "fri_c1_1000_50",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 453,
+      "majority_count": 547,
+      "data_sha256": "fa89849dc512cad07f6aa1f117651a65cb96ba33309c5fa556717ab38551b8d1"
+    },
+    {
+      "dataset_id": 838,
+      "name": "fri_c4_500_25",
+      "n_samples": 500,
+      "n_features": 25,
+      "minority_count": 216,
+      "majority_count": 284,
+      "data_sha256": "b06f8cb15dc57b45df58923d0176a4124e2a1218427f8c7ad1911b54a912bc0f"
+    },
+    {
+      "dataset_id": 841,
+      "name": "stock",
+      "n_samples": 950,
+      "n_features": 9,
+      "minority_count": 462,
+      "majority_count": 488,
+      "data_sha256": "248759aba029f522f84e9ef7c72e89b3c9306e3bac92b31ce3ff7123cf3176fc"
+    },
+    {
+      "dataset_id": 845,
+      "name": "fri_c0_1000_10",
+      "n_samples": 1000,
+      "n_features": 10,
+      "minority_count": 491,
+      "majority_count": 509,
+      "data_sha256": "e9a8a8abf49eca7e8f900df62bf8eaaa3f523f40b0a5b81464757ab89355cc04"
+    },
+    {
+      "dataset_id": 855,
+      "name": "fri_c4_500_10",
+      "n_samples": 500,
+      "n_features": 10,
+      "minority_count": 224,
+      "majority_count": 276,
+      "data_sha256": "059e782935d9b3d9e9ac2345610e3a75d1f48d47a50f0f05fc51f610f254132e"
+    },
+    {
+      "dataset_id": 863,
+      "name": "fri_c4_250_10",
+      "n_samples": 250,
+      "n_features": 10,
+      "minority_count": 117,
+      "majority_count": 133,
+      "data_sha256": "751659de3ebd3eaa99b0d2b8baf828027b372f903ba3da90b079b22fde54e3cb"
+    },
+    {
+      "dataset_id": 866,
+      "name": "fri_c2_1000_50",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 418,
+      "majority_count": 582,
+      "data_sha256": "ceb5fe43e16e9793ed7b2e486773a6bc98c7574a74bdf39de9877400ad8c782a"
+    },
+    {
+      "dataset_id": 869,
+      "name": "fri_c2_500_10",
+      "n_samples": 500,
+      "n_features": 10,
+      "minority_count": 214,
+      "majority_count": 286,
+      "data_sha256": "ed67e200e8a94e67a397990728573f39e3fc35828cfae2e9ee3674cf161be706"
+    },
+    {
+      "dataset_id": 870,
+      "name": "fri_c1_500_5",
+      "n_samples": 500,
+      "n_features": 5,
+      "minority_count": 233,
+      "majority_count": 267,
+      "data_sha256": "8ce95a8b1cce689c48aad747215b98f0317cd9c06bb350dfb90c6fd4b4892606"
+    },
+    {
+      "dataset_id": 873,
+      "name": "fri_c3_250_50",
+      "n_samples": 250,
+      "n_features": 50,
+      "minority_count": 108,
+      "majority_count": 142,
+      "data_sha256": "0c4fd408c1a586ddc608743837e2e69cb4d8af8cd9499e0fa895c21b6e7f045e"
+    },
+    {
+      "dataset_id": 877,
+      "name": "fri_c2_250_50",
+      "n_samples": 250,
+      "n_features": 50,
+      "minority_count": 113,
+      "majority_count": 137,
+      "data_sha256": "862c32ff998dbd798f36bacdda15fe05ea3b5852226374adf4a84ebb635c8de6"
+    },
+    {
+      "dataset_id": 879,
+      "name": "fri_c2_500_25",
+      "n_samples": 500,
+      "n_features": 25,
+      "minority_count": 196,
+      "majority_count": 304,
+      "data_sha256": "57e8de31d47f7ec3308df2646e9ab3c8c6b92c47a91a07c0600d33fbdd129042"
+    },
+    {
+      "dataset_id": 880,
+      "name": "mu284",
+      "n_samples": 284,
+      "n_features": 10,
+      "minority_count": 142,
+      "majority_count": 142,
+      "data_sha256": "ba3792892a13ed36bc01d5d0c66094183ad666159aef5ac2078a319b5df8e85b"
+    },
+    {
+      "dataset_id": 886,
+      "name": "no2",
+      "n_samples": 500,
+      "n_features": 7,
+      "minority_count": 249,
+      "majority_count": 251,
+      "data_sha256": "4b7ce27253693bee47202708f6e2fe9acf5377dcb8a358574e807cc31350b583"
+    },
+    {
+      "dataset_id": 895,
+      "name": "chscase_geyser1",
+      "n_samples": 222,
+      "n_features": 2,
+      "minority_count": 88,
+      "majority_count": 134,
+      "data_sha256": "cea9f8393e047272e95c742a44b96358e58735cab7e13dd4db98b08feaaf7146"
+    },
+    {
+      "dataset_id": 896,
+      "name": "fri_c3_500_25",
+      "n_samples": 500,
+      "n_features": 25,
+      "minority_count": 220,
+      "majority_count": 280,
+      "data_sha256": "a920192522f6c376a588a2a8cbf631d4bd045854192a74d26e6451c0efe89639"
+    },
+    {
+      "dataset_id": 900,
+      "name": "chscase_census6",
+      "n_samples": 400,
+      "n_features": 6,
+      "minority_count": 165,
+      "majority_count": 235,
+      "data_sha256": "e13d6b874d892be147d9738daad39c2cd67439a23297d229fe17a5a9ad074de3"
+    },
+    {
+      "dataset_id": 903,
+      "name": "fri_c2_1000_25",
+      "n_samples": 1000,
+      "n_features": 25,
+      "minority_count": 437,
+      "majority_count": 563,
+      "data_sha256": "36cf0d17bdc938ee48ce6416ffea7aaa2603a3cb75362482d5c0da8dabb531a6"
+    },
+    {
+      "dataset_id": 904,
+      "name": "fri_c0_1000_50",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 490,
+      "majority_count": 510,
+      "data_sha256": "13e40fd0f6bd57b18f09cada4b906e49f3b691d7f7d40d1c34c897b2f730b602"
+    },
+    {
+      "dataset_id": 906,
+      "name": "chscase_census5",
+      "n_samples": 400,
+      "n_features": 7,
+      "minority_count": 193,
+      "majority_count": 207,
+      "data_sha256": "58f2e7158400552628fcb7d614ec9a267ea1bac360b0bbe7eb5db9b003d01be2"
+    },
+    {
+      "dataset_id": 907,
+      "name": "chscase_census4",
+      "n_samples": 400,
+      "n_features": 7,
+      "minority_count": 194,
+      "majority_count": 206,
+      "data_sha256": "56018bdc8031cbc3222d7abacb0a8c61cac9c03bbed9dfc63d66a9c824199e7f"
+    },
+    {
+      "dataset_id": 908,
+      "name": "chscase_census3",
+      "n_samples": 400,
+      "n_features": 7,
+      "minority_count": 192,
+      "majority_count": 208,
+      "data_sha256": "961578487f583f6362a4447a0c6dfac6fc532485794c47d66647d038a7783a66"
+    },
+    {
+      "dataset_id": 909,
+      "name": "chscase_census2",
+      "n_samples": 400,
+      "n_features": 7,
+      "minority_count": 197,
+      "majority_count": 203,
+      "data_sha256": "2abff1300ec85481d5173b6798c806c07fc1797c9ecec00bdd174f19c4204930"
+    },
+    {
+      "dataset_id": 910,
+      "name": "fri_c1_1000_10",
+      "n_samples": 1000,
+      "n_features": 10,
+      "minority_count": 436,
+      "majority_count": 564,
+      "data_sha256": "e9e4fbe58dd003425744cde074d7ad07cd6d73db2ba5848cc6ad3e7e795249e7"
+    },
+    {
+      "dataset_id": 911,
+      "name": "fri_c2_250_5",
+      "n_samples": 250,
+      "n_features": 5,
+      "minority_count": 110,
+      "majority_count": 140,
+      "data_sha256": "ae69323031791b52642a4f0edea2cff4fa4f1e2c66a3e08edaf18653e5ebfc26"
+    },
+    {
+      "dataset_id": 912,
+      "name": "fri_c2_1000_5",
+      "n_samples": 1000,
+      "n_features": 5,
+      "minority_count": 416,
+      "majority_count": 584,
+      "data_sha256": "038939fe457428490f32292dff71a80412a5a65309c98f2cee164599084554ca"
+    },
+    {
+      "dataset_id": 913,
+      "name": "fri_c2_1000_10",
+      "n_samples": 1000,
+      "n_features": 10,
+      "minority_count": 420,
+      "majority_count": 580,
+      "data_sha256": "788e1bd6237f6beeefafc5f8bacdd7ecb74a774434db66be8092541d7e0f22f0"
+    },
+    {
+      "dataset_id": 917,
+      "name": "fri_c1_1000_25",
+      "n_samples": 1000,
+      "n_features": 25,
+      "minority_count": 454,
+      "majority_count": 546,
+      "data_sha256": "211a295e4065d89a350ebfeb200cc2a5cb0e671c212c66d6185edf508b25df2c"
+    },
+    {
+      "dataset_id": 918,
+      "name": "fri_c4_250_50",
+      "n_samples": 250,
+      "n_features": 50,
+      "minority_count": 115,
+      "majority_count": 135,
+      "data_sha256": "307702d76e255b7afdcc358d99dc00c7458945c7981d3a0f057aeb4fb0472c31"
+    },
+    {
+      "dataset_id": 920,
+      "name": "fri_c2_500_50",
+      "n_samples": 500,
+      "n_features": 50,
+      "minority_count": 205,
+      "majority_count": 295,
+      "data_sha256": "328e235aa90904222ccc626d0e499ae886fd4c022406031c84f3053b07b63bd2"
+    },
+    {
+      "dataset_id": 925,
+      "name": "visualizing_galaxy",
+      "n_samples": 323,
+      "n_features": 4,
+      "minority_count": 148,
+      "majority_count": 175,
+      "data_sha256": "8a9ec42586d407221a395a6e22eda0a5d1f7581e30d40f2ee13570609149fc4d"
+    },
+    {
+      "dataset_id": 926,
+      "name": "fri_c0_500_25",
+      "n_samples": 500,
+      "n_features": 25,
+      "minority_count": 245,
+      "majority_count": 255,
+      "data_sha256": "7a329c4f40bec59ef8105d67c1f81a1b740fd25969e372160730a66204968f48"
+    },
+    {
+      "dataset_id": 931,
+      "name": "disclosure_z",
+      "n_samples": 662,
+      "n_features": 3,
+      "minority_count": 314,
+      "majority_count": 348,
+      "data_sha256": "3d94ba7161f8df7d3f2f42e6f7b191ae832ef9415502a2943fd74ee81c99d6b4"
+    },
+    {
+      "dataset_id": 933,
+      "name": "fri_c4_250_25",
+      "n_samples": 250,
+      "n_features": 25,
+      "minority_count": 114,
+      "majority_count": 136,
+      "data_sha256": "8d999d88e549895544a109a36c54c7b156268a852155fcd28291c1abda01d853"
+    },
+    {
+      "dataset_id": 935,
+      "name": "fri_c1_250_10",
+      "n_samples": 250,
+      "n_features": 10,
+      "minority_count": 110,
+      "majority_count": 140,
+      "data_sha256": "98f9e3a3ef80b2bc068db2ca202520888537e22e4f9b35a99dbf388de3497de5"
+    },
+    {
+      "dataset_id": 936,
+      "name": "fri_c3_500_10",
+      "n_samples": 500,
+      "n_features": 10,
+      "minority_count": 228,
+      "majority_count": 272,
+      "data_sha256": "7341a387e52170f2e4a49f77a4e50f4aa8cbf8f76f69a33cd02f253b60555f81"
+    },
+    {
+      "dataset_id": 937,
+      "name": "fri_c3_500_50",
+      "n_samples": 500,
+      "n_features": 50,
+      "minority_count": 218,
+      "majority_count": 282,
+      "data_sha256": "695880215f3ee2c0ce205e820131869eb4937eb9d623a539dc6abce0257bd4c2"
+    },
+    {
+      "dataset_id": 943,
+      "name": "fri_c0_500_10",
+      "n_samples": 500,
+      "n_features": 10,
+      "minority_count": 241,
+      "majority_count": 259,
+      "data_sha256": "290bc1d1457f3bdd14fe7218c2b43639f73dc73ecc56746c2ce61d9e03a4dc88"
+    },
+    {
+      "dataset_id": 970,
+      "name": "analcatdata_authorship",
+      "n_samples": 841,
+      "n_features": 70,
+      "minority_count": 317,
+      "majority_count": 524,
+      "data_sha256": "e2f414ef95050c4996d1e138341c5894bd93f018b8422e0936bd9542eabb7d96"
+    },
+    {
+      "dataset_id": 996,
+      "name": "prnn_fglass",
+      "n_samples": 214,
+      "n_features": 9,
+      "minority_count": 76,
+      "majority_count": 138,
+      "data_sha256": "c31fef10b874039ef0922cbb9734f54f719ca9e09419cf97f9016cd56b482dd2"
+    },
+    {
+      "dataset_id": 997,
+      "name": "balance-scale",
+      "n_samples": 625,
+      "n_features": 4,
+      "minority_count": 288,
+      "majority_count": 337,
+      "data_sha256": "4e319491fb7cd9c49dbb65ada8e8b47724e72a334f7a9a74984fe259740a6c46"
+    },
+    {
+      "dataset_id": 1005,
+      "name": "glass",
+      "n_samples": 214,
+      "n_features": 9,
+      "minority_count": 76,
+      "majority_count": 138,
+      "data_sha256": "61b4f6b46875eb513060fb6bde2eeeb867569e0c6834282b005d0592e774c7e9"
+    },
+    {
+      "dataset_id": 1011,
+      "name": "ecoli",
+      "n_samples": 336,
+      "n_features": 7,
+      "minority_count": 143,
+      "majority_count": 193,
+      "data_sha256": "9ea4e0c8d273ee40470170714ad73ee0c69fe24644c5d97c4be6c2665d73ad92"
+    },
+    {
+      "dataset_id": 1048,
+      "name": "jEdit_4.2_4.3",
+      "n_samples": 369,
+      "n_features": 8,
+      "minority_count": 165,
+      "majority_count": 204,
+      "data_sha256": "feee298045bfc75ff1aa90828ff041cfe866772e63e74817a4b47db9c9512af4"
+    },
+    {
+      "dataset_id": 1049,
+      "name": "pc4",
+      "n_samples": 1458,
+      "n_features": 37,
+      "minority_count": 178,
+      "majority_count": 1280,
+      "data_sha256": "cf376f12d5628588ba43aa439a3f2121b6185a133cb07f9eb864707a79354a97"
+    },
+    {
+      "dataset_id": 1050,
+      "name": "pc3",
+      "n_samples": 1563,
+      "n_features": 37,
+      "minority_count": 160,
+      "majority_count": 1403,
+      "data_sha256": "abe8e1e54b216db03884018dfefa23e87665480a54e7379f815f38ddd64facb4"
+    },
+    {
+      "dataset_id": 1065,
+      "name": "kc3",
+      "n_samples": 458,
+      "n_features": 39,
+      "minority_count": 43,
+      "majority_count": 415,
+      "data_sha256": "1ee87bbb93ccf76c3cffeb615c6ed02fa4f8d82d61c116187c7e48be7cd4f950"
+    },
+    {
+      "dataset_id": 1071,
+      "name": "mw1",
+      "n_samples": 403,
+      "n_features": 37,
+      "minority_count": 31,
+      "majority_count": 372,
+      "data_sha256": "d4b6abfc5f7cf657803548e622ee7b20ed42d697e42010840f66488706beb53a"
+    },
+    {
+      "dataset_id": 1073,
+      "name": "jEdit_4.0_4.2",
+      "n_samples": 274,
+      "n_features": 8,
+      "minority_count": 134,
+      "majority_count": 140,
+      "data_sha256": "609eca81087d0a9022b20a0c51e7fc19580e5672ffdbe5b8e4cea86eb8dddc2d"
+    },
+    {
+      "dataset_id": 1443,
+      "name": "PizzaCutter1",
+      "n_samples": 661,
+      "n_features": 37,
+      "minority_count": 52,
+      "majority_count": 609,
+      "data_sha256": "e2b0cbd3af407ed6d5f811a8e9d568855d4618ed28a69f687688a4833928c9cf"
+    },
+    {
+      "dataset_id": 1444,
+      "name": "PizzaCutter3",
+      "n_samples": 1043,
+      "n_features": 37,
+      "minority_count": 127,
+      "majority_count": 916,
+      "data_sha256": "ff49074e2914f43b051fc829c66c3d3039b2b6b478cb7a1548f2ba73de1607e5"
+    },
+    {
+      "dataset_id": 1446,
+      "name": "CostaMadre1",
+      "n_samples": 296,
+      "n_features": 37,
+      "minority_count": 38,
+      "majority_count": 258,
+      "data_sha256": "4f2bf57ffd1214c84fd2217f54dc0597ca7da4fb9f783b340dd5d132f2952aa7"
+    },
+    {
+      "dataset_id": 1453,
+      "name": "PieChart3",
+      "n_samples": 1077,
+      "n_features": 37,
+      "minority_count": 134,
+      "majority_count": 943,
+      "data_sha256": "634cdcb0051355b46c02c3b430165ea59da90df40d2e1da1d66ab1e66e123c6e"
+    },
+    {
+      "dataset_id": 1467,
+      "name": "climate-model-simulation-crashes",
+      "n_samples": 540,
+      "n_features": 20,
+      "minority_count": 46,
+      "majority_count": 494,
+      "data_sha256": "de8105b49d15d532545bf2e52a3472e988012335d767a6d12b7c70b26a9736f8"
+    },
+    {
+      "dataset_id": 1510,
+      "name": "wdbc",
+      "n_samples": 569,
+      "n_features": 30,
+      "minority_count": 212,
+      "majority_count": 357,
+      "data_sha256": "3b04f569d1a4b220c4ce3b4bc2c9b7d84bf2509c8563b7c0d71e53d14a44ab79"
+    },
+    {
+      "dataset_id": 1524,
+      "name": "vertebra-column",
+      "n_samples": 310,
+      "n_features": 6,
+      "minority_count": 100,
+      "majority_count": 210,
+      "data_sha256": "881d6ed4bacc8f0430b6a248330c90fe72abbaff590e832b4ca6395b1d761d14"
+    },
+    {
+      "dataset_id": 1547,
+      "name": "autoUniv-au1-1000",
+      "n_samples": 1000,
+      "n_features": 20,
+      "minority_count": 259,
+      "majority_count": 741,
+      "data_sha256": "5466f0f193147dc8df5c563a033b82c6dd5479ccbd3b63e3479a701d47b15eeb"
+    },
+    {
+      "dataset_id": 1600,
+      "name": "SPECTF",
+      "n_samples": 267,
+      "n_features": 44,
+      "minority_count": 55,
+      "majority_count": 212,
+      "data_sha256": "4a4a4cc660f1622808c514e5a0a35c30cfe514b0d665d5c9cd0d388bdff95f16"
+    },
+    {
+      "dataset_id": 40994,
+      "name": "climate-model-simulation-crashes",
+      "n_samples": 540,
+      "n_features": 18,
+      "minority_count": 46,
+      "majority_count": 494,
+      "data_sha256": "7cf290c9feb8e8f84d74e0b5cb2973b5dcd5019d696b0cfd4191ea1bc98a7b38"
+    },
+    {
+      "dataset_id": 41945,
+      "name": "ilpd-numeric",
+      "n_samples": 583,
+      "n_features": 10,
+      "minority_count": 167,
+      "majority_count": 416,
+      "data_sha256": "6b0bde202c73efba62421a9667a12bf76a6666ce47fa26126392b223556e0d4b"
+    },
+    {
+      "dataset_id": 41946,
+      "name": "Sick_numeric",
+      "n_samples": 3772,
+      "n_features": 29,
+      "minority_count": 231,
+      "majority_count": 3541,
+      "data_sha256": "26eee4ecb9e0639debcb238b733f2178da2ad55c6bbe720242e67e02c2f97954"
+    },
+    {
+      "dataset_id": 43973,
+      "name": "phoneme",
+      "n_samples": 3172,
+      "n_features": 5,
+      "minority_count": 1586,
+      "majority_count": 1586,
+      "data_sha256": "d5700bfce02f56781ad81425a57ca6a20b0658d89678a452a91e1db87c0fce11"
+    },
+    {
+      "dataset_id": 43980,
+      "name": "wine",
+      "n_samples": 2554,
+      "n_features": 11,
+      "minority_count": 1277,
+      "majority_count": 1277,
+      "data_sha256": "2df39d3e00fcdfb570af35c31d6296912e43e12f7421d31ddf131d97140f011c"
+    },
+    {
+      "dataset_id": 44345,
+      "name": "credit",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "cc2ef139b40d696b6458ff107f8f7a2a63a08592167ee576e868b8cb25cad101"
+    },
+    {
+      "dataset_id": 44349,
+      "name": "credit_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "b025d600eaf9546befb03c0df2cc21e6ce8a8e156fa121a3652802c8c155521b"
+    },
+    {
+      "dataset_id": 44350,
+      "name": "credit_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "b67903ce949edc6ebf1d311eff54965e8299c91ff5843aa535581daef28d9f46"
+    },
+    {
+      "dataset_id": 44351,
+      "name": "credit_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "955a5008b699e1ee74423bc834501c50e00c004cf3937553d3da8f35121406c4"
+    },
+    {
+      "dataset_id": 44352,
+      "name": "credit_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "6c40218cd798f757760f6a51191e8640b2fb7d39876409c669d585731408d01b"
+    },
+    {
+      "dataset_id": 44362,
+      "name": "california_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 8,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "bb1c42199645942b2bfef70cc31d0a4d2783d8f9230cf81612c4dc22d0c19623"
+    },
+    {
+      "dataset_id": 44363,
+      "name": "california_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 8,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "4a41a249d9c9a75bb464a1ce4e472edd52ddd17e509d5928e3b984010fd10df6"
+    },
+    {
+      "dataset_id": 44364,
+      "name": "california_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 8,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "a6c2238f87581a5b57bf018422338d0d79b37a40492cf1d8814a0d68c3d0df18"
+    },
+    {
+      "dataset_id": 44365,
+      "name": "california_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 8,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "678c4cfadc1e5b39e9df473f8bdc1dee55272617767d0e456790265b79c2432a"
+    },
+    {
+      "dataset_id": 44366,
+      "name": "california_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 8,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d1cfd70957ca44b4e129c7be06700d668720089fd6427faf4d5d50fd6753f0c0"
+    },
+    {
+      "dataset_id": 44368,
+      "name": "wine_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 11,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "8517a16b495bd06f46d03161a9919c526f5a64b903af23786ab7299bdcf41b7a"
+    },
+    {
+      "dataset_id": 44369,
+      "name": "wine_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 11,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c71b4ee444e7a7bf303e505a60170a49b9af2e66be88e9cb749464699fedf0d7"
+    },
+    {
+      "dataset_id": 44370,
+      "name": "wine_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 11,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "02c95c1a8a6f6b5d4db9f0c2570d564949c087ba9fa88fc1676451dae6ba2679"
+    },
+    {
+      "dataset_id": 44371,
+      "name": "wine_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 11,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "b7027c3a5b11604d9d4cd326d596cf016ee89576bfecd16cd2ad14dd116545e7"
+    },
+    {
+      "dataset_id": 44372,
+      "name": "electricity_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "e10aef8766ac834c6012ada6826858df516addd645605c3e26b067a8df40aff8"
+    },
+    {
+      "dataset_id": 44373,
+      "name": "electricity_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d7139cc03dda74f56a85944fec77da902ee8e9d5d6a174eacfcfaf3c3aae83ef"
+    },
+    {
+      "dataset_id": 44374,
+      "name": "electricity_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d60c829e7deec16bc319d7a9ecc423eef610bd957d262c2eb38ad2d3fd8f9979"
+    },
+    {
+      "dataset_id": 44375,
+      "name": "electricity_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "7c75724c63dc51ed4decb2b2b7dfda270732ec17f496245715e34ad864109eb4"
+    },
+    {
+      "dataset_id": 44376,
+      "name": "electricity_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d342e96b6650207050f0d61a5abeef1b6816abe6c87cc0594ba464861aaacc7f"
+    },
+    {
+      "dataset_id": 44377,
+      "name": "covertype_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "0265d35656469f62fad2f6a9a867c778a54c5b2b934dd60e6a5fd2b38378ed96"
+    },
+    {
+      "dataset_id": 44378,
+      "name": "covertype_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "cf54a9688ccfd01948d25a29485ca89e9e3db3c6cbc2383e031311d2e551c6af"
+    },
+    {
+      "dataset_id": 44379,
+      "name": "covertype_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "ee5c358ea1eb6833144e8736de3e826b4c237ba3caf296a34bfcfcdc416830fa"
+    },
+    {
+      "dataset_id": 44380,
+      "name": "covertype_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "374952940cde7334d89f9f0e19e349f2b64c7c1dbb301b4bb55c4c841e268374"
+    },
+    {
+      "dataset_id": 44381,
+      "name": "covertype_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "dd28664e7035d18ade256ffcde4909ef26a04d1fb50b44e89d3c0798cfa5ee45"
+    },
+    {
+      "dataset_id": 44382,
+      "name": "pol_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 26,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c03b6ab2f1c223b8e813d3c1b4c2d910d44cdd87ac997a73cdd6702867756c50"
+    },
+    {
+      "dataset_id": 44383,
+      "name": "pol_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 26,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "46723bc8ec40af2510bbcf9da30fa62b1164a212ef032b76065406687a3bca75"
+    },
+    {
+      "dataset_id": 44384,
+      "name": "pol_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 26,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d4ca05610ffd83b9b0ded60868b0d380f8735a9f5a5dd25fe4f17a104e70a980"
+    },
+    {
+      "dataset_id": 44385,
+      "name": "pol_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 26,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "1e9cce264d7349f56e1e63a8da98efb7bade4412efcf2be06bd663399073ab28"
+    },
+    {
+      "dataset_id": 44386,
+      "name": "pol_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 26,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "5050888a3f84448cd79200609c32b94611b7a6a32b71162cdd2962cd354d1e6d"
+    },
+    {
+      "dataset_id": 44388,
+      "name": "house_16H_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 16,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "1c19dc65e9e5a380557da19d038af50036d10984c519651733f2ce6e6f924568"
+    },
+    {
+      "dataset_id": 44389,
+      "name": "house_16H_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 16,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "59fa4418f2f5198760b8e86b319af1883cd1b51439b22da35b30b35f2a3db7bb"
+    },
+    {
+      "dataset_id": 44390,
+      "name": "house_16H_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 16,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "83cab3d1e332b6a5e74cece277f1d421b897f5875555612685b456bfb7199c5a"
+    },
+    {
+      "dataset_id": 44391,
+      "name": "house_16H_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 16,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "466381184780c11c7524851dd435ce8ac8e55e82ee8b9a9375bdaa4f04c078a5"
+    },
+    {
+      "dataset_id": 44392,
+      "name": "kdd_ipums_la_97-small_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "278b7f961a1e7d40ea38a1925a940f3c695a9df8fc7cee038f3d976195d19993"
+    },
+    {
+      "dataset_id": 44393,
+      "name": "kdd_ipums_la_97-small_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "08fc19af81f2d94d51e2a0705f3a26ecdf8aca44e46c59054c94495026f00b04"
+    },
+    {
+      "dataset_id": 44394,
+      "name": "kdd_ipums_la_97-small_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "327e3f34f4bc92178ccb207ac689f4a5c4d54eb60248cd4897a8df2adafe7151"
+    },
+    {
+      "dataset_id": 44395,
+      "name": "kdd_ipums_la_97-small_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "add71fb58f3480375f698a2f94d17a532686fdce486e83b51535612458f5c09e"
+    },
+    {
+      "dataset_id": 44396,
+      "name": "kdd_ipums_la_97-small_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c2fd70c60a4c446066357c13b7da1cd4b70a5367293fc12a0eccd17433a1982f"
+    },
+    {
+      "dataset_id": 44397,
+      "name": "MagicTelescope_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "24332a362f044cb1159990e9521b591861868ab44910e9fd70a249dc13a9f379"
+    },
+    {
+      "dataset_id": 44398,
+      "name": "MagicTelescope_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "fd30128a9a952ec1c013a527919afef67148a49792096e3d891d874823f72277"
+    },
+    {
+      "dataset_id": 44399,
+      "name": "MagicTelescope_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c69194d1b6a79c679f80f86d1273ab6a4e82e4f65be04328cd2469a726b787e0"
+    },
+    {
+      "dataset_id": 44400,
+      "name": "MagicTelescope_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "b4bb33b69bd43723966b7583a280f19c3800b193023f7e9070f910a9a07c0ddd"
+    },
+    {
+      "dataset_id": 44401,
+      "name": "MagicTelescope_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 10,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "8e24d1d3d86cf984255920509b05bfa18250fff5d7e7030751b4f03b44e9b1a4"
+    },
+    {
+      "dataset_id": 44402,
+      "name": "bank-marketing_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "3db7fe68b08b90235ef931fccd9d05a47d575bc1e0f222861ec7391dad6bbeda"
+    },
+    {
+      "dataset_id": 44403,
+      "name": "bank-marketing_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "2a51cadd26b5e93b60692b2b6a23b346a5701a409bc9659d760a4839562177bf"
+    },
+    {
+      "dataset_id": 44404,
+      "name": "bank-marketing_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "83d9bb8971b61d5a48aed841d003bd868338e81208c746df3729255cc448f2c5"
+    },
+    {
+      "dataset_id": 44405,
+      "name": "bank-marketing_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "0e4a4bee52d458d6cf5e7860d7fa4f16bc3f4211fd2c2f53cedf4738b94f248c"
+    },
+    {
+      "dataset_id": 44406,
+      "name": "bank-marketing_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 7,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d963a72b84ccd381cdf8db42fb29360b155614deb9065bd9e950f0b6d8944411"
+    },
+    {
+      "dataset_id": 44408,
+      "name": "phoneme_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "436e6b2e1132186939e2cb99f8b59c920cc4f826821ad66140ed9e86ee5df839"
+    },
+    {
+      "dataset_id": 44409,
+      "name": "phoneme_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "0ceea98cad1fe04c8f8678c3776eb3e447ff60cf26ab0a7897fae21830446b66"
+    },
+    {
+      "dataset_id": 44410,
+      "name": "phoneme_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "42a6123e385992093e1117e6a94f354b11b9555e1d5763963d1b561d915410be"
+    },
+    {
+      "dataset_id": 44411,
+      "name": "phoneme_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "fe5512dff6f9ec30451b5801732f97b1eb0d627b42722c3ca5ec887f35dba651"
+    },
+    {
+      "dataset_id": 44412,
+      "name": "MiniBooNE_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 50,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "20c2326182573c787305dce799eebf2841710406f19b8cf47616f33f8fe05c84"
+    },
+    {
+      "dataset_id": 44413,
+      "name": "MiniBooNE_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 50,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "94fbe8ab73d11ace372e22f1de4919075b919a672366a190ea9b9242da659528"
+    },
+    {
+      "dataset_id": 44414,
+      "name": "MiniBooNE_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 50,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "9a129a4a1d47e39c07ba3f57d8d23dea9fab8762feecfc73bd2589e90923fa95"
+    },
+    {
+      "dataset_id": 44415,
+      "name": "MiniBooNE_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 50,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c8271e7209e7aa925e780dde816ebbc125a04146593449f1bcb8bb5809bfb5e8"
+    },
+    {
+      "dataset_id": 44416,
+      "name": "MiniBooNE_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 50,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "ca305fba3f25b9906859b2c40901132e609f0531633954b65fa0e07db3ed9a5c"
+    },
+    {
+      "dataset_id": 44417,
+      "name": "Higgs_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 24,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "4989b306865bba8c7aca0c3032123b30c0a40821baf2a3d126fc2a4f7b39b4f0"
+    },
+    {
+      "dataset_id": 44418,
+      "name": "Higgs_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 24,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "6d035a61c4fc867a7e2a7a09f4b6f068592cc6d824d400a0be6dd3138db64c24"
+    },
+    {
+      "dataset_id": 44419,
+      "name": "Higgs_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 24,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "0ca273c5140cb5a712225588c4d69ebce14f0da78426d4abe3ae36e40bf15edc"
+    },
+    {
+      "dataset_id": 44420,
+      "name": "Higgs_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 24,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d9e92b0190b4b6c9bc055d7ea7f03d1dc83de461e2ea3c61a1416d4007c1508c"
+    },
+    {
+      "dataset_id": 44421,
+      "name": "Higgs_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 24,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "9a30d6e6682aa4e3bb3fa9f412cdbc4355aacf02d3268a999e8b7ec4c52f7353"
+    },
+    {
+      "dataset_id": 44423,
+      "name": "eye_movements_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "d4092782e68cd2c3e3926994ff3d2f4b32b9bb0255f16e2497ccc858ebd2349e"
+    },
+    {
+      "dataset_id": 44424,
+      "name": "eye_movements_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "ffc0a0b26777aaa9a20d8173670c09819f9c154a105282c201fd28630e47487a"
+    },
+    {
+      "dataset_id": 44425,
+      "name": "eye_movements_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "767984dfb4ec1678267233c74f828c92f92ffa70d7aa7dcadbcae626d9003da2"
+    },
+    {
+      "dataset_id": 44426,
+      "name": "eye_movements_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "fc12681181673f6ad85ac90dbce0a2f6f13aa97a0c999677b5c9d4a06c211ea2"
+    },
+    {
+      "dataset_id": 44427,
+      "name": "eye_movements_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "9895b35683482b83151c39a135cd3d68f2b235da57ff509760733d2e2446979b"
+    },
+    {
+      "dataset_id": 44428,
+      "name": "jannis_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 54,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "5c4f6d5cb81b3623b4808d56759289efbcd6cb6186f4880bbb23f2a55008623e"
+    },
+    {
+      "dataset_id": 44429,
+      "name": "jannis_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 54,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "0bb9b66d7983bbf7dd485399161386a9e200e878a27bdf77d17eb3ff4c16e369"
+    },
+    {
+      "dataset_id": 44430,
+      "name": "jannis_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 54,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "5e2bc3a9b97ee768680da65d03742c8ec2e433a33f3f90f923557b58d8defa46"
+    },
+    {
+      "dataset_id": 44431,
+      "name": "jannis_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 54,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "06086d0bd6fbcb918ebca0387e1e7c18ec79f584203687960d2e254145e40df6"
+    },
+    {
+      "dataset_id": 44432,
+      "name": "jannis_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 54,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "484085b09489850382ee455e6254ad4c92e869531df1183521d8c525b8d3ddd1"
+    },
+    {
+      "dataset_id": 44489,
+      "name": "wilt_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 108,
+      "majority_count": 1892,
+      "data_sha256": "028b5c5396fb0903f1121625abff9590e5c938f0fa931a654b61f04b5de08f3f"
+    },
+    {
+      "dataset_id": 44490,
+      "name": "wilt_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 108,
+      "majority_count": 1892,
+      "data_sha256": "2baef43a2cf285a06a38620af1589f2419cf5ff92de1a5ac1717240c736f2038"
+    },
+    {
+      "dataset_id": 44491,
+      "name": "wilt_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 108,
+      "majority_count": 1892,
+      "data_sha256": "59d57a480a57835911f1c2ac95d7bbe826797ef9914bb15a93c5c8b3afa1a953"
+    },
+    {
+      "dataset_id": 44492,
+      "name": "wilt_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 5,
+      "minority_count": 108,
+      "majority_count": 1892,
+      "data_sha256": "401663f3bb02606849dad36f7b08c22d49975df980d2bbf309a07d2c6b1ebefe"
+    },
+    {
+      "dataset_id": 44493,
+      "name": "numerai28.6_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 21,
+      "minority_count": 990,
+      "majority_count": 1010,
+      "data_sha256": "321a852222db9822c6cb28bff68c0eacf5a9f4591d7e7361ade0f80bfc6d9cc6"
+    },
+    {
+      "dataset_id": 44494,
+      "name": "numerai28.6_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 21,
+      "minority_count": 990,
+      "majority_count": 1010,
+      "data_sha256": "6752205b3006c20a1942801414a65f784e3881369002995599a85fb08b57ffcd"
+    },
+    {
+      "dataset_id": 44495,
+      "name": "numerai28.6_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 21,
+      "minority_count": 990,
+      "majority_count": 1010,
+      "data_sha256": "7aa712b8fde81829d644fbcedac38b31d2e6aa9bde5a2c0c23b77dbcc8a4f3cc"
+    },
+    {
+      "dataset_id": 44496,
+      "name": "numerai28.6_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 21,
+      "minority_count": 990,
+      "majority_count": 1010,
+      "data_sha256": "edd6b50efda9358c379a3b54f5070da7275480ddee1b23395f8a46321b0cca0c"
+    },
+    {
+      "dataset_id": 44497,
+      "name": "numerai28.6_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 21,
+      "minority_count": 990,
+      "majority_count": 1010,
+      "data_sha256": "1d8552f71a205616d84578e2fd7e45c9280bfde5b8a10baf2f87eaed18e00e33"
+    },
+    {
+      "dataset_id": 44549,
+      "name": "ozone-level-8hr_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 72,
+      "minority_count": 126,
+      "majority_count": 1874,
+      "data_sha256": "ce1d270e48f51afb9f9376e09ceadcc5f7dd5083b7faa77dae50ae11c982e261"
+    },
+    {
+      "dataset_id": 44550,
+      "name": "ozone-level-8hr_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 72,
+      "minority_count": 126,
+      "majority_count": 1874,
+      "data_sha256": "40c5c0ce87e963c9dfb4bf8c1a4d559a9aba44b9616f6c55b1ca6639b312b740"
+    },
+    {
+      "dataset_id": 44551,
+      "name": "ozone-level-8hr_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 72,
+      "minority_count": 126,
+      "majority_count": 1874,
+      "data_sha256": "0a48b3fc7f7883cea5ccc9687f4daf77e59db226d3abca73a12d4faa892dae4a"
+    },
+    {
+      "dataset_id": 44552,
+      "name": "ozone-level-8hr_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 72,
+      "minority_count": 126,
+      "majority_count": 1874,
+      "data_sha256": "c4454be7ed0c0014776fb082fff6ec5ad30d547aff3892c3de03ae8fac10afc7"
+    },
+    {
+      "dataset_id": 44568,
+      "name": "ada_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 48,
+      "minority_count": 496,
+      "majority_count": 1504,
+      "data_sha256": "42a8363649d66eb03c0a5122368b18d7b810c8f2df67d0eae79e28327ced5167"
+    },
+    {
+      "dataset_id": 44569,
+      "name": "ada_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 48,
+      "minority_count": 496,
+      "majority_count": 1504,
+      "data_sha256": "2b32391382fb1a50aa4a32a8d333bf944f65a980f9c666e317f3b1859882e461"
+    },
+    {
+      "dataset_id": 44571,
+      "name": "ada_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 48,
+      "minority_count": 496,
+      "majority_count": 1504,
+      "data_sha256": "8c9c7097be1c12adf4b4f326444ee682edcc5812542afb1f1ddf4651de93af09"
+    },
+    {
+      "dataset_id": 44572,
+      "name": "ada_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 48,
+      "minority_count": 496,
+      "majority_count": 1504,
+      "data_sha256": "14a03e4e0bf2078dedf9f546513bd814fed928db2b438df3dd87552d21504895"
+    },
+    {
+      "dataset_id": 44678,
+      "name": "sylvine_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "57ee0ae7add92e6fc42ffa4fb7449a3a119e2d677ac776a41b9806d224b34dd7"
+    },
+    {
+      "dataset_id": 44679,
+      "name": "sylvine_seed_1_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "92e3547f413704466860a069fbe3f612052d925f9729009124d0f7b8f8a490fc"
+    },
+    {
+      "dataset_id": 44680,
+      "name": "sylvine_seed_2_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "31dc2a1d4c67f94b523fdcfe85381bb13f7f31e1cef56b751829a3d4be64b1ad"
+    },
+    {
+      "dataset_id": 44681,
+      "name": "sylvine_seed_3_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "c0221e09d8f4982d83dcc95402fbd5ade264c4b72549bf65651864cbd4e2c275"
+    },
+    {
+      "dataset_id": 44682,
+      "name": "sylvine_seed_4_nrows_2000_nclasses_10_ncols_100_stratify_True",
+      "n_samples": 2000,
+      "n_features": 20,
+      "minority_count": 1000,
+      "majority_count": 1000,
+      "data_sha256": "5f49f7fa870dc8f5e8ae122276c1242bbfe543c961a1d0e5b55190d047be2097"
+    },
+    {
+      "dataset_id": 46279,
+      "name": "algerian_forest_fires",
+      "n_samples": 243,
+      "n_features": 13,
+      "minority_count": 106,
+      "majority_count": 137,
+      "data_sha256": "c9b49bb6411216953a403401f22b2e7e36285473eb19d6c94e731eff7e7f1c51"
+    },
+    {
+      "dataset_id": 46416,
+      "name": "Creditability-German-Credit-Data",
+      "n_samples": 1000,
+      "n_features": 20,
+      "minority_count": 300,
+      "majority_count": 700,
+      "data_sha256": "990b05a243c26e0f97a91bf02a1b7d181be21bbb1d7aa62d56c976abba4be1e9"
+    },
+    {
+      "dataset_id": 46502,
+      "name": "Credit_Approval_Classification",
+      "n_samples": 1000,
+      "n_features": 50,
+      "minority_count": 300,
+      "majority_count": 700,
+      "data_sha256": "29a6081c8227dc915ed50da2a81170de45d41913c1e4d99d3472b86e4f2c0651"
+    },
+    {
+      "dataset_id": 46532,
+      "name": "dataset_credit-g",
+      "n_samples": 1000,
+      "n_features": 20,
+      "minority_count": 300,
+      "majority_count": 700,
+      "data_sha256": "2c33dbaf4a7f5fbaf65ee9b6f442c990fbe48dd40c38d5a6c75270ab3fda3890"
+    },
+    {
+      "dataset_id": 46562,
+      "name": "German-Credit-Data-Creditability-Preprocessed-Dataset",
+      "n_samples": 1000,
+      "n_features": 33,
+      "minority_count": 300,
+      "majority_count": 700,
+      "data_sha256": "29e0dff21441dbdb0572ff777fe2b50c1b8b0e172d038975c8f21dc539ea651f"
+    },
+    {
+      "dataset_id": 46921,
+      "name": "diabetes",
+      "n_samples": 768,
+      "n_features": 8,
+      "minority_count": 268,
+      "majority_count": 500,
+      "data_sha256": "715206aabef452481fad2979d6d38e2b84c1774e61d67ba21ecdfc34db3d002f"
+    },
+    {
+      "dataset_id": 46951,
+      "name": "Pumpkin_Seeds",
+      "n_samples": 2500,
+      "n_features": 12,
+      "minority_count": 1200,
+      "majority_count": 1300,
+      "data_sha256": "9129baedd342d8420a165309a9e6143b8bc78eda2909893f3cc86dbda5dc2f29"
+    },
+    {
+      "dataset_id": 47150,
+      "name": "CanadaFiresD",
+      "n_samples": 1491,
+      "n_features": 46,
+      "minority_count": 588,
+      "majority_count": 903,
+      "data_sha256": "fa6cd43ab2e389dfdafced70665bd3dd750a8747e1bb2c59ad9033ef8c8cafbb"
+    }
+  ],
+  "cross_references": {
+    "decision_file": "protocol/S06_confirmatory_decision.json",
+    "protocol_file": "protocol/S06_PROTOCOL.json",
+    "results_full": "results/s06_confirmatory_stage198.jsonl",
+    "historical_stage_32": "cohort_reuse/stage_32_cohort_manifest_historical.json"
+  },
+  "created_at_utc": "2026-10-13T23:03:37.037990+00:00",
+  "audit_reference": "Notebook 1, CELL 19"
+}

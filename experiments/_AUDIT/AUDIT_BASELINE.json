@@ -1,0 +1,44 @@
+{
+  "actual_head": "6e55d41a51d6ba05a997264d44899926ee35f6be",
+  "code_version_hashes": {
+    "src": {
+      "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+      "arbiter.py": "eca757f3f21585d013c1479431344278e64f4a20ea549a8c2c935ba67c7d155e",
+      "core.py": "902e5ddbb02b45d77450f7514493d4949a00b10bbb1ac5bacf06fa6909f00280",
+      "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    },
+    "src_v2": {
+      "__init__.py": "755efb89b4b4e8b4b6457cd9fd8f3fbe686c0851e62b6c4b54780650df63c99d",
+      "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+      "core.py": "bd9462020cff2a187399942604a802b8654158570f1b6e07abd763ff43d4a981",
+      "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+      "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    },
+    "src_v3": {
+      "__init__.py": "56f4ac73b320695049d3c5bc993c2cad9553ca7641b350582d716b888748af7d",
+      "arbiter.py": "cdcc5e857367b0c552de95e75639a05735155bd2622b657f90cd8c2730b4a140",
+      "core.py": "b28f5dc895973ab75caee055ae0e4de9f547ff5d7f713191b09b31a3114aa4e0",
+      "generator.py": "c3c6558e6882eb9260ea978494fb63178f59f3649cbb8c039e49ff9c7c56fbda",
+      "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    },
+    "src_v4": {
+      "__init__.py": "c7ed068891fc4fee6f42eda45620b57990388281912ed6996245ecc322236cc0",
+      "arbiter.py": "03f570edc509b13afd0e297cd394610da267184b15cfb02756449ad276b708ad",
+      "core.py": "9ac0f6e87b35788224ab3d8a4803960d40fd900fbd4dd033cb4b76ac9d77cb63",
+      "generator.py": "166ac28ec269896283fa83df0c966e4a0446f89ced28d9ec0901bf6230b1383b",
+      "srdf_v2_runner.py": "9b41ff1eeb390de73530b6152c81ace31aec498bcfcb7ac6805568b2a0011943",
+      "trawler.py": "c135a615c60d7f0e77d764cf45d3ba6180ee2be8f09e5baf35d1498cefa63905"
+    }
+  },
+  "created_at_utc": "2026-10-13T22:52:54.471856+00:00",
+  "expected_head": "6e55d41a51d6ba05",
+  "protocol_hashes": {
+    "S05_PROTOCOL.json": "58c3a93990f6ed92f1c17d527db87e03f55ff2039151d37f8e3ddda08d6c5d56",
+    "S06_PROTOCOL.json": "32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759",
+    "S06b_PROTOCOL.json": "14f33e3e42f67c75843e3422c8d7a15c3053053b32e5bdc9c442df840de105c9",
+    "S06c_PROTOCOL.json": "a44ae91e8d5d883283988f95f4bdb0655e231432341e805feb3a22c66b11b0b0"
+  }
+}
