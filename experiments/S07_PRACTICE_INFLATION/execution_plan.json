@@ -1,0 +1,21 @@
+{
+  "cache_key_prefix": "c78b78ed48",
+  "declared_status": "CONFIRMATORY",
+  "deviations_log": "logs/deviations.jsonl",
+  "estimated_runtime_hours": "3-4",
+  "n_cohort": 131,
+  "n_req": 70,
+  "resume_supported": true,
+  "stage_order": [
+    "Cell 5 \u2014 Method library",
+    "Cell 6 \u2014 Library integrity tests",
+    "Cell 7 \u2014 Main confirmatory run (A1\u2013A7 on Cohort R)",
+    "Cell 8 \u2014 Confirmatory analysis (H1, H2\u00d73, H4\u00d73, Holm)",
+    "Cell 9 \u2014 Descriptive H3 + moderator + sensitivity",
+    "Cell 10 \u2014 Arm L (Logistic Regression)",
+    "Cell 11 \u2014 Arm L analysis",
+    "Cell 12 \u2014 Arm B (SRDF bridge)",
+    "Cell 13 \u2014 Forensic audit",
+    "Cell 14 \u2014 Final report and packaging"
+  ]
+}

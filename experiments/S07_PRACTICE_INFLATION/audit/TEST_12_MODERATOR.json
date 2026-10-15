@@ -1,0 +1,94 @@
+{
+  "test": "MODERATOR_AUDIT",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "moderator_n_at_least_50",
+      "passed": true,
+      "detail": "n=98"
+    },
+    {
+      "check": "no_severe_multicollinearity",
+      "passed": true,
+      "detail": "max VIF = 1.33"
+    },
+    {
+      "check": "influence_documented",
+      "passed": true,
+      "detail": "max Cook's D = 1.2498, top-3 = [38, 13, 42], 6/98 above 4/n"
+    },
+    {
+      "check": "significant_coef_sign_stable",
+      "passed": true,
+      "detail": "terms=['log_ir'], signs stable=True"
+    },
+    {
+      "check": "significant_coef_remains_significant",
+      "passed": true,
+      "detail": "all remain p<0.05 after removing top-3=True"
+    },
+    {
+      "check": "hc3_noted_as_not_cluster_robust",
+      "passed": true,
+      "detail": "HC3 addresses heteroscedasticity only."
+    }
+  ],
+  "n": 98,
+  "formula": "delta_thr ~ log_ir + minority_count + cat_share + log_ir:cat_share",
+  "vif": {
+    "log_ir": 1.3333895799859707,
+    "minority_count": 1.3096885513288532,
+    "cat_share": 1.0207503027443523
+  },
+  "max_cooks_d": 1.2498212615690818,
+  "cooks_cutoff_4_over_n": 0.04081632653061224,
+  "n_above_cutoff": 6,
+  "top3_influential_indices": [
+    38,
+    13,
+    42
+  ],
+  "significant_terms_full": [
+    "log_ir"
+  ],
+  "sign_stable_after_removal": true,
+  "significance_stable_after_removal": true,
+  "coefficients_full": {
+    "Intercept": {
+      "coef": -0.0091628461604218,
+      "se_hc3": 0.03730825174133544,
+      "p": 0.8059931439839917,
+      "ci_lo": -0.08228567589959301,
+      "ci_hi": 0.06395998357874941
+    },
+    "log_ir": {
+      "coef": 0.06614040033540662,
+      "se_hc3": 0.017630967995301006,
+      "p": 0.00017586632304705503,
+      "ci_lo": 0.031584338052038294,
+      "ci_hi": 0.10069646261877495
+    },
+    "minority_count": {
+      "coef": -3.148984070236752e-05,
+      "se_hc3": 3.890612975586685e-05,
+      "p": 0.4182966410631975,
+      "ci_lo": -0.00010774445380170867,
+      "ci_hi": 4.4764772396973624e-05
+    },
+    "cat_share": {
+      "coef": -0.06530822790253468,
+      "se_hc3": 0.1266680439594392,
+      "p": 0.60614382318922,
+      "ci_lo": -0.31357303205517184,
+      "ci_hi": 0.1829565762501025
+    },
+    "log_ir:cat_share": {
+      "coef": 0.009308355118092287,
+      "se_hc3": 0.07630351468506616,
+      "p": 0.9029060104604413,
+      "ci_lo": -0.1402437855584605,
+      "ci_hi": 0.15886049579464506
+    }
+  },
+  "note": "Cook's D is diagnostic. The substantive criterion is whether significant terms retain sign and significance after removing top-3 influential points. log_ir is the only significant moderator (full coef=+0.0661, p=0.0002)."
+}

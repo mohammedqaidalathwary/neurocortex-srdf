@@ -1,0 +1,39 @@
+kind,ts,dataset_id,column,cardinality,limit,error
+no_numeric_runtime,2026-10-15T20:49:26.806307+00:00,336,,,,
+cardinality_exceeded,2026-10-15T20:52:40.582665+00:00,940,DBO-E,204.0,50.0,
+no_numeric_runtime,2026-10-15T20:56:46.123825+00:00,1003,,,,
+no_numeric_runtime,2026-10-15T20:57:11.932933+00:00,1014,,,,
+no_numeric_runtime,2026-10-15T20:58:22.506302+00:00,1025,,,,
+no_numeric_runtime,2026-10-15T21:08:56.323913+00:00,40680,,,,
+no_numeric_runtime,2026-10-15T21:10:20.978557+00:00,40702,,,,
+no_numeric_runtime,2026-10-15T21:11:57.489687+00:00,41538,,,,
+cardinality_exceeded,2026-10-15T21:12:59.740071+00:00,42882,date,120.0,50.0,
+cardinality_exceeded,2026-10-15T21:13:04.135202+00:00,43051,timestamp,4032.0,50.0,
+cardinality_exceeded,2026-10-15T21:14:15.223327+00:00,44232,state,51.0,50.0,
+no_numeric_runtime,2026-10-15T21:32:29.434807+00:00,44708,,,,
+no_numeric_runtime,2026-10-15T21:32:40.367634+00:00,44709,,,,
+no_numeric_runtime,2026-10-15T21:32:48.217220+00:00,44710,,,,
+no_numeric_runtime,2026-10-15T21:32:57.466588+00:00,44711,,,,
+no_numeric_runtime,2026-10-15T21:33:05.439943+00:00,44712,,,,
+download_failure,2026-10-15T21:38:14.348536+00:00,44763,,,,HTTPError: HTTP Error 500: Internal Server Error
+download_failure,2026-10-15T21:40:26.461021+00:00,44764,,,,HTTPError: HTTP Error 500: Internal Server Error
+download_failure,2026-10-15T21:42:36.171683+00:00,44765,,,,HTTPError: HTTP Error 500: Internal Server Error
+download_failure,2026-10-15T21:44:45.123995+00:00,44766,,,,HTTPError: HTTP Error 500: Internal Server Error
+download_failure,2026-10-15T21:46:57.287134+00:00,44767,,,,HTTPError: HTTP Error 500: Internal Server Error
+cardinality_exceeded,2026-10-15T21:47:16.827933+00:00,44773,Address,1539.0,50.0,
+cardinality_exceeded,2026-10-15T21:47:32.845410+00:00,44774,Address,1503.0,50.0,
+cardinality_exceeded,2026-10-15T21:47:52.081986+00:00,44775,Address,1531.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:09.096947+00:00,44776,Address,1527.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:27.332261+00:00,44777,Address,1518.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:37.228792+00:00,44783,ps_car_11_cat,104.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:43.060840+00:00,44784,ps_car_11_cat,104.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:49.736616+00:00,44785,ps_car_11_cat,104.0,50.0,
+cardinality_exceeded,2026-10-15T21:48:54.849681+00:00,44786,ps_car_11_cat,104.0,50.0,
+cardinality_exceeded,2026-10-15T21:49:01.597565+00:00,44787,ps_car_11_cat,104.0,50.0,
+no_numeric_runtime,2026-10-15T21:51:46.991763+00:00,46800,,,,
+cardinality_exceeded,2026-10-15T21:52:56.554961+00:00,46940,Dt_Customer,663.0,50.0,
+armL_download_failure,2026-10-15T22:04:12.310137+00:00,44763,,,,HTTPError: HTTP Error 500: Internal Server Error
+armL_download_failure,2026-10-15T22:06:24.573336+00:00,44764,,,,HTTPError: HTTP Error 500: Internal Server Error
+armL_download_failure,2026-10-15T22:10:08.391267+00:00,44765,,,,HTTPError: HTTP Error 500: Internal Server Error
+armL_download_failure,2026-10-15T22:12:17.856192+00:00,44766,,,,HTTPError: HTTP Error 500: Internal Server Error
+armL_download_failure,2026-10-15T22:14:25.284915+00:00,44767,,,,HTTPError: HTTP Error 500: Internal Server Error

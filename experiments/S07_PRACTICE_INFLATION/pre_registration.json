@@ -1,0 +1,12 @@
+{
+  "api_url": "https://zenodo.org/api/records/23404802",
+  "deposit_description": "Protocol declaration and locked artifacts for S07. Declared before any model was fit. Includes the cohort derivation rules, the confirmatory family, the SESOI, the decision rules, and the exact identity Delta_conv = Delta_mat + Delta_thr.",
+  "deposit_title": "S07 Pre-registration \u2014 Protocol for the Benchmark-Practice Inflation Study",
+  "deposited_utc": "2026-10-15T20:44:11.081973+00:00",
+  "doi": "10.5281/zenodo.23404802",
+  "protocol_sha256_at_deposit": "c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525",
+  "results_doi": "10.5281/zenodo.23406120",
+  "results_url": "https://doi.org/10.5281/zenodo.23406120",
+  "zenodo_updated_utc": "2026-10-15T20:44:11.382057+00:00",
+  "zenodo_url": "https://doi.org/10.5281/zenodo.23404802"
+}

@@ -1,0 +1,40 @@
+{
+  "test": "ARML_AUDIT",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "same_datasets_rf_and_lr",
+      "passed": true,
+      "detail": "RF=98, LR=98"
+    },
+    {
+      "check": "same_splits_rf_and_lr",
+      "passed": true,
+      "detail": "RF=980, LR=980"
+    },
+    {
+      "check": "lr_arms_uniform_4_per_split",
+      "passed": true,
+      "detail": "observed: [4]"
+    },
+    {
+      "check": "no_lr_failures",
+      "passed": true,
+      "detail": "n_failures=0"
+    },
+    {
+      "check": "H1_direction_consistent_rf_lr",
+      "passed": true,
+      "detail": "RF=+0.0976, LR=+0.1216"
+    }
+  ],
+  "descriptive": {
+    "H1_RF_mean": 0.09764692962602231,
+    "H1_LR_mean": 0.12163412861426556,
+    "H1_direction_match": true,
+    "H2_CSRF_RF_mean": -0.10714144168018754,
+    "H2_CSRF_LR_mean": 0.0029080818410734785
+  },
+  "classification": "exploratory",
+  "note": "Arm L is exploratory. H1 direction is consistent across learners. H2_CSRF direction differs: for LR, cost-sensitive learning acts as a threshold adjustment; for RF, balanced_subsample changes the ensemble structure."
+}

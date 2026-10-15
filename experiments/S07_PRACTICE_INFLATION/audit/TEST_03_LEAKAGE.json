@@ -1,0 +1,61 @@
+{
+  "test": "LEAKAGE_AUDIT",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "ordinal_encoding_declared",
+      "passed": true,
+      "detail": "Ordinal encoding declared in protocol."
+    },
+    {
+      "check": "fit_on_training_fold_only",
+      "passed": true,
+      "detail": "Preprocessing restricted to training fold."
+    },
+    {
+      "check": "pi_hat_definition_from_training",
+      "passed": true,
+      "detail": "pi_hat from training partition."
+    },
+    {
+      "check": "t_cv_from_inner_split",
+      "passed": true,
+      "detail": "A6 threshold from inner-validation only."
+    },
+    {
+      "check": "t_star_diagnostic_only",
+      "passed": true,
+      "detail": "A7 flagged as diagnostic upper bound."
+    },
+    {
+      "check": "arm_counts_are_6_or_7",
+      "passed": true,
+      "detail": "observed: [6, 7]"
+    },
+    {
+      "check": "arm_count_uniform_within_dataset",
+      "passed": true,
+      "detail": "98/98 uniform"
+    },
+    {
+      "check": "per_dataset_arm_count_matches_a3_presence",
+      "passed": true,
+      "detail": "6 for no-A3, 7 for A3, uniform within each dataset"
+    },
+    {
+      "check": "two_repeats_per_dataset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "five_folds_per_repeat",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "runtime_arm_detection": {
+    "n_datasets_with_A3": 40,
+    "n_datasets_without_A3": 58,
+    "note": "A3 (SMOTENC) availability is determined at runtime by split_cols on the actual downloaded data."
+  }
+}

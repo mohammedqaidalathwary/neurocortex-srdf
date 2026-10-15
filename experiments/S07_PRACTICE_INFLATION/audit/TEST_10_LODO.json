@@ -1,0 +1,49 @@
+{
+  "test": "LEAVE_ONE_DATASET_OUT",
+  "verdict": "PASS",
+  "n_datasets": 98,
+  "summary": [
+    {
+      "contrast": "H1",
+      "full_mean": 0.09764692962602231,
+      "lodo_min": 0.09546569760400689,
+      "lodo_max": 0.09885364114064128,
+      "sign_stable": true
+    },
+    {
+      "contrast": "H2_SMOTE",
+      "full_mean": -0.0365065778078758,
+      "lodo_min": -0.038944257161105666,
+      "lodo_max": -0.033991266249928154,
+      "sign_stable": true
+    },
+    {
+      "contrast": "H2_CSRF",
+      "full_mean": -0.10714144168018754,
+      "lodo_min": -0.10843411768904683,
+      "lodo_max": -0.10533660516669957,
+      "sign_stable": true
+    },
+    {
+      "contrast": "H2_EE",
+      "full_mean": 0.007394821133754889,
+      "lodo_min": 0.005897818336823297,
+      "lodo_max": 0.007831881145443085,
+      "sign_stable": true
+    },
+    {
+      "contrast": "H4_CSRF",
+      "full_mean": -0.002843665584697432,
+      "lodo_min": -0.0034451976300899374,
+      "lodo_max": -0.0025236628734940187,
+      "sign_stable": true
+    },
+    {
+      "contrast": "H4_EE",
+      "full_mean": 0.0012131278141106732,
+      "lodo_min": 0.0007675015390286583,
+      "lodo_max": 0.0016835687488658652,
+      "sign_stable": true
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "test": "ARMB_FAIRNESS",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "S04_usable_no_missing",
+      "passed": true,
+      "detail": "373 usable, missing=0"
+    },
+    {
+      "check": "S04_pairs_aligned",
+      "passed": true,
+      "detail": "max |diff| = 9.78e-16"
+    },
+    {
+      "check": "S04_pi_hat_in_range",
+      "passed": true,
+      "detail": "[0.0427, 0.2481]"
+    },
+    {
+      "check": "S06_pi_hat_in_range",
+      "passed": true,
+      "detail": "[0.0537, 0.2481]"
+    },
+    {
+      "check": "S06_v1_identity_holds",
+      "passed": true,
+      "detail": "valid=587, NaN=0, max |res| = 9.16e-16"
+    },
+    {
+      "check": "S06_v2_identity_holds",
+      "passed": true,
+      "detail": "valid=352, NaN=235, max |res| = 9.16e-16"
+    },
+    {
+      "check": "S06_v3_identity_holds",
+      "passed": true,
+      "detail": "valid=582, NaN=5, max |res| = 9.16e-16"
+    },
+    {
+      "check": "S06_v4_identity_holds",
+      "passed": true,
+      "detail": "valid=587, NaN=0, max |res| = 9.99e-16"
+    },
+    {
+      "check": "S06_exclusions_count",
+      "passed": true,
+      "detail": "n_excluded = 13"
+    }
+  ],
+  "s04_summary": {
+    "n_triggered": 375,
+    "n_missing_srdf": 2,
+    "n_usable": 373,
+    "mean_delta_conv": 0.02885474359323911,
+    "mean_delta_corrected": -0.06541290962771966,
+    "mean_delta_thr": 0.09426765322095851,
+    "sign_flips": 187
+  },
+  "s06_summary": {
+    "n_triggered": 600,
+    "n_usable": 587,
+    "n_excluded": 13
+  },
+  "note": "S04: cases with no SRDF result are excluded from delta means. S06: identity is defined only on cases where each version produced a result; v2 and v3 have NaN by design."
+}

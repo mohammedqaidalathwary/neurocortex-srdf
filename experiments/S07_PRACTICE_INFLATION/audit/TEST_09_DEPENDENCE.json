@@ -1,0 +1,52 @@
+{
+  "test": "DEPENDENCE_AUDIT",
+  "verdict": "PASS",
+  "confirmatory_family": [
+    {
+      "test": "H1",
+      "n_reported": 98,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H2_SMOTE",
+      "n_reported": 40,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H2_CSRF",
+      "n_reported": 98,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H2_EE",
+      "n_reported": 98,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H4_SMOTE",
+      "n_reported": 40,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H4_CSRF",
+      "n_reported": 98,
+      "unit_of_inference": "dataset"
+    },
+    {
+      "test": "H4_EE",
+      "n_reported": 98,
+      "unit_of_inference": "dataset"
+    }
+  ],
+  "armB": {
+    "S04": {
+      "n_cases": 375,
+      "n_unique_datasets": 15
+    },
+    "S06": {
+      "n_cases": 587,
+      "n_unique_datasets": 24
+    }
+  },
+  "note": "The confirmatory family uses dataset-level means. Arm B is interpretive; effective n = 15/24. Disclosed in report."
+}

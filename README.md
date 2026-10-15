@@ -338,3 +338,18 @@ No statistical claim extends beyond the scope of its protocol.
 Any empirical claim, if pursued, will be reported separately in a
 peer-reviewed publication. This repository preserves the framework,
 its protocols, and its evidence structure.
+
+---
+
+## S07 — Practice Inflation Study
+
+**Question:** In the standard benchmark practice, rebalancing methods are compared against a plain classifier at the default 0.5 threshold. How much of the reported benefit is an artifact of that control?
+
+**Answer (Scenario A):** The conventional control inflates the reported benefit by **+9.76 bAcc** (CI95 [8.24, 11.32], p < 1e-4). After correction: SMOTENC inferior, CS-RF inferior, EasyEnsemble equivalent. The effect disappears under AUC.
+
+- **Notebook:** [`S07-pipeline_integrity.ipynb`](S07-pipeline_integrity.ipynb)
+- **Pre-registration:** [10.5281/zenodo.23404802](https://doi.org/10.5281/zenodo.23404802)
+- **Results:** [10.5281/zenodo.23406120](https://doi.org/10.5281/zenodo.23406120)
+- **Protocol SHA-256:** `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`
+
+Full artifacts: [`experiments/S07_PRACTICE_INFLATION/`](experiments/S07_PRACTICE_INFLATION/)

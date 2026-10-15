@@ -1,0 +1,70 @@
+{
+  "test": "INDEPENDENT_RECOMPUTATION",
+  "verdict": "PASS",
+  "comparisons": [
+    {
+      "test": "H1",
+      "reported_mean": 0.0976469296260223,
+      "recomputed_mean": 0.09764692962602231,
+      "diff": 1.3877787807814457e-17,
+      "n_reported": 98,
+      "n_recomputed": 98,
+      "match": "True"
+    },
+    {
+      "test": "H2_SMOTE",
+      "reported_mean": -0.0365065778078758,
+      "recomputed_mean": -0.0365065778078758,
+      "diff": 0.0,
+      "n_reported": 40,
+      "n_recomputed": 40,
+      "match": "True"
+    },
+    {
+      "test": "H2_CSRF",
+      "reported_mean": -0.1071414416801875,
+      "recomputed_mean": -0.10714144168018754,
+      "diff": 4.163336342344337e-17,
+      "n_reported": 98,
+      "n_recomputed": 98,
+      "match": "True"
+    },
+    {
+      "test": "H2_EE",
+      "reported_mean": 0.0073948211337548,
+      "recomputed_mean": 0.007394821133754889,
+      "diff": 8.933825901280557e-17,
+      "n_reported": 98,
+      "n_recomputed": 98,
+      "match": "True"
+    },
+    {
+      "test": "H4_SMOTE",
+      "reported_mean": -0.0059465754458946,
+      "recomputed_mean": -0.005946575445894614,
+      "diff": 1.3877787807814457e-17,
+      "n_reported": 40,
+      "n_recomputed": 40,
+      "match": "True"
+    },
+    {
+      "test": "H4_CSRF",
+      "reported_mean": -0.0028436655846974,
+      "recomputed_mean": -0.002843665584697432,
+      "diff": 3.209238430557093e-17,
+      "n_reported": 98,
+      "n_recomputed": 98,
+      "match": "True"
+    },
+    {
+      "test": "H4_EE",
+      "reported_mean": 0.0012131278141106,
+      "recomputed_mean": 0.0012131278141106732,
+      "diff": 7.32920668600201e-17,
+      "n_reported": 98,
+      "n_recomputed": 98,
+      "match": "True"
+    }
+  ],
+  "max_abs_diff": 8.933825901280557e-17
+}

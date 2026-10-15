@@ -1,0 +1,52 @@
+{
+  "test": "EQUIVALENCE_AUDIT",
+  "verdict": "PASS",
+  "margin": 0.02,
+  "margin_declared_in_protocol": true,
+  "claims": [
+    {
+      "test": "H2_EE",
+      "n": 98,
+      "mean": 0.0073948211337548,
+      "ci_lo": 0.0032203545715377,
+      "ci_hi": 0.0121077873446363,
+      "p_holm": 6.999930000699993e-05,
+      "p_ok": true,
+      "ci_inside_margin": true,
+      "valid_equivalence_claim": true
+    },
+    {
+      "test": "H4_SMOTE",
+      "n": 40,
+      "mean": -0.0059465754458946,
+      "ci_lo": -0.0164174974971527,
+      "ci_hi": 0.0032677488039569,
+      "p_holm": 0.0128398716012839,
+      "p_ok": true,
+      "ci_inside_margin": true,
+      "valid_equivalence_claim": true
+    },
+    {
+      "test": "H4_CSRF",
+      "n": 98,
+      "mean": -0.0028436655846974,
+      "ci_lo": -0.0054271045317813,
+      "ci_hi": -0.0002525657917172,
+      "p_holm": 6.999930000699993e-05,
+      "p_ok": true,
+      "ci_inside_margin": true,
+      "valid_equivalence_claim": true
+    },
+    {
+      "test": "H4_EE",
+      "n": 98,
+      "mean": 0.0012131278141106,
+      "ci_lo": -0.0018249742230798,
+      "ci_hi": 0.004251402944688,
+      "p_holm": 6.999930000699993e-05,
+      "p_ok": true,
+      "ci_inside_margin": true,
+      "valid_equivalence_claim": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "test": "DATA_INTEGRITY",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "protocol_hash_unchanged",
+      "passed": true,
+      "detail": "c78b78ed48ea3e00..."
+    },
+    {
+      "check": "cohort_pool_hash_unchanged",
+      "passed": true,
+      "detail": "8242993572eda3f5..."
+    },
+    {
+      "check": "cohort_ids_match_manifest",
+      "passed": true,
+      "detail": "n_csv=131, n_manifest=131"
+    },
+    {
+      "check": "case_keys_unique",
+      "passed": true,
+      "detail": "duplicates = 0"
+    },
+    {
+      "check": "arm_A1_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A2_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A4_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A5_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A6_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A7_row_count",
+      "passed": true,
+      "detail": "980 rows (expected 980)"
+    },
+    {
+      "check": "arm_A3_row_count",
+      "passed": true,
+      "detail": "400 rows (expected 400)"
+    },
+    {
+      "check": "datasets_analyzed",
+      "passed": true,
+      "detail": "98"
+    },
+    {
+      "check": "no_nan_in_critical_columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "deviations_log_exists",
+      "passed": true,
+      "detail": "logs/deviations.csv"
+    }
+  ]
+}

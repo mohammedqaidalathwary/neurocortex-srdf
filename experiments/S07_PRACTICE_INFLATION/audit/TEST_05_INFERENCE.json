@@ -1,0 +1,73 @@
+{
+  "test": "INFERENCE_AUDIT",
+  "verdict": "PASS",
+  "mc_tolerance": 0.009486832980505138,
+  "family_size": 7,
+  "near_zero_reported": 4,
+  "p_values": [
+    {
+      "test": "H1",
+      "p_reported": 9.99990000099999e-06,
+      "p_recomputed": 9.99990000099999e-06,
+      "diff": 0.0,
+      "match": true,
+      "p_holm_reported": 6.999930000699993e-05,
+      "holm_match": true
+    },
+    {
+      "test": "H2_SMOTE",
+      "p_reported": 0.990160098399016,
+      "p_recomputed": 0.990390096099039,
+      "diff": 0.00022999770002307685,
+      "match": true,
+      "p_holm_reported": 1.0,
+      "holm_match": true
+    },
+    {
+      "test": "H2_CSRF",
+      "p_reported": 1.0,
+      "p_recomputed": 1.0,
+      "diff": 0.0,
+      "match": true,
+      "p_holm_reported": 1.0,
+      "holm_match": true
+    },
+    {
+      "test": "H2_EE",
+      "p_reported": 9.99990000099999e-06,
+      "p_recomputed": 9.99990000099999e-06,
+      "diff": 0.0,
+      "match": true,
+      "p_holm_reported": 6.999930000699993e-05,
+      "holm_match": true
+    },
+    {
+      "test": "H4_SMOTE",
+      "p_reported": 0.0042799572004279,
+      "p_recomputed": 0.0041599584004159956,
+      "diff": 0.00011999880001190445,
+      "match": true,
+      "p_holm_reported": 0.0128398716012839,
+      "holm_match": true
+    },
+    {
+      "test": "H4_CSRF",
+      "p_reported": 9.99990000099999e-06,
+      "p_recomputed": 9.99990000099999e-06,
+      "diff": 0.0,
+      "match": true,
+      "p_holm_reported": 6.999930000699993e-05,
+      "holm_match": true
+    },
+    {
+      "test": "H4_EE",
+      "p_reported": 9.99990000099999e-06,
+      "p_recomputed": 9.99990000099999e-06,
+      "diff": 0.0,
+      "match": true,
+      "p_holm_reported": 6.999930000699993e-05,
+      "holm_match": true
+    }
+  ],
+  "note": "Sign-flip p-values are Monte-Carlo estimates. Tolerance 0.00949 derived from permutation count. 4 p-values below 1e-4 should be displayed in scientific notation (p < 1e-4) in the paper."
+}

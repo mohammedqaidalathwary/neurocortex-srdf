@@ -1,0 +1,185 @@
+{
+  "declared_status": "CONFIRMATORY",
+  "execution_plan_sha256": "e27074f4079adfc4b202b3f2f230ccf1c9501d16e287739a21a0018f3660a287",
+  "locked_utc": "2026-10-15T20:24:37.570068+00:00",
+  "n_cohort": 131,
+  "n_req": 70,
+  "notes": [
+    "This record is written once. Any modification after this point invalidates the confirmatory claim.",
+    "The hash is recomputed from in-memory PROTOCOL at the end of the notebook (Cell 13) and asserted equal.",
+    "Sub-artifact hashes are recorded for external audit.",
+    "If cohort size is below N_req, status is EXPLORATORY; this is a declared outcome, not a protocol modification."
+  ],
+  "protocol": {
+    "alpha": 0.05,
+    "arm_B_definition": "SRDF threshold re-reading on matching S04/S06 splits. Recompute RF@pi_hat only. Integrity check: recomputed RF@0.5 must match recorded baseline_bacc within tolerance T=0.005. Interpretive, no p-value.",
+    "arm_L_definition": "LogisticRegression(L2, C=1, max_iter=2000, class_weight optional) as alternative learner on the same splits. Four matched arms (A1_LR, A2_LR, A4_LR, A6_LR). Exploratory, no p-value.",
+    "arms": {
+      "A1": "RF@0.5 (conventional control)",
+      "A2": "RF@pi_hat (primary control; pi_hat = training minority prevalence)",
+      "A3": "SMOTENC+RF (numeric-only datasets: NOT_APPLICABLE)",
+      "A4": "CS-RF (class_weight='balanced_subsample') @0.5",
+      "A5": "EasyEnsemble @0.5",
+      "A6": "RF@t_cv (inner-validation optimum, secondary)",
+      "A7": "RF@t_star (test-optimal oracle; diagnostic upper bound only)"
+    },
+    "arms_exploratory": [
+      "B",
+      "L"
+    ],
+    "bootstrap_method": "percentile",
+    "ci_level": 0.95,
+    "cohort": {
+      "declared_status": "CONFIRMATORY",
+      "report_both_ways": true,
+      "rules": {
+        "binary_target": true,
+        "cells_max": 150000,
+        "dedupe_by": "name",
+        "dedupe_keep": "lowest_did",
+        "features_max": 100,
+        "features_min": 2,
+        "ir_min": 3.0,
+        "minority_min": 30,
+        "missing_max_frac": 0.05,
+        "n_max": 5000,
+        "n_min": 200
+      },
+      "runtime_checks": {
+        "max_cardinality_per_col": 50,
+        "max_encoded_width": 200
+      },
+      "seen_before_flag": true,
+      "sensitivity_unseen_only": true,
+      "snapshot_path": "experiments/S04_OPENML_GENERALIZATION/cohort/openml_metadata_snapshot.csv",
+      "snapshot_sha256": "1ada74d5f0c378e9062a8e8cdf399b9305ccdad2359723e567011af43320c201",
+      "snapshot_source": "repository_S04"
+    },
+    "confirmatory_tests": [
+      "H1",
+      "H2_SMOTE",
+      "H2_CSRF",
+      "H2_EE",
+      "H4_SMOTE",
+      "H4_CSRF",
+      "H4_EE"
+    ],
+    "created_utc": "2026-10-15T20:23:27.275799+00:00",
+    "cv_folds": 5,
+    "cv_repeats": 2,
+    "declarations": {
+      "confirmatory_exploratory_separation": true,
+      "no_manual_dataset_selection": true,
+      "no_post_hoc_threshold_changes": true,
+      "protocol_declares_rules_not_outcomes": true,
+      "sesoi_justification": "0.02 bAcc is the smallest difference that could plausibly change the ranking of two methods in a published comparison table where adjacent-method gaps are typically 3-10 pp."
+    },
+    "effect_sizes": [
+      "hedges_dz"
+    ],
+    "h1_rule": "One-sided sign-flip test of mean(Delta_thr) against +SESOI (0.02). SUPPORTED if p_holm < alpha; else NOT SUPPORTED.",
+    "h2_h4_rule": "TOST against +/- SESOI with sign-flip permutation. EQUIVALENT if p_holm < alpha; else SUPERIOR if CI95_low > +SESOI; else INFERIOR if CI95_high < -SESOI; else INCONCLUSIVE.",
+    "h3_rule": "Descriptive: win-flip rate with 95% bootstrap CI. Labels: reversed / attenuated / preserved / none. No p-value.",
+    "identity": "Delta_conv(m) = Delta_mat(m) + Delta_thr",
+    "limitations": [
+      "The study does not claim SRDF is better or worse than any baseline. SRDF appears only as one documented instance of the practice under test.",
+      "No claim extends beyond RF-based pipelines and OpenML binary tabular datasets within the declared size range.",
+      "Results are not extrapolated to missingness above 5%, to datasets with IR < 3, or to F1 / PR-AUC.",
+      "The hypotheses are not blind: S05/S06 data already suggest the direction of H1. This is disclosed, and the design is built so that the other outcomes remain meaningful.",
+      "OpenML metadata and datasets can change after the snapshot; content hashes of every fetched dataset are recorded for audit."
+    ],
+    "master_seed": 20261014,
+    "models": {
+      "ee_base_n_estimators": 10,
+      "ee_n_estimators": 10,
+      "rf_n_estimators": 100,
+      "rf_n_jobs": -1,
+      "smote_k_neighbors": 5,
+      "smotenc_k_neighbors": 5
+    },
+    "moderator_cov_type": "HC3",
+    "moderator_formula": "delta_thr ~ log_ir + minority_count + cat_share + log_ir:cat_share",
+    "moderator_terms": [
+      "log_ir",
+      "minority_count",
+      "cat_share"
+    ],
+    "multiplicity": "holm",
+    "n_bootstrap": 10000,
+    "n_signflip": 100000,
+    "power": {
+      "N_req": 70,
+      "family_alpha": 0.0071428571428571435,
+      "mc_reps": 20000,
+      "n_grid": [
+        10,
+        500
+      ],
+      "sigma_plan": 0.04,
+      "sigma_range": [
+        0.03,
+        0.04,
+        0.05
+      ],
+      "target_power": 0.9
+    },
+    "preprocessing": {
+      "categorical": "most-frequent imputation + ordinal encoding",
+      "encoder": "OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)",
+      "fit_on": "training fold only",
+      "note": "Ordinal encoding for all arms. One-hot is not used. SMOTENC receives integer-coded categorical features via declared categorical column indices.",
+      "numeric": "median imputation"
+    },
+    "protocol_version": "1.1",
+    "repeat_seeds": [
+      101,
+      202
+    ],
+    "research_questions": {
+      "Q1": "How much of the reported benefit of rebalancing over a plain classifier is an artifact of the default 0.5 threshold of the control?",
+      "Q2": "After replacing the control with the same learner at a parameter-free, prior-corrected threshold, does any rebalancing family retain a benefit, remain equivalent, or fall behind?",
+      "Q3": "In which regimes (IR, minority size, categorical share) does a residual benefit exist?"
+    },
+    "sensitivity_methods": [
+      "wilcoxon",
+      "trimmed_means"
+    ],
+    "sesoi_bacc": 0.02,
+    "sesoi_sensitivity": [
+      0.01,
+      0.03
+    ],
+    "study_id": "S07-PRACTICE-INFLATION",
+    "success_criteria": {
+      "contribution_scenarios": {
+        "A": "Inflation is confirmed (H1 supported) and rebalancing is equivalent or inferior to the threshold-corrected control (H2 returns equivalence or inferiority for at least two of three methods).",
+        "B": "Inflation is confirmed but a residual benefit exists in defined regimes (H1 supported, H2 returns superiority for at least one method).",
+        "C": "H1 is not supported. The conventional control is adequate on this cohort. This is itself a methodological result."
+      },
+      "definition": "A clean execution plus a determinate (non-inconclusive) resolution of H1 and of H2/H4 for at least two of the three methods.",
+      "failure_definition": "An integrity abort, or an inconclusive outcome on H1 and on all of H2."
+    },
+    "title": "Does Class-Imbalance Correction Beat a Threshold-Corrected Control? A Catalog-Wide Confirmatory Study of Benchmark-Practice Bias",
+    "trimmed_fraction": 0.1
+  },
+  "protocol_sha256": "c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525",
+  "sigma_plan": 0.04,
+  "status_note": "Cohort size (131) meets the power requirement (N_req = 70). Confirmatory claims are permitted.",
+  "sub_artifacts": {
+    "cohort_R_candidates": {
+      "bytes": 13134,
+      "path": "tables/cohort_R_candidates.csv",
+      "sha256": "3d65296bc71825d9f984de2499e4a4d173ac4b82a9cbad54529956e45d9e8491"
+    },
+    "cohort_R_manifest": {
+      "bytes": 2631,
+      "path": "cohort_R_manifest.json",
+      "sha256": "fc9d2e5670bff35a830ba9de4395babc6215b4e981e01ad1c376e1c2ac86d470"
+    },
+    "environment": {
+      "bytes": 497,
+      "path": "environment.json",
+      "sha256": "412576dbddd26826f238d979a80b751e807137e5bc85057cd6f45a54d4024aaf"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "test": "IDENTITY_DELTA_CONV",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "cohort": "S04",
+      "n_cases": 375,
+      "max_residual": 9.992007221626409e-16,
+      "pass": true
+    },
+    {
+      "cohort": "S06_v1",
+      "n_cases": 587,
+      "n_nan": 0,
+      "max_residual": 9.159339953157541e-16,
+      "pass": true
+    },
+    {
+      "cohort": "S06_v2",
+      "n_cases": 352,
+      "n_nan": 235,
+      "max_residual": 9.159339953157541e-16,
+      "pass": true
+    },
+    {
+      "cohort": "S06_v3",
+      "n_cases": 582,
+      "n_nan": 5,
+      "max_residual": 9.159339953157541e-16,
+      "pass": true
+    },
+    {
+      "cohort": "S06_v4",
+      "n_cases": 587,
+      "n_nan": 0,
+      "max_residual": 9.992007221626409e-16,
+      "pass": true
+    },
+    {
+      "cohort": "confirmatory_A3",
+      "n_cases": 98,
+      "max_residual": 0.0,
+      "pass": true
+    },
+    {
+      "cohort": "confirmatory_A4",
+      "n_cases": 98,
+      "max_residual": 0.0,
+      "pass": true
+    },
+    {
+      "cohort": "confirmatory_A5",
+      "n_cases": 98,
+      "max_residual": 0.0,
+      "pass": true
+    }
+  ]
+}

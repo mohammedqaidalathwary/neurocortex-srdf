@@ -1,0 +1,64 @@
+{
+  "test": "CLAIMS_TO_EVIDENCE",
+  "verdict": "PASS",
+  "n_claims": 8,
+  "n_supported": 8,
+  "claims": [
+    {
+      "claim": "Threshold inflation is confirmed",
+      "test": "H1",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = +0.0976, CI95 = [+0.0824, +0.1132]",
+      "supported": true
+    },
+    {
+      "claim": "Cost-sensitive RF is inferior to corrected control",
+      "test": "H2_CSRF",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = -0.1071",
+      "supported": true
+    },
+    {
+      "claim": "EasyEnsemble is equivalent to corrected control",
+      "test": "H2_EE",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = +0.0074",
+      "supported": true
+    },
+    {
+      "claim": "AUC contrast for SMOTE is equivalent to baseline",
+      "test": "H4_SMOTE",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = -0.0059",
+      "supported": true
+    },
+    {
+      "claim": "AUC contrast for CSRF is equivalent to baseline",
+      "test": "H4_CSRF",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = -0.0028",
+      "supported": true
+    },
+    {
+      "claim": "AUC contrast for EE is equivalent to baseline",
+      "test": "H4_EE",
+      "evidence_file": "tables/confirmatory_results.csv",
+      "value": "mean = +0.0012",
+      "supported": true
+    },
+    {
+      "claim": "Mechanism is not RF-specific (H1 direction holds with LR)",
+      "test": "Arm L (exploratory)",
+      "evidence_file": "tables/armL_analysis.csv",
+      "value": "mean = +0.1216",
+      "supported": true
+    },
+    {
+      "claim": "SRDF's S04 claim flips to negative under corrected control",
+      "test": "Arm B (interpretive)",
+      "evidence_file": "tables/armB_summary.csv",
+      "value": "conv = +0.0289, corrected = -0.0654",
+      "supported": true
+    }
+  ]
+}
