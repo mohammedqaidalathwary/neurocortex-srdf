@@ -1,355 +1,385 @@
-# NeuroCortex — Self-Reinforcing Development Framework (SRDF)
+<div align="center">
 
-<p align="center">
-  <img src="assets/neurocortex_logo.png" alt="NeuroCortex Logo" width="220">
-</p>
+<img src="assets/neurocortex_logo.png" alt="NeuroCortex SRDF" width="240">
 
-<p align="center">
-  <a href="https://doi.org/10.5281/zenodo.23252917">
-    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23252917.svg"
-         alt="DOI: 10.5281/zenodo.23252917">
-  </a>
-</p>
+# NeuroCortex SRDF
+### Self-Reinforcing Development Framework
 
-<p align="center">
-  <a href="https://orcid.org/0009-0006-9075-072X">
-    <img src="https://img.shields.io/badge/ORCID-0009--0006--9075--072X-a6ce39.svg"
-         alt="ORCID">
-  </a>
-  <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"
-         alt="License">
-  </a>
-  <img src="https://img.shields.io/badge/python-3.9%2B-blue"
-       alt="Python">
-</p>
+**A research framework for controlled, evidence-driven runtime structural adaptation**
 
-## Overview
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23252917.svg)](https://doi.org/10.5281/zenodo.23252917)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--9075--072X-A6CE39.svg)](https://orcid.org/0009-0006-9075-072X)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
-NeuroCortex is a research framework centered on the **Self-Reinforcing Development Framework (SRDF)**. SRDF describes a controlled, auditable approach to **runtime structural adaptation** in machine learning systems.
+**Author:** Mohammed Qaid Al-Athwary  
+**ORCID:** [0009-0006-9075-072X](https://orcid.org/0009-0006-9075-072X)  
+**Affiliation:** AMAN LIFT YEMEN, Sana’a, Yemen
 
-Rather than allowing unbounded self-modification, SRDF separates the adaptation process into explicit stages: observation, analysis, candidate generation, evaluation, authorization, and controlled state transition.
+[Repository](https://github.com/mohammedqaidalathwary/neurocortex-srdf) · [S06 Protocol](https://doi.org/10.5281/zenodo.23308347) · [S07 Preregistration](https://doi.org/10.5281/zenodo.23404802) · [S07 Results](https://doi.org/10.5281/zenodo.23406120)
 
-The framework is organized around three principal components — **Trawler**, **Generator**, and **Arbiter** — whose roles are deliberately separated.
+</div>
 
 ---
 
-## Table of Contents
+## Abstract
 
-- [Overview](#overview)
-- [Framework Components](#framework-components)
-- [Workflow](#workflow)
-- [Project Structure](#project-structure)
-- [Primary Artifacts](#primary-artifacts)
-- [Repository Layout](#repository-layout)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Reproducibility](#reproducibility)
-- [Data and Code Availability](#data-and-code-availability)
-- [Citation](#citation)
-- [Phase S04 — OpenML Generalization (R4)](#phase-s04--openml-generalization-r4)
-- [License](#license)
-- [Contributing](#contributing)
-- [Contact](#contact)
-- [Research Scope and Boundaries](#research-scope-and-boundaries)
+NeuroCortex is a research framework built around the Self-Reinforcing Development Framework (SRDF). It investigates controlled runtime structural adaptation through explicit context acquisition, analysis, candidate generation, evaluation, arbitration, and state transitions.
 
----
+The design separates candidate generation from evaluation and authorization. A generated candidate is not automatically considered beneficial: its acceptance depends on predefined evaluation criteria and system constraints. The framework emphasizes traceable decisions, inspectable execution records, and evidence-bounded claims.
 
-## Framework Components
+The research program includes prototype validation, generator–arbiter experiments, OpenML-based evaluation, extended evaluation, arbiter revision, and S07, a study of threshold-corrected controls and benchmark-practice bias in imbalanced classification.
 
-### Trawler
+This repository is an evolving research program. Each conclusion must be interpreted according to its protocol, cohort, implementation, experimental unit, and recorded results. The studies do not by themselves establish general intelligence or universal self-improvement.
 
-Observes the current runtime context and identifies conditions that may justify adaptation. Its role is analysis, not decision-making.
+## Contents
 
-### Generator
+1. [Research Overview](#research-overview)
+2. [Architecture](#architecture)
+3. [Adaptation Workflow](#adaptation-workflow)
+4. [Research Program](#research-program)
+5. [S07 Study](#s07-study)
+6. [S07 Reported Results](#s07-reported-results)
+7. [Repository Organization](#repository-organization)
+8. [Reproducibility](#reproducibility)
+9. [Claim Boundaries](#claim-boundaries)
+10. [Citation](#citation)
+11. [License](#license)
 
-Produces candidate structural or learning modifications. Candidates are proposals, not commitments. The Generator does not evaluate or authorize its own candidates.
+## Research Overview
 
-### Arbiter
+Machine-learning systems are commonly developed through externally designed experiments and manually selected configurations. SRDF investigates a structured process in which a system identifies a runtime condition, proposes a candidate adaptation, evaluates it, and authorizes or rejects a controlled transition.
 
-Evaluates candidates against predefined constraints and authorizes only those that satisfy the required conditions. Its role is independent of the Generator.
+The central research question is not merely whether a system can generate a modification. It is whether the modification can be evaluated under explicit criteria, whether the decision can be traced to evidence, and whether the resulting transition remains subject to defined constraints.
 
----
+### Research questions
 
-## Workflow
+| Area | Question | Evidence needed |
+|---|---|---|
+| Controlled adaptation | Can candidates be evaluated before commitment? | Execution records and decision outcomes |
+| Generator–arbiter separation | Can generation be separated from authorization? | Component tests and arbitration records |
+| Generalization | How does behavior vary across datasets? | Defined cohorts and appropriate statistical analysis |
+| Decision criteria | How sensitive are decisions to metrics and thresholds? | Controlled comparisons and sensitivity analyses |
+| Benchmark methodology | Can baseline thresholds change apparent advantages? | Matched comparisons and prespecified tests |
+| Reproducibility | Can others inspect how results were produced? | Versioned protocols, code, and result artifacts |
 
-The SRDF workflow is ordered and stage-separated:
+## Architecture
 
-    OBSERVE -> ANALYZE -> GENERATE -> EVALUATE -> AUTHORIZE
-            -> COMMIT_OR_REJECT -> RECORD
+The following diagram summarizes the conceptual responsibilities. It does not imply that every experiment activates every component identically.
 
-Each stage has a defined role and a defined output. Stage separation is a design principle, not a runtime detail.
+```mermaid
+flowchart TB
+    A["Runtime context and evidence"] --> B["Context acquisition"]
+    B --> C["Trawler analysis"]
+    C --> D["Structural graph generator"]
+    D --> E["Candidate adaptation"]
+    E --> F["Evaluation and constraints"]
+    F --> G["Hybrid arbiter"]
+    G -->|Authorized| H["Controlled state transition"]
+    G -->|Rejected| I["Retain existing state"]
+    H --> J["Persistent memory and run record"]
+    I --> J
+    J --> K["Audit and statistical analysis"]
+```
 
----
+| Component | Conceptual responsibility |
+|---|---|
+| Context Acquisition | Collects information about the current state or task. |
+| Trawler Analysis | Analyzes context and identifies conditions relevant to adaptation. |
+| Structural Graph Generator | Proposes candidate structural changes. |
+| Evaluation | Assesses candidates using the applicable protocol. |
+| Hybrid Arbiter | Applies the defined authorization policy. |
+| Persistent Memory | Supports retention of relevant state or records. |
+| Resource Manager | Accounts for computational constraints. |
+| Run Record | Preserves information needed to inspect execution and outcomes. |
 
-## Project Structure
+## Adaptation Workflow
 
-The project currently hosts the following experimental phases:
+```mermaid
+flowchart TD
+    A["OBSERVE"] --> B["ANALYZE"]
+    B --> C["GENERATE"]
+    C --> D["EVALUATE"]
+    D --> E["AUTHORIZE"]
+    E --> F{"Decision"}
+    F -->|Accept| G["COMMIT"]
+    F -->|Reject| H["RETAIN PRIOR STATE"]
+    G --> I["RECORD"]
+    H --> I
+    I --> J["Audit and analysis"]
+```
 
-| Phase | Directory | Role |
-|-------|-----------|------|
-| **S01** | `experiments/S01_PROTOTYPE_VALIDATION/` | Foundational executable prototype |
-| **S03** | `experiments/S03_GENERATOR_ARBITER/` | Functional SRDF validation |
-| **S04** | `experiments/S04_OPENML_GENERALIZATION/` | Pre-registered OpenML generalization (R4) |
+The intended evidence chain is **Evidence → Protocol → Execution → Statistics → Claims**. Confirmatory procedures should be defined before interpreting the results. Changes to a locked protocol should be documented rather than silently incorporated into the original analysis.
 
-Each phase directory contains its own `README.md` describing scope,
-artifacts, and claim boundaries.
+A rejection, an absent trigger, or an empty generator output is not automatically a system failure. Valid negative decisions should be distinguished from incomplete execution, infrastructure interruptions, data errors, dependency failures, and experiment-harness failures.
 
-## Primary Artifacts
+## Research Program
 
-### White Paper
+```mermaid
+flowchart LR
+    S1["S01: Prototype validation"] --> S3["S03: Generator and arbiter"]
+    S3 --> S4["S04: OpenML evaluation"]
+    S4 --> S5["S05: Extended evaluation"]
+    S5 --> S6["S06: Arbiter revision"]
+    S6 --> S7["S07: Benchmark-practice study"]
+```
 
-A conceptual white paper describing the framework is available at:
+### S01 — Prototype validation
 
-- `docs/whitepaper/NeuroCortex_SRDF_White_Paper_v1.0.pdf`
+The prototype stage investigates basic framework behavior in a controlled illustrative setting. Its results apply to that setting and do not independently establish broad empirical generalization.
 
-The white paper is a **conceptual document**. It does not report
-experimental results, does not present quantitative evaluation, and
-does not constitute prior publication of any future manuscript.
+### S03 — Generator and arbiter
 
-### S01 — Foundational Executable Prototype
+This stage investigates interactions between candidate generation and decision-making, including conditions under which candidates are evaluated, accepted, or rejected.
 
-- `experiments/S01_PROTOTYPE_VALIDATION/notebooks/srdf_s01_foundational_prototype.ipynb`
+### S04 — OpenML evaluation
 
-An executable notebook demonstrating the SRDF workflow in a
-controlled setting.
+The documented S04 study includes 300 datasets and five stratified folds per dataset, corresponding to 1,500 fold-level cases. These are repeated observations within datasets, not 1,500 independent datasets.
 
-### S03 — Functional Validation
+The study records trigger decisions, accepted and rejected candidates, and performance differences. Interpretation should distinguish fold-level observations from dataset-level units of analysis.
 
-- `experiments/S03_GENERATOR_ARBITER/runs/srdf_s03_multirun_raw_20260917T223125Z.json`
-- `experiments/S03_GENERATOR_ARBITER/results/srdf_s03_multirun_validated.json`
+### S05 — Extended evaluation
 
-Multirun artifacts documenting functional execution of the SRDF cycle
-across fixed seeds.
+S05 extends the empirical program. Its exact cohort, implementation, protocol, and conclusions should be taken from its own versioned artifacts rather than inferred from another phase.
 
-### S04 — OpenML Generalization (R4)
+### S06 — Arbiter revision
 
-- `experiments/S04_OPENML_GENERALIZATION/protocol/R4_PROTOCOL.json`
-- `experiments/S04_OPENML_GENERALIZATION/cohort/cohort_manifest.json`
-- `experiments/S04_OPENML_GENERALIZATION/statistics/r4_summary.json`
-- `experiments/S04_OPENML_GENERALIZATION/evidence/forensic_lock.json`
+S06 investigates a revised arbitration configuration. Comparisons between S04 and S06 should preserve the definitions of their respective protocols and distinguish raw performance differences from differences caused by thresholds, baselines, or evaluation choices.
 
-Pre-registered evaluation on 45 OpenML binary classification
-datasets (1,125 execution cases). All thresholds, seeds, folds,
-and the cohort were frozen by SHA-256 before execution. See the
-phase directory for the full artifact set.
+## S07 Study
 
-## Repository Layout
+### Study title
 
-The repository is organized into the following principal directories:
+**Does Class-Imbalance Correction Beat a Threshold-Corrected Control? A Catalog-Wide Confirmatory Study of Benchmark-Practice Bias.**
 
-- `src/` — Reference implementation of the SRDF components
-  (Trawler, Generator, Arbiter, Core).
-- `experiments/` — Experimental phases, each in its own directory
-  (S01, S03, S04).
-- `protocols/` — Protocol artifacts aligned with each phase.
-- `docs/` — Project documentation and the conceptual white paper.
-- `examples/` — Minimal illustrative examples of the SRDF workflow.
-- `tests/` — Unit tests for the reference implementation.
-- `assets/` — Static visual assets (logos, icons).
-- `archive/` — Historical artifacts preserved for provenance.
+S07 investigates whether the apparent benefit of imbalance-correction methods changes when the comparison uses a threshold-corrected control rather than relying only on a conventional baseline.
 
-Top-level files include:
+### Conceptual comparison
 
-- `README.md` — This document.
-- `LICENSE` — Apache License 2.0.
-- `CITATION.cff` — Citation metadata (CFF 1.2.0).
-- `CHANGELOG.md` — Project change log.
-- `AUTHORS.md` — Author and contribution information.
-- `CONTRIBUTING.md` — Contribution guidelines.
-- `CODE_OF_CONDUCT.md` — Community code of conduct.
-- `SECURITY.md` — Security policy.
-- `requirements.txt` — General project dependencies.
-- `pyproject.toml` — Project metadata and build configuration.
-- `setup.py` — Legacy packaging compatibility.
+```mermaid
+flowchart TD
+    A["Original dataset"] --> B["A1: Conventional baseline"]
+    A --> C["A2: Threshold-corrected control"]
+    A --> D["A3: SMOTE"]
+    A --> E["A4: CSRF"]
+    A --> F["A5: EE"]
+    B --> G["Matched evaluation"]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+    G --> H["Balanced Accuracy and AUC"]
+    H --> I["Prespecified statistical analysis"]
+    I --> J["Multiplicity adjustment and bounded conclusions"]
+```
 
+The diagram illustrates the comparison concept. The frozen S07 protocol is authoritative for the exact definitions of A1–A5, preprocessing, thresholds, exclusions, metrics, and tests.
 
----
+### Protocol and result records
 
-## Installation
+- **Protocol DOI:** [10.5281/zenodo.23404802](https://doi.org/10.5281/zenodo.23404802)
+- **Results DOI:** [10.5281/zenodo.23406120](https://doi.org/10.5281/zenodo.23406120)
+- **Locked protocol SHA-256:** `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`
+- **Experiment directory:** `experiments/S07_PRACTICE_INFLATION/`
+- **Recorded notebook path:** `S07-pipeline_integrity.ipynb`
+
+The cohort record identifies 131 candidate datasets and 98 analyzed datasets. The candidate cohort and analyzed cohort are distinct and should not be conflated.
+
+## S07 Reported Results
+
+The table below transcribes the available reported summary. It is not a substitute for the original results or an independent reanalysis.
+
+| Comparison | Metric | n | Mean difference | Raw p | Holm-adjusted p | Reported status |
+|---|---|---:|---:|---:|---:|---|
+| H1: A2 − A1 | Balanced Accuracy | 98 | +0.09764693 | 0.00001 | 0.00007 | SUPPORTED |
+| H2_SMOTE: A3 − A2 | Balanced Accuracy | 40 | −0.03650658 | 0.99016 | 1.00000 | INFERIOR |
+| H2_CSRF: A4 − A2 | Balanced Accuracy | 98 | −0.10714144 | 1.00000 | 1.00000 | INFERIOR |
+| H2_EE: A5 − A2 | Balanced Accuracy | 98 | +0.00739482 | 0.00001 | 0.00007 | EQUIVALENT |
+| H4_SMOTE: A3 − A1 | AUC | 40 | −0.00594658 | 0.00428 | 0.01284 | EQUIVALENT |
+| H4_CSRF: A4 − A1 | AUC | 98 | −0.00284367 | 0.00001 | 0.00007 | EQUIVALENT |
+| H4_EE: A5 − A1 | AUC | 98 | +0.00121313 | 0.00001 | 0.00007 | EQUIVALENT |
+
+**Interpretation note:** These are the statuses recorded in the reported summary. Equivalence is a margin-dependent conclusion and cannot be established solely by a small observed difference or a particular p-value. The prespecified margins, test direction, and test implementation must be checked in the locked protocol and analysis artifacts.
+
+The A1–A2 comparison evaluates the effect of threshold correction on the baseline under the study procedure. Comparisons between A2 and the correction arms examine whether those methods provide an additional benefit beyond the threshold-corrected control. AUC provides a complementary ranking-oriented measure, distinct from threshold-dependent measures.
+
+The findings concern the methods, datasets, metrics, and analysis used in S07. They do not automatically generalize to every classifier, dataset, resampling method, or evaluation protocol, and they do not establish overall superiority or inferiority of NeuroCortex SRDF.
+
+## Repository Organization
+
+```text
+neurocortex-srdf/
+├── README.md
+├── CITATION.cff
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── LICENSE
+├── pyproject.toml
+├── requirements.txt
+├── src/
+├── src_v2/
+├── src_v3/
+├── src_v4/
+├── tests/
+├── examples/
+│   ├── srdf_toy_english/
+│   └── srdf_toy_arabic/
+├── docs/
+├── assets/
+└── experiments/
+    ├── S01_PROTOTYPE_VALIDATION/
+    ├── S03_GENERATOR_ARBITER/
+    ├── S04_OPENML_GENERALIZATION/
+    ├── S05_EXTENDED_EVALUATION/
+    ├── S06_ARBITER_REVISION/
+    ├── S07_PRACTICE_INFLATION/
+    └── _AUDIT/
+```
+
+This is a navigational overview, not a guaranteed exhaustive filesystem listing. The current GitHub branch is authoritative for actual filenames and paths.
+
+| Artifact | Purpose |
+|---|---|
+| `src/` and versioned source directories | Framework implementation and development iterations |
+| `tests/` | Automated tests and checks |
+| `examples/` | Illustrative examples |
+| `docs/` | Supporting documentation |
+| `assets/` | Project assets |
+| `experiments/` | Versioned empirical studies and supporting artifacts |
+| `CITATION.cff` | Citation metadata, when maintained |
+| `CHANGELOG.md` | Recorded project changes |
+| `LICENSE` | Licensing terms |
+| `pyproject.toml` and `requirements.txt` | Project and dependency configuration |
+
+Use the source version and configuration associated with the experiment being reproduced. The latest implementation is not necessarily identical to the implementation used for an earlier result.
+
+## Installation and Environment
 
 Clone the repository:
 
-    git clone https://github.com/mohammedqaidalathwary/neurocortex-srdf.git
-    cd neurocortex-srdf
+```bash
+git clone https://github.com/mohammedqaidalathwary/neurocortex-srdf.git
+cd neurocortex-srdf
+```
 
-Install the Python dependencies:
+Review `pyproject.toml` and `requirements.txt` before installing dependencies. If the project configuration supports editable installation, a typical command is:
 
-    pip install -r requirements.txt
+```bash
+python -m pip install -e .
+```
 
----
+For reproducible work, record the Python version, dependency versions, operating environment, random seeds, dataset identifiers, preprocessing configuration, source revision, and protocol version. A successful installation does not guarantee that every historical notebook runs unchanged in the same environment.
 
-## Usage
+## Examples and Tests
 
-### Running the S01 prototype
+Inspect the current example files:
 
-Open the notebook directly in Google Colab:
+```bash
+find examples -maxdepth 3 -type f
+```
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammedqaidalathwary/neurocortex-srdf/blob/main/experiments/S01_PROTOTYPE_VALIDATION/notebooks/srdf_s01_foundational_prototype.ipynb)
+Inspect test files:
 
-Or run it locally:
+```bash
+find tests -maxdepth 3 -type f
+```
 
-    jupyter notebook experiments/S01_PROTOTYPE_VALIDATION/notebooks/srdf_s01_foundational_prototype.ipynb
+If the project uses pytest and the necessary dependencies are installed, run:
 
-### Inspecting the SRDF reference implementation
+```bash
+python -m pytest
+```
 
-The reference implementation of the framework components is in `src/`:
-
-- `src/trawler.py`
-- `src/generator.py`
-- `src/arbiter.py`
-- `src/core.py`
-
-Unit tests are in `tests/`.
-
----
+Adjust the command if the repository defines a different test runner or requires specific configuration. Passing software tests supports the behaviors actually tested; it does not independently establish scientific validity or generalization.
 
 ## Reproducibility
 
-Each phase follows the SRDF principle of **protocol before execution**.
-Where a phase defines a fixed random seed, the executed run is
-reproducible under the same software environment and configuration.
+A reproducible experiment requires more than a final metric. A run record should include, where applicable:
 
-The executed artifacts of each phase are preserved in their
-respective directories. Where a phase was executed under a frozen
-protocol, the protocol, the source lock, and the cohort lock are
-included alongside the results.
+- Unique run identifier and timestamp.
+- Source revision, implementation version, and protocol identifier/hash.
+- Dataset identifiers and cohort-selection procedure.
+- Random seed and fold assignment.
+- Preprocessing and model configuration.
+- Candidate generation, evaluation, and arbitration outcomes.
+- Metric values and the statistical unit of analysis.
+- Exclusions and their prespecified reasons.
+- Execution status and failure category.
+- Statistical tests, multiplicity correction, and uncertainty estimates.
 
-This README does not summarize or reinterpret the results of any
-phase. It points to the directories where those artifacts are
-preserved.
+### Evidence chain
 
----
+1. **Implementation evidence:** source code, tests, and component behavior.
+2. **Execution evidence:** records of what ran and what happened.
+3. **Protocol evidence:** predefined procedures, parameters, criteria, and exclusions.
+4. **Statistical evidence:** results calculated using the specified analysis.
+5. **Scientific claims:** interpretations supported by the preceding evidence.
 
-## Data and Code Availability
+A claim should not be stronger than its supporting evidence. Exploratory analyses are valuable for discovery, but should be identified as exploratory when they were not covered by the locked confirmatory procedure.
 
-- **Code**: This repository, released under the Apache License 2.0.
-- **White Paper**: `docs/whitepaper/NeuroCortex_SRDF_White_Paper_v1.0.pdf`
-- **Author ORCID**: [0009-0006-9075-072X](https://orcid.org/0009-0006-9075-072X)
+### Statistical units
 
-A persistent identifier will be assigned through Zenodo upon the
-final project release.
+Multiple folds from one dataset are not automatically independent datasets. Multiple runs on the same dataset may share sources of variation. Reports should identify the statistical unit and account for dependence where required by the design.
 
----
+### Auditability
+
+An audit check marked PASS should correspond to a defined check and a recorded outcome. The existence of an audit report does not remove the need to inspect what was tested and what remains outside the audit scope.
+
+## Computational Context
+
+The project has been developed under constrained computational conditions, including free cloud notebook resources. This context helps describe the practical conditions under which experiments were conducted.
+
+Resource constraints can affect runtime, throughput, continuity, and the feasibility of repeated experiments. They neither prove nor disprove a scientific claim. Interrupted runs, resource exhaustion, dependency failures, and incomplete experiments should be recorded rather than silently treated as completed observations.
+
+## Claim Boundaries
+
+NeuroCortex is an evolving research framework. Its software architecture and empirical findings should be assessed separately.
+
+Claims about controlled adaptation require implementation and execution records. Claims about generalization require defined datasets, evaluation procedures, and appropriate statistical analysis. Claims about superiority require fair comparisons against clearly specified baselines under comparable conditions.
+
+The current research program investigates:
+
+- Explicitly mediated runtime adaptation.
+- Separation of generation, evaluation, arbitration, and commitment.
+- Traceable execution and decision records.
+- Empirical behavior across defined machine-learning benchmarks.
+- Sensitivity of benchmark conclusions to thresholds and comparison methods.
+- Reproducibility and protocol-based research practice.
+
+The available evidence should not be interpreted as proof that every adaptation improves performance, that the framework outperforms every alternative, that fold-level observations are independent datasets, or that the project has demonstrated general intelligence or universal self-improvement.
+
+These boundaries clarify what each experiment can legitimately establish; they do not negate the value of a well-designed and reproducible experiment.
 
 ## Citation
 
-If you reference this software or framework in academic or technical
-work, please cite it using the metadata in `CITATION.cff`:
+Use the DOI and version corresponding to the specific code, protocol, or results being cited.
 
-> Al-Athwary, M. Q. (2026). *NeuroCortex — Self-Reinforcing
-> Development Framework (SRDF)*. GitHub.
-> https://github.com/mohammedqaidalathwary/neurocortex-srdf
+- **Project archive:** https://doi.org/10.5281/zenodo.23252917
+- **S06 protocol:** https://doi.org/10.5281/zenodo.23308347
+- **S07 preregistration:** https://doi.org/10.5281/zenodo.23404802
+- **S07 results:** https://doi.org/10.5281/zenodo.23406120
+- **Repository:** https://github.com/mohammedqaidalathwary/neurocortex-srdf
 
-Published with a persistent DOI: [10.5281/zenodo.23252917](https://doi.org/10.5281/zenodo.23252917)
-
----
-
-## Phase S04 — OpenML Generalization (R4)
-
-**Phase identifier**: S04
-**Phase name**: OpenML Generalization
-**Status**: Completed — 2026-10-09
-**Artifacts**: [`experiments/S04_OPENML_GENERALIZATION/`](experiments/S04_OPENML_GENERALIZATION/)
-
-### Overview
-
-This phase evaluates NeuroCortex SRDF under a fully pre-registered protocol on a deterministic cohort drawn from the OpenML active binary classification universe. All thresholds, seeds, folds, and the cohort itself were frozen by SHA-256 before any model was trained. No post-hoc tuning was performed.
-
-### Key results
-
-| Metric | Value |
-|---|---|
-| Cohort datasets | 45 |
-| Execution cases | 1,125 (45 datasets × 5 seeds × 5 folds) |
-| SUCCESS | 373 |
-| NOT_TRIGGERED | 750 |
-| REJECTED | 2 |
-| Technical failures | 0 |
-| Mean ΔbAcc (case-level, SUCCESS only) | +2.89 pp |
-| 95% CI (t) | [+0.0239, +0.0338] |
-| Relative improvement | +3.78% |
-| Cohen's d | 0.60 |
-| Win rate (positive Δ) | 62.2% (232/373) |
-| Wilcoxon signed-rank p (dataset-level, n=15) | 0.00116 |
-| Bootstrap 95% CI (dataset-level) | [+0.0148, +0.0443] |
-
-### Execution identifiers
-
-| Identifier | Value |
-|---|---|
-| Run ID | `S04-R4-20261009T004210Z-88bcf6717e5e` |
-| Cohort SHA-256 | `88bcf6717e5e5c28f20d93f0c2d36c393cd8b70253c68094b57f492cd7d9c09d` |
-| Summary SHA-256 | `c06fec4d9741cc622e861fe0b11536182993a74e8a33db412a76476cba9bda10` |
-| Forensic SHA-256 | `3fea6f3863096c10081f58d081afdd46f759148abc1172d748167a64889f106e` |
-| Pushed commit | `5e1af6865bbb915b0b5f1ebc7ec4d44e3851c8bf` |
-
-### Reproducibility
-
-The full pre-registered pipeline is reproducible from the frozen artifacts in the directory linked above. The forensic verification (15 independent checks) returns PASS and is confirmed by a post-push verification that compares SHA-256 of every packaged file against a fresh clone of the public repository.
-
----
+Consult `CITATION.cff` and the archived records for canonical bibliographic metadata. A repository citation, protocol citation, and results citation identify different research artifacts.
 
 ## License
 
-This project is released under the Apache License 2.0. See
-[`LICENSE`](LICENSE) for the full text.
+Consult the repository `LICENSE` file for the authoritative licensing terms. The license badge identifies the repository as Apache-2.0; the license file governs. Third-party datasets, libraries, and external assets may have separate terms.
+
+## Contributions and Contact
+
+Technical feedback, reproducibility reports, issue reports, and scientifically grounded criticism are welcome. Include the relevant source revision, experiment identifier, environment, command, and a minimal reproduction where possible.
+
+For empirical discrepancies, identify the protocol version and exact result artifact being compared. Distinguish verified behavior from assumptions, exploratory findings from confirmatory results, and environmental failures from protocol deviations.
+
+**Author:** Mohammed Qaid Al-Athwary  
+**ORCID:** https://orcid.org/0009-0006-9075-072X  
+**Repository:** https://github.com/mohammedqaidalathwary/neurocortex-srdf
 
 ---
 
-## Contributing
-
-Contributions, technical discussions, and research-oriented feedback
-are welcome. Before proposing changes, please review
-[`CONTRIBUTING.md`](CONTRIBUTING.md).
-
----
-
-## Contact
-
-**Author**: Mohammed Qaid Al-Athwary  
-**ORCID**: [0009-0006-9075-072X](https://orcid.org/0009-0006-9075-072X)  
-**Email**: mohammedqaid.amanlift@gmail.com
-
----
-
-## Research Scope and Boundaries
-
-NeuroCortex is an ongoing research project. The material in this
-repository is presented as a **conceptual and methodological
-foundation**, not as a finished claim about capability or
-superiority.
-
-The repository does **not** claim:
-
-- general or universal performance improvement,
-- statistical significance of any result outside a pre-registered
-  protocol,
-- self-evolving artificial general intelligence,
-- unrestricted or unbounded self-modification,
-- superiority over any existing method or architecture,
-- production readiness.
-
-Where a pre-registered protocol was executed (for example, S04),
-the reported statistics are bounded by that protocol and are
-reproducible from the frozen artifacts in the phase directory.
-No statistical claim extends beyond the scope of its protocol.
-
-Any empirical claim, if pursued, will be reported separately in a
-peer-reviewed publication. This repository preserves the framework,
-its protocols, and its evidence structure.
-
----
-
-## S07 — Practice Inflation Study
-
-**Question:** In the standard benchmark practice, rebalancing methods are compared against a plain classifier at the default 0.5 threshold. How much of the reported benefit is an artifact of that control?
-
-**Answer (Scenario A):** The conventional control inflates the reported benefit by **+9.76 bAcc** (CI95 [8.24, 11.32], p < 1e-4). After correction: SMOTENC inferior, CS-RF inferior, EasyEnsemble equivalent. The effect disappears under AUC.
-
-- **Notebook:** [`S07-pipeline_integrity.ipynb`](S07-pipeline_integrity.ipynb)
-- **Pre-registration:** [10.5281/zenodo.23404802](https://doi.org/10.5281/zenodo.23404802)
-- **Results:** [10.5281/zenodo.23406120](https://doi.org/10.5281/zenodo.23406120)
-- **Protocol SHA-256:** `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`
-
-Full artifacts: [`experiments/S07_PRACTICE_INFLATION/`](experiments/S07_PRACTICE_INFLATION/)
+<div align="center">
+**NeuroCortex SRDF**  
+*Controlled adaptation. Traceable decisions. Evidence-bounded claims.*
+</div>
