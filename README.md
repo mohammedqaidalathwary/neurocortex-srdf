@@ -133,10 +133,34 @@ This stage investigates interactions between candidate generation and decision-m
 
 ### S04 — OpenML evaluation
 
-The documented S04 study includes 300 datasets and five stratified folds per dataset, corresponding to 1,500 fold-level cases. These are repeated observations within datasets, not 1,500 independent datasets.
+The committed S04/R4 run used a frozen cohort of **45 datasets**, evaluated with **5 random seeds** and **5 stratified folds per seed**. The planned and recorded total was **1125 fold-level cases**. These cases are repeated observations within datasets and must not be treated as independent datasets.
 
-The study records trigger decisions, accepted and rejected candidates, and performance differences. Interpretation should distinguish fold-level observations from dataset-level units of analysis.
+The committed run summary records the following terminal outcomes:
 
+| Outcome | Cases | Share of all planned cases |
+|---|---:|---:|
+| `SUCCESS` | 373 | 33.16% |
+| `NOT_TRIGGERED` | 750 | 66.67% |
+| `REJECTED` | 2 | 0.18% |
+| **Total** | **1125** | **100.00%** |
+
+A trigger occurred in **375 cases** (33.33% of planned cases). Of these, **373** ended in successful adaptation and **2** were rejected. The summary records **0 failure cases**. `NOT_TRIGGERED` cases are not assigned a zero performance change.
+
+Among the **373 successful cases with valid performance differences**, the recorded mean change in Balanced Accuracy relative to the conventional baseline was **+0.028855** (case-level standard deviation 0.048463). These are fold-level observations, not independent dataset-level replicates.
+
+At the dataset level, the recorded summary contains **15 datasets with successful adaptation contributing to the dataset-level comparison**. Their mean Balanced Accuracy change was **+0.028805**, with a dataset-level bootstrap 95% confidence interval of **[+0.014811, +0.044278]**. This dataset-level result is based on the datasets represented in that analysis, not all 45 cohort members.
+
+These are observed results under the committed S04 protocol. They do **not** by themselves establish universal superiority, broad self-improvement, or general intelligence.
+
+#### S04 evidence and reproducibility boundary
+
+The committed cohort-closure report records an exact reconstruction of the 45-dataset selection from the frozen metadata snapshot, with zero symmetric difference. The closure audit also states two limitations: it did not make live OpenML queries, and the original S04 selection notebook used as the reconstruction reference is not stored in this repository. Therefore, cohort-artifact integrity and reconstruction are documented, but a fully independent end-to-end reproduction from every original execution input is not established by the repository alone.
+
+The authoritative committed artifacts are:
+
+- Protocol: `experiments/S04_OPENML_GENERALIZATION/protocol/R4_PROTOCOL.json`
+- Run summary: `experiments/S04_OPENML_GENERALIZATION/statistics/r4_summary.json`
+- Cohort closure audit: `experiments/_AUDIT/S04_CLOSURE_REPORT.json`
 ### S05 — Extended evaluation
 
 S05 extends the empirical program. Its exact cohort, implementation, protocol, and conclusions should be taken from its own versioned artifacts rather than inferred from another phase.
