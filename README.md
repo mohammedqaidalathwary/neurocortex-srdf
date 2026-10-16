@@ -2,23 +2,57 @@
 
 <img src="assets/neurocortex_logo.png" alt="NeuroCortex SRDF" width="240">
 
+<br>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://orcid.org/0009-0006-9075-072X">
+        <img src="https://img.shields.io/badge/ORCID-0009--0006--9075--072X-A6CE39?logo=orcid&logoColor=white" alt="ORCID">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23252917">
+        <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23252917.svg" alt="NeuroCortex DOI">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23308347">
+        <img src="https://img.shields.io/badge/S06-Protocol%20DOI-blue?logo=zenodo" alt="S06 Protocol DOI">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23404802">
+        <img src="https://img.shields.io/badge/S07-Preregistration%20DOI-blue?logo=zenodo" alt="S07 Preregistration DOI">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23406120">
+        <img src="https://img.shields.io/badge/S07-Results%20DOI-blue?logo=zenodo" alt="S07 Results DOI">
+      </a>
+    </td>
+    <td align="center">
+      <a href="LICENSE">
+        <img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg" alt="Apache 2.0 License">
+      </a>
+    </td>
+  </tr>
+</table>
+
 # NeuroCortex SRDF
+
 ### Self-Reinforcing Development Framework
 
 **A research framework for controlled, evidence-driven runtime structural adaptation**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23252917.svg)](https://doi.org/10.5281/zenodo.23252917)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--9075--072X-A6CE39.svg)](https://orcid.org/0009-0006-9075-072X)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
-
 **Author:** Mohammed Qaid Al-Athwary  
-**ORCID:** [0009-0006-9075-072X](https://orcid.org/0009-0006-9075-072X)  
 **Affiliation:** AMAN LIFT YEMEN, Sana’a, Yemen
 
-[Repository](https://github.com/mohammedqaidalathwary/neurocortex-srdf) · [S06 Protocol](https://doi.org/10.5281/zenodo.23308347) · [S07 Preregistration](https://doi.org/10.5281/zenodo.23404802) · [S07 Results](https://doi.org/10.5281/zenodo.23406120)
+[Repository](https://github.com/mohammedqaidalathwary/neurocortex-srdf)
 
 </div>
-
 ---
 
 ## Abstract
