@@ -10,20 +10,29 @@ re-fetching and re-applying the runtime rule.
 
 ## Results
 
-| dataset_id | rows × cols | numeric cols | categorical cols (runtime) | A3 applicable |
+| dataset_id | rows x cols | numeric cols | categorical cols (runtime) | A3 applicable |
 |---|---|---|---|---|
-| 43893 | 1470 × 34 | 26 | 8 | True |
-| 43895 | 1470 × 33 | 25 | 8 | True |
-| 46595 | 470 × 16 | 3 | 13 | True |
+| 43893 | 1470 x 34 | 26 | 8 | True |
+| 43895 | 1470 x 33 | 25 | 8 | True |
+| 46595 | 470 x 16 | 3 | 13 | True |
 
 ## Interpretation
 
-In each case, the runtime dtype-based rule detected at least one
-categorical predictor that the snapshot metadata did not reflect.
-This is consistent with the documented behavior:
+In each of the three datasets, the `has_categorical` field in the
+snapshot metadata does not match the actual column-type detection at
+runtime. This discrepancy must be read alongside the other metadata
+fields that are available. In one case (43895), the snapshot records
+`NumberOfSymbolicFeatures = 1`, indicating that some categorical
+information was indeed present in the metadata, even though
+`has_categorical` was set to `False`.
 
-1. `has_categorical` is an informational snapshot flag, not a filter.
-2. A3 applicability is determined at runtime by `split_cols`.
+A3 applicability in these cases was determined by the runtime column
+inspection (`split_cols`), not by the `has_categorical` field alone.
 
-These cases are not errors; they are the expected consequence of the
-two-rule design.
+These cases do not constitute errors in the experiment results and do
+not require re-execution. The conclusion is limited to the datasets
+for which execution evidence is recorded.
+
+## Data
+
+- `S07_a3_edge_cases_evidence.csv` (this directory)

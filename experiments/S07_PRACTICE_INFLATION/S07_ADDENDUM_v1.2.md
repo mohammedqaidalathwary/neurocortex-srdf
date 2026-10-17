@@ -9,8 +9,8 @@
 
 ## Purpose
 
-A closer examination of `S07_ADDENDUM_v1.1.md` identified an apparent
-inconsistency between:
+An independent review of `S07_ADDENDUM_v1.1.md` raised a legitimate
+question about the apparent inconsistency between:
 
 1. The declared "numeric-only" set in `cohort_R_candidates.csv`
    (`has_categorical = False`, 65 datasets)
@@ -131,10 +131,17 @@ yet show `A3 SUCCESS` at runtime:
 | 43895 | ibm-employee-performance | 25 / 1 | SUCCESS |
 | 46595 | Thoracic_Surgery_Data | 3 / 0 | SUCCESS |
 
-These are natural consequences of the runtime dtype-based rule.
-The snapshot metadata is a coarse indicator; the actual pandas
-dtype after download can differ. These cases do not constitute
-errors and do not affect any confirmatory result.
+In these three cases, the `has_categorical` field does not match
+the actual runtime column types. This discrepancy should be read
+alongside the other metadata fields: in dataset 43895, the snapshot
+records `NumberOfSymbolicFeatures = 1`, so the metadata did carry some
+indication of categorical content even though `has_categorical` was
+`False`.
+
+A3 applicability in these cases rests on the runtime column inspection
+(`split_cols`), not on `has_categorical` alone. This is a documentation
+clarification. It does not indicate an error in the results and does
+not require re-execution.
 
 ---
 
