@@ -1,0 +1,8 @@
+test,arm_a,arm_b,n_actual,n_reported,match
+H1,A2,A1,98,98,yes
+H2_SMOTE,A3,A2,40,40,yes
+H2_CSRF,A4,A2,98,98,yes
+H2_EE,A5,A2,98,98,yes
+H4_SMOTE,A3,A1,40,40,yes
+H4_CSRF,A4,A1,98,98,yes
+H4_EE,A5,A1,98,98,yes

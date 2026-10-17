@@ -1,3 +1,27 @@
+## [v1.2-addendum] — 2026-10-17
+
+### Added
+- `experiments/S07_PRACTICE_INFLATION/S07_ADDENDUM_v1.2.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_A3_APPLICABILITY_NOTE.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_contrast_n_reconciliation.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_dataset_arm_reconciliation.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_a3_not_applicable_58.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_a3_success_40.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_lost_33_features.csv`
+
+### Clarified
+- A3 (SMOTENC) applicability is a runtime, dtype-based property.
+- `has_categorical` is an informational snapshot flag, not a filter.
+- All 7 confirmatory contrasts n-match exactly.
+- Cohort reconciliation 131 = 98 + 33 is exact.
+
+### Unchanged (locked)
+- `protocol_lock.json`, `pre_registration.json`, `S07_REPORT.md`,
+  `confirmatory_results.csv`, `AUDIT.json`, `execution_plan.json`,
+  `cohort_R_manifest.json`
+
+---
+
 ## [v1.1-addendum] — 2026-10-17
 
 ### Added
