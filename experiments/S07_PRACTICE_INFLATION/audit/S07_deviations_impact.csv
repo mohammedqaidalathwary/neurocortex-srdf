@@ -1,0 +1,5 @@
+category,count,type,affected_tests,severity
+cardinality_exceeded,15,data,all,low
+no_numeric_runtime,13,technical,H2_SMOTE;H4_SMOTE,low
+download_failure,5,data,all,low
+armL_download_failure,5,data,arm_L_exploratory,none

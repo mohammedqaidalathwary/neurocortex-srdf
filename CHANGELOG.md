@@ -1,3 +1,36 @@
+## [v1.1-addendum] — 2026-10-17
+
+### Added
+- `experiments/S07_PRACTICE_INFLATION/S07_ADDENDUM_v1.1.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/TEST_NUMBERING_NOTE.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_RECONCILIATION.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_UNSEEN_ONLY_REPORT.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_SESOI_MARGINS_REPORT.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_DEVIATIONS_IMPACT_REPORT.md`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_unseen_only_sensitivity.json`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_sesoi_margins_sensitivity.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_deviations_impact.csv`
+- `experiments/S07_PRACTICE_INFLATION/audit/S07_seen_before_manifest.csv`
+
+### Changed
+- `AUDIT.md` — appended post-publication addendum section
+- `README.md` (S07) — appended addendum reference
+
+### Unchanged (locked)
+- `protocol_lock.json`
+- `pre_registration.json`
+- `S07_REPORT.md`
+- `confirmatory_results.csv`
+- `AUDIT.json`
+- `execution_plan.json`
+- `cohort_R_manifest.json`
+
+### Verification
+- No confirmatory result changed.
+- All primary and secondary conclusions remain valid.
+
+---
+
 # Changelog
 
 All notable changes to the NeuroCortex SRDF project are documented in this file.
