@@ -9,8 +9,8 @@
 
 ## Purpose
 
-This addendum closes four documentation gaps identified during an independent
-post-publication review of S07. It does **not** modify the locked protocol,
+This addendum closes five documentation gaps in the S07 outputs.
+It does **not** modify the locked protocol,
 the pre-registration, the confirmatory results, or the parent report.
 
 1. Forensic test numbering (gaps 08, 13)
