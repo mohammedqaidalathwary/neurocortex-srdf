@@ -103,3 +103,22 @@ Total bytes: **847,990**
 ## Identity
 
 `Delta_conv = Delta_mat + Delta_thr` max residual: `0.00e+00`
+
+---
+
+## Post-publication addendum (2026-10-17)
+
+An addendum (v1.1) closes four documentation gaps identified during
+independent review. It adds no changes to locked artifacts, confirmatory
+results, or the parent report. See:
+
+- `S07_ADDENDUM_v1.1.md`
+- `audit/TEST_NUMBERING_NOTE.md`
+- `audit/S07_RECONCILIATION.md`
+- `audit/S07_UNSEEN_ONLY_REPORT.md`
+- `audit/S07_SESOI_MARGINS_REPORT.md`
+- `audit/S07_DEVIATIONS_IMPACT_REPORT.md`
+
+**Clarification on forensic test numbering:** The 12 tests listed above are
+the complete and final set. IDs 08 and 13 are unused labels, not omitted
+tests. All 12 tests pass.

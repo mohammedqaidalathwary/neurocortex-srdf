@@ -1,0 +1,66 @@
+{
+  "analysis": "unseen_only_sensitivity",
+  "protocol_basis": "protocol_lock.json -> cohort.sensitivity_unseen_only",
+  "analysis_date": "2026-10-17",
+  "classification": "EXPLORATORY",
+  "classification_reason": "N=60 < N_req=70 (per protocol note)",
+  "cohort": {
+    "s07_candidates": 131,
+    "s07_analyzed": 98,
+    "seen_before_union": 243,
+    "s07_seen_in_prior_stages": 38,
+    "s07_unseen": 60
+  },
+  "results": {
+    "H1": {
+      "label": "H1",
+      "n": 60,
+      "mean": 0.07936368808067108,
+      "sd": 0.07083928835566257,
+      "ci_lo": 0.061438874988838224,
+      "ci_hi": 0.09728850117250394,
+      "effect_size_dz": 1.120334350088472,
+      "sesoi": 0.02,
+      "direction_preserved": true,
+      "p_signflip_onetailed": "< 0.0001",
+      "note": "One-tailed sign-flip test (matches protocol h1_rule)"
+    },
+    "H2_CSRF": {
+      "label": "H2_CSRF",
+      "n": 60,
+      "mean": -0.08779043833435624,
+      "sd": 0.06907933860326507,
+      "ci_lo": -0.10526992269555085,
+      "ci_hi": -0.07031095397316162,
+      "effect_size_dz": -1.2708639096641088,
+      "sesoi": 0.02,
+      "direction_preserved": true,
+      "note": "Direction check only; TOST per protocol not re-run for this exploratory subset"
+    },
+    "H2_EE": {
+      "label": "H2_EE",
+      "n": 60,
+      "mean": 0.009147818361562756,
+      "sd": 0.02611425145991355,
+      "ci_lo": 0.002540001042705453,
+      "ci_hi": 0.015755635680420058,
+      "effect_size_dz": 0.35029984970486455,
+      "sesoi": 0.02,
+      "direction_preserved": true,
+      "note": "Direction check only; TOST per protocol not re-run for this exploratory subset"
+    },
+    "H2_SMOTE": {
+      "label": "H2_SMOTE",
+      "n": 40,
+      "mean": -0.03650657780787579,
+      "sd": 0.04307907002104848,
+      "ci_lo": -0.0498569199212181,
+      "ci_hi": -0.02315623569453348,
+      "effect_size_dz": -0.8474318918685719,
+      "sesoi": 0.02,
+      "direction_preserved": true,
+      "note": "Direction check only; TOST per protocol not re-run for this exploratory subset"
+    }
+  },
+  "analysis_note": "This is an exploratory direction-preservation check. For H2/H4, only direction is evaluated; formal TOST is not re-run."
+}

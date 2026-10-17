@@ -36,3 +36,8 @@ Notebook: `S07-pipeline_integrity.ipynb` (repo root).
 Protocol SHA-256: `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`.
 Merkle root: `d48271da7b7e16e48767e036ba8239d7236ee8d386cb6a7d366a74d152de1e23`.
 Runtime: ~90 minutes on Colab. Deterministic (seed 20261014).
+
+> **Note (2026-10-17):** An addendum (`S07_ADDENDUM_v1.1.md`) closes four
+> documentation gaps: forensic test numbering, cohort reconciliation,
+> SESOI margin sensitivity, unseen-only sensitivity, and deviations
+> impact. No locked artifact was modified.
