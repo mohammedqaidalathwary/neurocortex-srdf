@@ -1,0 +1,4 @@
+dataset_id,name,n_rows,n_cols_total,n_num_cols_runtime,n_cat_cols_runtime,cat_cols_first5,cat_card_max,A3_applicable_runtime
+43893,ibm-employee-attrition,1470,34,26,8,BusinessTravel|Department|EducationField|Gender|JobRole,9,True
+43895,ibm-employee-performance,1470,33,25,8,BusinessTravel|Department|EducationField|Gender|JobRole,9,True
+46595,Thoracic_Surgery_Data,470,16,3,13,DGN|PRE6|PRE7|PRE8|PRE9,7,True

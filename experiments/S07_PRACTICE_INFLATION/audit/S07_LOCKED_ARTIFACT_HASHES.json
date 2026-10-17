@@ -1,0 +1,9 @@
+{
+  "experiments/S07_PRACTICE_INFLATION/protocol_lock.json": "6a4ab5277abab93a7a1a9e7056a584c9d3ab1ebaa18bb99adcf2cb4bd9cd1e5a",
+  "experiments/S07_PRACTICE_INFLATION/pre_registration.json": "260f89aeed96e6f2e7772f868d6b175b261c6cbac997a83111ed8fe99a956a9a",
+  "experiments/S07_PRACTICE_INFLATION/S07_REPORT.md": "74eb441278fa6d5778f0286901dac484a80eb2ab4eb0ad0faa12cb6b4e3e00f9",
+  "experiments/S07_PRACTICE_INFLATION/tables/confirmatory_results.csv": "ad95f80a19a30631ae7e06191176ea08710b981a22b98af77ae62de430f4fdc2",
+  "experiments/S07_PRACTICE_INFLATION/AUDIT.json": "471e6d3f1202af735763b995b12a2beec71dbee874723001608161922652ec05",
+  "experiments/S07_PRACTICE_INFLATION/execution_plan.json": "e27074f4079adfc4b202b3f2f230ccf1c9501d16e287739a21a0018f3660a287",
+  "experiments/S07_PRACTICE_INFLATION/cohort_R_manifest.json": "fc9d2e5670bff35a830ba9de4395babc6215b4e981e01ad1c376e1c2ac86d470"
+}
