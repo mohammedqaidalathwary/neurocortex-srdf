@@ -9,8 +9,8 @@
 
 ## Purpose
 
-An independent review of `S07_ADDENDUM_v1.1.md` raised a legitimate
-question about the apparent inconsistency between:
+A closer examination of `S07_ADDENDUM_v1.1.md` identified an apparent
+inconsistency between:
 
 1. The declared "numeric-only" set in `cohort_R_candidates.csv`
    (`has_categorical = False`, 65 datasets)
