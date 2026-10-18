@@ -8,7 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0006-9075-072X"
     email: "mohammedqaid.amanlift@gmail.com"
 repository-code: "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
-license: "LicenseRef-NeuroCortex-Research-NonCommercial-1.0"
+license: "Apache-2.0"
 version: "0.3.0"
 date-released: "2026-10-08"
 keywords:
