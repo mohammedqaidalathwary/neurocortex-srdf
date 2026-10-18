@@ -9,8 +9,8 @@ authors:
     email: "mohammedqaid.amanlift@gmail.com"
 repository-code: "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
 license: "Apache-2.0"
-version: "0.3.0"
-date-released: "2026-10-08"
+version: "1.0.0"
+date-released: "2026-10-09"
 keywords:
   - self-reinforcing development framework
   - runtime structural adaptation
@@ -25,8 +25,8 @@ abstract: >
 
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23252917
-    description: "Concept DOI — always resolves to the latest release"
-  - type: doi
     value: 10.5281/zenodo.23252916
+    description: "Concept DOI — resolves to the latest release"
+  - type: doi
+    value: 10.5281/zenodo.23252917
     description: "Version DOI — points specifically to v1.0.0"
