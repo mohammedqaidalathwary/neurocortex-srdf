@@ -95,7 +95,7 @@ keeps the exploratory nature of the subset analysis explicit.
 | Category | Count | Affected tests |
 |---|---|---|
 | `cardinality_exceeded` | 15 | All (column exclusion) |
-| `no_numeric_runtime` | 13 | H2_SMOTE, H4_SMOTE only |
+| `no_numeric_runtime` | 13 | Full pipeline loss; not A3-only. A3 comparisons additionally use n=40 among the 98 analyzed datasets. |
 | `download_failure` | 5 | All (dataset loss) |
 | `armL_download_failure` | 5 | Arm L only |
 
