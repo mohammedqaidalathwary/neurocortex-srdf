@@ -35,7 +35,7 @@
     </td>
     <td align="center">
       <a href="LICENSE">
-        <img src="https://img.shields.io/badge/License-Research%20%26%20Non--Commercial-orange.svg" alt="Research and Non-Commercial Use License">
+        <img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg" alt="Apache 2.0 License">
       </a>
     </td>
   </tr>
@@ -423,7 +423,7 @@ Consult `CITATION.cff` and the archived records for canonical bibliographic meta
 
 ## License
 
-The repository `LICENSE` file defines the NeuroCortex Research and Non-Commercial Use License. Non-commercial research, academic study, teaching, education, personal learning, and scientific evaluation are permitted under its terms. Commercial use requires prior written authorization and a separate license. This is a custom license, not an OSI-approved open-source license. Earlier copies distributed under Apache License 2.0 remain subject to that earlier license. Third-party datasets, libraries, and external assets may have separate terms.
+Consult the repository `LICENSE` file for the authoritative licensing terms. The license badge identifies the repository as Apache-2.0; the license file governs. Third-party datasets, libraries, and external assets may have separate terms.
 
 ## Contributions and Contact
 
