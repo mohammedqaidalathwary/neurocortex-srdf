@@ -31,7 +31,7 @@ long_description = (
 
 setup(
     name="neurocortex",
-    version="0.3.0",
+    version="0.4.0",
     description=(
         "NeuroCortex SRDF prototype framework "
         "for bounded runtime structural adaptation."

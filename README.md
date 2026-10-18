@@ -282,7 +282,6 @@ neurocortex-srdf/
 ├── tests/
 ├── examples/
 │   ├── srdf_toy_english/
-│   └── srdf_toy_arabic/
 ├── docs/
 ├── assets/
 └── experiments/

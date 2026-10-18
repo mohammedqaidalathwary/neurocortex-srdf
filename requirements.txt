@@ -4,12 +4,9 @@
 # run the reference implementation in src/ and the S01 prototype
 # notebook.
 #
-# Experiment-specific reproducibility environments (e.g. the
-# protocol-controlled R4 execution) are governed by the
-# corresponding execution configuration and are not replaced by
-# this file.
-#
-# See: experiments/S04_OPENML_GENERALIZATION/protocol/R4_EXECUTION_CONFIGURATION.json
+# Experiment-specific reproducibility is defined by the corresponding
+# locked protocol and run-linked artifacts under experiments/.
+# This general requirements file does not pin or reproduce an experiment.
 
 numpy
 pandas
