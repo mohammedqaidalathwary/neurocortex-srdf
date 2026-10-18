@@ -109,6 +109,8 @@ The direction of H1 (threshold inflation) is consistent between RF (+0.098) and 
 
 **Note:** S04 cases: 373 usable (2 excluded for missing SRDF result). S06 cases: 587 usable (13 excluded for baseline mismatch, all reported in `audit/TEST_04_S06_EXCLUSIONS.csv`). The unit of inference for Arm B is the dataset (15 for S04, 24 for S06); case counts are descriptive.
 
+> **ملاحظة Arm B (S04):** حالتان من أصل 375 حالة مفعّلة في S04 افتقدتا SRDF، فاستُبعدتا من جميع متوسطات Arm B. جميع القيم في `armB_summary.csv` و`TEST_04_ARMB_FAIRNESS.json` محسوبة على n_usable = 373، والهوية `Delta_thr = Delta_conv − Delta_corrected` تنطبق على مستوى الحالات (أقصى residual = 8.88e-16) وعلى مستوى المتوسطات بعد توحيد المقام.
+
 ## Leave-One-Dataset-Out robustness
 
 | contrast | lodo_min | lodo_max |
@@ -163,6 +165,6 @@ All contrasts retain their sign across every single-dataset exclusion. The sign 
 
 ## Data availability
 
-The complete S07 output is deposited on Zenodo at DOI `10.5281/zenodo.23404802` (pre-registration) and at the results DOI (to be added after deposit).
+The complete S07 output is deposited on Zenodo at DOI `10.5281/zenodo.23404802` (pre-registration) and at the results DOI `10.5281/zenodo.23406120`.
 
 Protocol SHA-256: `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`. Merkle root of the output: `d48271da7b7e16e48767e036ba8239d7236ee8d386cb6a7d366a74d152de1e23`.
