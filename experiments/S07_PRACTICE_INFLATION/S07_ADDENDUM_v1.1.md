@@ -24,7 +24,7 @@ the pre-registration, the confirmatory results, or the parent report.
 ## 1. Forensic test numbering
 
 The forensic audit contains tests numbered 1–14 with gaps at 8 and 13.
-Review of the full Git history (all branches, all tags) confirms that
+Examination of the full Git history (all branches, all tags) confirms that
 `TEST_08` and `TEST_13` were **never planned, never specified, and never
 implemented**. The numbering reflects discovery order during development,
 not a predefined test count. See `audit/TEST_NUMBERING_NOTE.md`.
