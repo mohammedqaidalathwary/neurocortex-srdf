@@ -21,12 +21,12 @@ Historical source snapshots retain their own identifiers. The package version do
 
 | Artifact | Current value | Interpretation and handling |
 |---|---|---|
-| `CITATION.cff` | `version: 0.3.0`; `date-released: 2026-10-08` | Software citation metadata. Its version and DOI mapping must be checked against the corresponding Zenodo record before being changed. |
-| Concept DOI in `CITATION.cff` | `10.5281/zenodo.23252917` | Concept-level identifier recorded in the citation metadata. |
-| Version DOI in `CITATION.cff` | `10.5281/zenodo.23252916`, described there as v1.0.0 | Version-specific identifier recorded in the citation metadata. Its relationship to the current citation version requires verification against Zenodo metadata. |
+| `CITATION.cff` | `version: 1.0.0`; `date-released: 2026-10-09` | Software citation metadata aligned to the public v1.0.0 Zenodo software record. |
+| Concept DOI in `CITATION.cff` | `10.5281/zenodo.23252916` | Concept-level identifier for the NeuroCortex software record. |
+| Version DOI in `CITATION.cff` | `10.5281/zenodo.23252917` | Version-specific record published as v1.0.0 on 2026-10-09. |
 | `docs/index.html` structured metadata | `version: 0.3.0`; publication date `2026-10-08` | The structured metadata labels the conceptual white paper. It is not, by itself, evidence of the current Python package version. |
 
-The citation version must not be changed merely to match the package version. Before changing `CITATION.cff`, verify the release/version metadata and DOI relationships against the authoritative Zenodo records. Preserve the existing citation metadata until that verification is complete.
+The software release metadata is distinct from the package metadata: Zenodo lists release `v0.4.0` at record `23224039` (2026-10-07) and release `v1.0.0` at record `23252917` (2026-10-09). The concept DOI is `10.5281/zenodo.23252916`; the version DOI for v1.0.0 is `10.5281/zenodo.23252917`. The Python package version remains `0.4.0`; do not mechanically equate the package version with the archived software-release version.
 
 ## Experiment identifiers
 
