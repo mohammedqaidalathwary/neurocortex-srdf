@@ -1,47 +1,50 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>NeuroCortex — Self-Reinforcing Development Framework (SRDF)</title>  <meta name="description" content="NeuroCortex SRDF is a research framework for controlled runtime structural adaptation in machine learning systems. Explore the conceptual white paper, reference implementation, protocols, and research artifacts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroCortex — Self-Reinforcing Development Framework (SRDF)</title>
+  <meta name="description" content="NeuroCortex SRDF is a research framework for controlled runtime structural adaptation in machine learning systems. Explore the conceptual white paper, reference implementation, protocols, and research artifacts.">
   <meta name="author" content="Mohammed Qaid Al-Athwary">
   <meta name="keywords" content="SRDF, Self-Reinforcing Development Framework, runtime structural adaptation, NeuroCortex, machine learning, artificial intelligence">
-  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://mohammedqaidalathwary.github.io/neurocortex-srdf/">  <meta property="og:title" content="NeuroCortex — Self-Reinforcing Development Framework (SRDF)">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://mohammedqaidalathwary.github.io/neurocortex-srdf/">
+  
+  <meta property="og:title" content="NeuroCortex — Self-Reinforcing Development Framework (SRDF)">
   <meta property="og:description" content="A research framework for controlled runtime structural adaptation in machine learning systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/">
-  <meta property="og:image" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/assets/neurocortex_logo.png">  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/assets/neurocortex_logo.png">
+  
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="NeuroCortex — SRDF">
   <meta name="twitter:description" content="A research framework for controlled runtime structural adaptation in machine learning systems.">
-  <meta name="twitter:image" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/assets/neurocortex_logo.png">  <script type="application/ld+json">
+  <meta name="twitter:image" content="https://mohammedqaidalathwary.github.io/neurocortex-srdf/assets/neurocortex_logo.png">
+
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
+    "@type": "Article",
     "headline": "NeuroCortex: Self-Reinforcing Development Framework (SRDF) — A Conceptual White Paper",
     "description": "A conceptual description of NeuroCortex SRDF, a framework for controlled runtime structural adaptation in machine learning systems. This page does not report experimental results or quantitative evaluation.",
     "image": "https://mohammedqaidalathwary.github.io/neurocortex-srdf/assets/neurocortex_logo.png",
     "author": {
       "@type": "Person",
       "name": "Mohammed Qaid Al-Athwary",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "0009-0006-9075-072X"
-      },
-      "sameAs": "https://orcid.org/0009-0006-9075-072X"
+      "url": "https://orcid.org/0009-0006-9075-072X"
     },
-    "datePublished": "2026-10-08T00:00:00+03:00",
-    "version": "0.3.0",
+    "datePublished": "2026-10-08",
     "license": "https://opensource.org/licenses/Apache-2.0",
     "url": "https://mohammedqaidalathwary.github.io/neurocortex-srdf/",
-    "isPartOf": {
-      "@type": "CreativeWork",
-      "name": "NeuroCortex SRDF"
-    },
     "sameAs": [
       "https://github.com/mohammedqaidalathwary/neurocortex-srdf",
       "https://orcid.org/0009-0006-9075-072X"
     ]
   }
-  </script>  <style>
+  </script>
+
+  <style>
     :root {
       --bg: #fafafa;
       --fg: #1a1a1a;
@@ -192,103 +195,96 @@
         margin: 0.4rem 0;
       }
     }
-  </style></head><body>
-  <main class="container"><header>
-  <img src="assets/neurocortex_logo.png" alt="NeuroCortex logo" width="140" height="140">
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img src="assets/neurocortex_logo.png" alt="NeuroCortex logo" width="140" height="140">
+      <h1>NeuroCortex</h1>
+      <p class="subtitle">Self-Reinforcing Development Framework (SRDF)</p>
+      <p class="subtitle">A Conceptual White Paper</p>
+    </header>
 
-  <h1>NeuroCortex</h1>
-  <p class="subtitle">Self-Reinforcing Development Framework (SRDF)</p>
-  <p class="subtitle">A Conceptual White Paper</p>
-</header>
+    <div class="meta">
+      <span><strong>Author:</strong> Mohammed Qaid Al-Athwary</span>
+      <span>
+        <strong>ORCID:</strong>
+        <a href="https://orcid.org/0009-0006-9075-072X">0009-0006-9075-072X</a>
+      </span>
+      <span><strong>Date:</strong> October 2026</span>
+    </div>
 
-<div class="meta">
-  <span><strong>Author:</strong> Mohammed Qaid Al-Athwary</span>
-  <span>
-    <strong>ORCID:</strong>
-    <a href="https://orcid.org/0009-0006-9075-072X">0009-0006-9075-072X</a>
-  </span>
-  <span><strong>Date:</strong> October 2026</span>
-</div>
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>
+        NeuroCortex is a research framework centered on the
+        <strong>Self-Reinforcing Development Framework (SRDF)</strong>.
+        SRDF proposes a controlled, auditable approach to
+        <strong>runtime structural adaptation</strong> in machine learning
+        systems. Rather than allowing unbounded self-modification, SRDF
+        separates the adaptation process into explicit stages: observation,
+        analysis, candidate generation, evaluation, authorization, and
+        controlled state transition.
+      </p>
+      <p>
+        The framework is organized around three principal components:
+        <strong>Trawler</strong>, <strong>Generator</strong>, and
+        <strong>Arbiter</strong>.
+      </p>
+    </section>
 
-<section aria-labelledby="overview">
-  <h2 id="overview">Overview</h2>
+    <section aria-labelledby="white-paper">
+      <h2 id="white-paper">White Paper</h2>
+      <p>
+        The conceptual white paper describes the framework, its design
+        principles, and its scope. It is a conceptual document: it does not
+        report experimental results, does not present quantitative evaluation,
+        and does not constitute prior publication of any future manuscript.
+      </p>
+      <div class="actions">
+        <a class="btn" href="whitepaper/NeuroCortex_SRDF_White_Paper_v1.0.pdf">Download PDF</a>
+      </div>
+    </section>
 
-  <p>
-    NeuroCortex is a research framework centered on the
-    <strong>Self-Reinforcing Development Framework (SRDF)</strong>.
-    SRDF proposes a controlled, auditable approach to
-    <strong>runtime structural adaptation</strong> in machine learning
-    systems. Rather than allowing unbounded self-modification, SRDF
-    separates the adaptation process into explicit stages: observation,
-    analysis, candidate generation, evaluation, authorization, and
-    controlled state transition.
-  </p>
+    <section aria-labelledby="repository">
+      <h2 id="repository">Repository</h2>
+      <p>
+        The full repository, including the reference implementation, phase
+        documentation (S01, S03), protocols, and research artifacts, is
+        available on GitHub.
+      </p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">View on GitHub</a>
+      </div>
+    </section>
 
-  <p>
-    The framework is organized around three principal components:
-    <strong>Trawler</strong>, <strong>Generator</strong>, and
-    <strong>Arbiter</strong>.
-  </p>
-</section>
+    <section aria-labelledby="research-scope">
+      <h2 id="research-scope">Research Scope</h2>
+      <p>
+        NeuroCortex is an ongoing research project. The material in this
+        repository is presented as a conceptual and methodological foundation,
+        not as a finished claim about capability or superiority. The repository
+        does not claim general or universal performance improvement, statistical
+        significance of any result, self-evolving artificial general
+        intelligence, unrestricted or unbounded self-modification, or
+        superiority over any existing method or architecture.
+      </p>
+    </section>
 
-<section aria-labelledby="white-paper">
-  <h2 id="white-paper">White Paper</h2>
+    <section aria-labelledby="license">
+      <h2 id="license">License</h2>
+      <p>
+        Released under the
+        <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a>.
+      </p>
+    </section>
 
-  <p>
-    The conceptual white paper describes the framework, its design
-    principles, and its scope. It is a conceptual document: it does not
-    report experimental results, does not present quantitative evaluation,
-    and does not constitute prior publication of any future manuscript.
-  </p>
-
-  <div class="actions">
-    <a class="btn" href="whitepaper/NeuroCortex_SRDF_White_Paper_v1.0.pdf">Download PDF</a>
-  </div>
-</section>
-
-<section aria-labelledby="repository">
-  <h2 id="repository">Repository</h2>
-
-  <p>
-    The full repository, including the reference implementation, phase
-    documentation (S01, S03), protocols, and research artifacts, is
-    available on GitHub.
-  </p>
-
-  <div class="actions">
-    <a class="btn" href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">View on GitHub</a>
-  </div>
-</section>
-
-<section aria-labelledby="research-scope">
-  <h2 id="research-scope">Research Scope</h2>
-
-  <p>
-    NeuroCortex is an ongoing research project. The material in this
-    repository is presented as a conceptual and methodological foundation,
-    not as a finished claim about capability or superiority. The repository
-    does not claim general or universal performance improvement, statistical
-    significance of any result, self-evolving artificial general
-    intelligence, unrestricted or unbounded self-modification, or
-    superiority over any existing method or architecture.
-  </p>
-</section>
-
-<section aria-labelledby="license">
-  <h2 id="license">License</h2>
-
-  <p>
-    Released under the
-    <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a>.
-  </p>
-</section>
-
-<footer>
-  NeuroCortex SRDF · Version 0.3.0 · October 2026<br>
-  <a href="https://orcid.org/0009-0006-9075-072X">ORCID</a> ·
-  <a href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">GitHub</a>
-</footer>
-
+    <footer>
+      NeuroCortex SRDF · Version 0.3.0 · October 2026<br>
+      <a href="https://orcid.org/0009-0006-9075-072X">ORCID</a> ·
+      <a href="https://github.com/mohammedqaidalathwary/neurocortex-srdf">GitHub</a>
+    </footer>
   </main>
 </body>
-  </html>
+</html>
