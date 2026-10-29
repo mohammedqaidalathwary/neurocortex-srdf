@@ -327,6 +327,14 @@ statistical procedures, and deposited result artifacts. Its findings do not
 by themselves establish universal superiority of any classifier or universal
 self-improvement by NeuroCortex SRDF.
 
+
+### S08 Study Design Figure
+
+![S08 confirmatory study design and cohort flow](assets/S08_Figure_1_Study_Design_and_Cohort_Flow.png)
+
+*Figure 1. Confirmatory study design, cohort accounting, exclusions, and contrast-specific sample sizes.*
+
+
 ## S08 Reported Results
 
 The following table transcribes the reported estimates, confidence intervals,
@@ -343,6 +351,14 @@ adjusted p-values, and conclusion labels from the S08 results summary.
 | H2 | LR | SMOTE vs corrected control | 77 | -0.0105868 | [-0.0167986, -0.00483344] | 0.00689993 | EQUIVALENT |
 | H2 | LR | Random undersampling vs corrected control | 85 | -0.00709924 | [-0.0119894, -0.00292603] | 0.0000900000 | EQUIVALENT |
 | H3 | — | Imbalance-ratio coefficient | — | +0.04363 | Not reported here | 0.22953 | NOT SUPPORTED |
+
+
+### S08 Confirmatory Results Figure
+
+![S08 confirmatory results with confidence intervals](assets/S08_Figure_2_Confirmatory_Contrasts.png)
+
+*Figure 2. Reported S08 mean differences, confidence intervals, adjusted p-values, and conclusion labels.*
+
 
 For H3, the recorded raw p-value was **0.07651** and the Holm-adjusted
 p-value was **0.22953**; the hypothesis was reported as NOT SUPPORTED.
