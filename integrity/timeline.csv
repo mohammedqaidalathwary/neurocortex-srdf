@@ -1,0 +1,19 @@
+phase,event,utc,source
+S04,protocol locked,2026-10-09 00:10:17.938173+00:00,protocol_lock.json
+S04,cohort independent audit,2026-10-09 00:40:32.619119+00:00,cohort_lock.json
+S04,first result finished,2026-10-09 00:50:28.177947+00:00,r4_case_results.jsonl
+S04,last result finished,2026-10-09 01:36:54.967321+00:00,r4_case_results.jsonl
+S05,protocol locked,2026-10-11 23:51:07.184752+00:00,S05_protocol_lock.json
+S06,freeze addendum,2026-10-12 03:28:16.556208+00:00,protocol_freeze_addendum.json
+S06,Zenodo deposit recorded locally,2026-10-12 03:52:04.661494+00:00,S06_ZENODO_DEPOSIT.json
+S06,confirmatory cohort-size decision,2026-10-12 04:36:39.676105+00:00,S06_confirmatory_decision.json
+S06a,v2 manifest created (exploratory),2026-10-12 03:05:11.350110+00:00,v2_MANIFEST.json
+S06b,protocol locked,2026-10-12 09:43:29.182663+00:00,S06b_protocol_lock.json
+S06b,src_v3 manifest created,2026-10-12 09:44:10.479469+00:00,src_v3_manifest.json
+S06c,protocol locked,2026-10-12 10:39:58.076749+00:00,S06c_protocol_lock.json
+S07,notebook run started,2026-10-15 20:14:34.858215+00:00,environment.json
+S07,protocol created,2026-10-15 20:23:27.275799+00:00,protocol_lock.json
+S07,protocol locked,2026-10-15 20:24:37.570068+00:00,protocol_lock.json
+S07,Zenodo pre-registration deposited,2026-10-15 20:44:11.081973+00:00,pre_registration.json
+S07,first logged runtime event,2026-10-15 20:49:26.806307+00:00,deviations.csv
+S07,audit run,2026-10-15 23:08:33.829469+00:00,AUDIT.json

@@ -1,0 +1,595 @@
+{
+  "23252916": {
+    "created": "2026-10-09T03:06:43.417670+00:00",
+    "modified": "2026-10-09T03:06:43.596769+00:00",
+    "id": 23252917,
+    "conceptrecid": "23252916",
+    "doi": "10.5281/zenodo.23252917",
+    "conceptdoi": "10.5281/zenodo.23252916",
+    "doi_url": "https://doi.org/10.5281/zenodo.23252917",
+    "metadata": {
+      "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+      "doi": "10.5281/zenodo.23252917",
+      "publication_date": "2026-10-09",
+      "description": "NeuroCortex SRDF is a research framework for bounded runtime structural adaptation in AI systems. The framework separates observation, candidate generation, evaluation, authorization, and controlled state transition into explicit, auditable stages.",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Al-Athwary, Mohammed Qaid",
+          "affiliation": null,
+          "orcid": "0009-0006-9075-072X"
+        }
+      ],
+      "keywords": [
+        "self-reinforcing development framework",
+        "runtime structural adaptation",
+        "SRDF",
+        "generator-arbiter",
+        "machine learning"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/mohammedqaidalathwary/neurocortex-srdf/tree/v1.0.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1.0.0",
+      "custom": {
+        "code:codeRepository": "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
+      },
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "apache2.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23252916"
+            }
+          }
+        ]
+      },
+      "notes": "If you use this software, please cite it as below."
+    },
+    "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+    "links": {
+      "self": "https://zenodo.org/api/records/23252917",
+      "self_html": "https://zenodo.org/records/23252917",
+      "preview_html": "https://zenodo.org/records/23252917?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.23252917",
+      "self_doi": "https://doi.org/10.5281/zenodo.23252917",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23252917",
+      "reserve_doi": "https://zenodo.org/api/records/23252917/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/23252916",
+      "parent_html": "https://zenodo.org/records/23252916",
+      "parent_doi": "https://doi.org/10.5281/zenodo.23252916",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23252916",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23252917/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23252917/sequence/default",
+      "files": "https://zenodo.org/api/records/23252917/files",
+      "media_files": "https://zenodo.org/api/records/23252917/media-files",
+      "latest": "https://zenodo.org/api/records/23252917/versions/latest",
+      "latest_html": "https://zenodo.org/records/23252917/latest",
+      "versions": "https://zenodo.org/api/records/23252917/versions",
+      "draft": "https://zenodo.org/api/records/23252917/draft",
+      "access_links": "https://zenodo.org/api/records/23252917/access/links",
+      "access_grants": "https://zenodo.org/api/records/23252917/access/grants",
+      "access_users": "https://zenodo.org/api/records/23252917/access/users",
+      "access_request": "https://zenodo.org/api/records/23252917/access/request",
+      "access": "https://zenodo.org/api/records/23252917/access",
+      "communities": "https://zenodo.org/api/records/23252917/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/23252917/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/23252917/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/23252917/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/23252917/quota-increase",
+      "requests": "https://zenodo.org/api/records/23252917/requests"
+    },
+    "updated": "2026-10-09T03:06:43.596769+00:00",
+    "recid": "23252917",
+    "revision": 3,
+    "files": [
+      {
+        "id": "e94db5fb-850c-4184-830e-6e7b50f2138c",
+        "key": "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+        "size": 934113,
+        "checksum": "md5:b28cf5a5413e97650fa2ecdeeaedcd1b",
+        "links": {
+          "self": "https://zenodo.org/api/records/23252917/files/mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "1926973"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 0,
+      "unique_downloads": 0,
+      "views": 16,
+      "unique_views": 9,
+      "version_downloads": 0,
+      "version_unique_downloads": 0,
+      "version_unique_views": 9,
+      "version_views": 16
+    },
+    "state": "done",
+    "submitted": true
+  },
+  "23252917": {
+    "created": "2026-10-09T03:06:43.417670+00:00",
+    "modified": "2026-10-09T03:06:43.596769+00:00",
+    "id": 23252917,
+    "conceptrecid": "23252916",
+    "doi": "10.5281/zenodo.23252917",
+    "conceptdoi": "10.5281/zenodo.23252916",
+    "doi_url": "https://doi.org/10.5281/zenodo.23252917",
+    "metadata": {
+      "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+      "doi": "10.5281/zenodo.23252917",
+      "publication_date": "2026-10-09",
+      "description": "NeuroCortex SRDF is a research framework for bounded runtime structural adaptation in AI systems. The framework separates observation, candidate generation, evaluation, authorization, and controlled state transition into explicit, auditable stages.",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Al-Athwary, Mohammed Qaid",
+          "affiliation": null,
+          "orcid": "0009-0006-9075-072X"
+        }
+      ],
+      "keywords": [
+        "self-reinforcing development framework",
+        "runtime structural adaptation",
+        "SRDF",
+        "generator-arbiter",
+        "machine learning"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/mohammedqaidalathwary/neurocortex-srdf/tree/v1.0.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1.0.0",
+      "custom": {
+        "code:codeRepository": "https://github.com/mohammedqaidalathwary/neurocortex-srdf"
+      },
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "apache2.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23252916"
+            }
+          }
+        ]
+      },
+      "notes": "If you use this software, please cite it as below."
+    },
+    "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+    "links": {
+      "self": "https://zenodo.org/api/records/23252917",
+      "self_html": "https://zenodo.org/records/23252917",
+      "preview_html": "https://zenodo.org/records/23252917?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.23252917",
+      "self_doi": "https://doi.org/10.5281/zenodo.23252917",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23252917",
+      "reserve_doi": "https://zenodo.org/api/records/23252917/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/23252916",
+      "parent_html": "https://zenodo.org/records/23252916",
+      "parent_doi": "https://doi.org/10.5281/zenodo.23252916",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23252916",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23252917/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23252917/sequence/default",
+      "files": "https://zenodo.org/api/records/23252917/files",
+      "media_files": "https://zenodo.org/api/records/23252917/media-files",
+      "latest": "https://zenodo.org/api/records/23252917/versions/latest",
+      "latest_html": "https://zenodo.org/records/23252917/latest",
+      "versions": "https://zenodo.org/api/records/23252917/versions",
+      "draft": "https://zenodo.org/api/records/23252917/draft",
+      "access_links": "https://zenodo.org/api/records/23252917/access/links",
+      "access_grants": "https://zenodo.org/api/records/23252917/access/grants",
+      "access_users": "https://zenodo.org/api/records/23252917/access/users",
+      "access_request": "https://zenodo.org/api/records/23252917/access/request",
+      "access": "https://zenodo.org/api/records/23252917/access",
+      "communities": "https://zenodo.org/api/records/23252917/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/23252917/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/23252917/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/23252917/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/23252917/quota-increase",
+      "requests": "https://zenodo.org/api/records/23252917/requests"
+    },
+    "updated": "2026-10-09T03:06:43.596769+00:00",
+    "recid": "23252917",
+    "revision": 3,
+    "files": [
+      {
+        "id": "e94db5fb-850c-4184-830e-6e7b50f2138c",
+        "key": "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+        "size": 934113,
+        "checksum": "md5:b28cf5a5413e97650fa2ecdeeaedcd1b",
+        "links": {
+          "self": "https://zenodo.org/api/records/23252917/files/mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "1926973"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 0,
+      "unique_downloads": 0,
+      "views": 16,
+      "unique_views": 9,
+      "version_downloads": 0,
+      "version_unique_downloads": 0,
+      "version_unique_views": 9,
+      "version_views": 16
+    },
+    "state": "done",
+    "submitted": true
+  },
+  "23308347": {
+    "created": "2026-10-12T03:51:04.733005+00:00",
+    "modified": "2026-10-12T03:51:04.986430+00:00",
+    "id": 23308347,
+    "conceptrecid": "23308346",
+    "doi": "10.5281/zenodo.23308347",
+    "conceptdoi": "10.5281/zenodo.23308346",
+    "doi_url": "https://doi.org/10.5281/zenodo.23308347",
+    "metadata": {
+      "title": "Confirmatory evaluation of SRDF v2 (tie-break + balanced-accuracy utility) on an independent cohort",
+      "doi": "10.5281/zenodo.23308347",
+      "publication_date": "2026-10-12",
+      "description": "<p>Study ID: NC-S06-CONFIRM</p>\n<p>&nbsp;</p>\n<p>Repository: https://github.com/mohammedqaidalathwary/neurocortex-srdf</p>\n<p>Frozen commit: 41570895c2c3fce5334e69eb5dab9895b9e42c94</p>\n<p>Protocol SHA-256: 32bb9acd810b4f4567f4b799a0230ddd50946770631f2f9fd1192f2c11c16759</p>\n<p>&nbsp;</p>\n<p>Background:</p>\n<p>SRDF is a runtime framework for controlled structural adaptation. v2 of the framework (S06a+d) modified the Arbiter tie-break rule and replaced accuracy with balanced accuracy inside the utility signal. v2 was derived AFTER inspecting failures of v1 on the 45 S04 datasets; its effect on those datasets is therefore exploratory and optimistic by construction. This protocol specifies a confirmatory evaluation on a fully independent cohort.</p>\n<p>&nbsp;</p>\n<p>Hypotheses:</p>\n<p>H1: v2 improves on v1.</p>\n<p>H2: v2 is non-inferior to Always-SMOTE+RF (governance does not cost accuracy), margin 0.005.</p>\n<p>H3: v2 improves on the RF baseline (replication of S04, reported separately outside the Holm family).</p>\n<p>&nbsp;</p>\n<p>Decision rules:</p>\n<p>- SESOI = 0.01.</p>\n<p>- Alpha family = 0.05.</p>\n<p>- Multiplicity: Holm-Bonferroni over {H1, H2}.</p>\n<p>- Failed hypothesis reported as a null finding; no re-run.</p>\n<p>`</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Al-Athwary, Mohammed Qaid",
+          "affiliation": "Independent Researcher",
+          "orcid": "0009-0006-9075-072X"
+        }
+      ],
+      "version": "1.0.0",
+      "language": "aig",
+      "resource_type": {
+        "title": "Preprint",
+        "type": "publication",
+        "subtype": "preprint"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23308346"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Confirmatory evaluation of SRDF v2 (tie-break + balanced-accuracy utility) on an independent cohort",
+    "links": {
+      "self": "https://zenodo.org/api/records/23308347",
+      "self_html": "https://zenodo.org/records/23308347",
+      "preview_html": "https://zenodo.org/records/23308347?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.23308347",
+      "self_doi": "https://doi.org/10.5281/zenodo.23308347",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23308347",
+      "reserve_doi": "https://zenodo.org/api/records/23308347/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/23308346",
+      "parent_html": "https://zenodo.org/records/23308346",
+      "parent_doi": "https://doi.org/10.5281/zenodo.23308346",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23308346",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23308347/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23308347/sequence/default",
+      "files": "https://zenodo.org/api/records/23308347/files",
+      "media_files": "https://zenodo.org/api/records/23308347/media-files",
+      "latest": "https://zenodo.org/api/records/23308347/versions/latest",
+      "latest_html": "https://zenodo.org/records/23308347/latest",
+      "versions": "https://zenodo.org/api/records/23308347/versions",
+      "draft": "https://zenodo.org/api/records/23308347/draft",
+      "access_links": "https://zenodo.org/api/records/23308347/access/links",
+      "access_grants": "https://zenodo.org/api/records/23308347/access/grants",
+      "access_users": "https://zenodo.org/api/records/23308347/access/users",
+      "access_request": "https://zenodo.org/api/records/23308347/access/request",
+      "access": "https://zenodo.org/api/records/23308347/access",
+      "communities": "https://zenodo.org/api/records/23308347/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/23308347/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/23308347/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/23308347/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/23308347/quota-increase",
+      "requests": "https://zenodo.org/api/records/23308347/requests"
+    },
+    "updated": "2026-10-12T03:51:04.986430+00:00",
+    "recid": "23308347",
+    "revision": 3,
+    "files": [
+      {
+        "id": "bb895a00-017d-46fc-a086-88ca4bcd70f7",
+        "key": "S06_registration_bundle.zip",
+        "size": 12067,
+        "checksum": "md5:b03ba48d3715b9b12f77f38e9c7fbcba",
+        "links": {
+          "self": "https://zenodo.org/api/records/23308347/files/S06_registration_bundle.zip/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "1926973"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 1,
+      "unique_downloads": 1,
+      "views": 5,
+      "unique_views": 5,
+      "version_downloads": 1,
+      "version_unique_downloads": 1,
+      "version_unique_views": 5,
+      "version_views": 5
+    },
+    "state": "done",
+    "submitted": true
+  },
+  "23404802": {
+    "created": "2026-10-15T20:44:11.081973+00:00",
+    "modified": "2026-10-15T20:44:11.382057+00:00",
+    "id": 23404802,
+    "conceptrecid": "23404801",
+    "doi": "10.5281/zenodo.23404802",
+    "conceptdoi": "10.5281/zenodo.23404801",
+    "doi_url": "https://doi.org/10.5281/zenodo.23404802",
+    "metadata": {
+      "title": "S07 Pre-registration \u2014 Protocol for the Benchmark-Practice Inflation Study",
+      "doi": "10.5281/zenodo.23404802",
+      "publication_date": "2026-10-15",
+      "description": "<p>Protocol declaration and locked artifacts for S07. Declared before any model was fit.</p>\n<p>Contents: cohort derivation rules from the S04 OpenML snapshot, the confirmatory family (H1, H2&times;3, H4&times;3), the SESOI (0.02 bAcc), the pre-declared decision rules, and the exact identity Delta_conv = Delta_mat + Delta_thr.</p>\n<p>Protocol SHA-256: c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525</p>\n<p>The S07 study measures how much of the reported benefit of class-imbalance correction over a plain classifier is an artifact of the default 0.5 decision threshold of the control. The unit of claim is the benchmark practice; the system NeuroCortex-SRDF appears only as one documented instance of that practice. Cohort R: 131 OpenML binary tabular datasets. Declared status: confirmatory (N_req = 70).</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Al-Athwary, Mohammed Qaid",
+          "affiliation": null,
+          "orcid": "0009-0006-9075-072X"
+        }
+      ],
+      "language": "eng",
+      "resource_type": {
+        "title": "Other",
+        "type": "other"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23404801"
+            }
+          }
+        ]
+      }
+    },
+    "title": "S07 Pre-registration \u2014 Protocol for the Benchmark-Practice Inflation Study",
+    "links": {
+      "self": "https://zenodo.org/api/records/23404802",
+      "self_html": "https://zenodo.org/records/23404802",
+      "preview_html": "https://zenodo.org/records/23404802?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.23404802",
+      "self_doi": "https://doi.org/10.5281/zenodo.23404802",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23404802",
+      "reserve_doi": "https://zenodo.org/api/records/23404802/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/23404801",
+      "parent_html": "https://zenodo.org/records/23404801",
+      "parent_doi": "https://doi.org/10.5281/zenodo.23404801",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23404801",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23404802/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23404802/sequence/default",
+      "files": "https://zenodo.org/api/records/23404802/files",
+      "media_files": "https://zenodo.org/api/records/23404802/media-files",
+      "latest": "https://zenodo.org/api/records/23404802/versions/latest",
+      "latest_html": "https://zenodo.org/records/23404802/latest",
+      "versions": "https://zenodo.org/api/records/23404802/versions",
+      "draft": "https://zenodo.org/api/records/23404802/draft",
+      "access_links": "https://zenodo.org/api/records/23404802/access/links",
+      "access_grants": "https://zenodo.org/api/records/23404802/access/grants",
+      "access_users": "https://zenodo.org/api/records/23404802/access/users",
+      "access_request": "https://zenodo.org/api/records/23404802/access/request",
+      "access": "https://zenodo.org/api/records/23404802/access",
+      "communities": "https://zenodo.org/api/records/23404802/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/23404802/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/23404802/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/23404802/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/23404802/quota-increase",
+      "requests": "https://zenodo.org/api/records/23404802/requests"
+    },
+    "updated": "2026-10-15T20:44:11.382057+00:00",
+    "recid": "23404802",
+    "revision": 3,
+    "files": [
+      {
+        "id": "e4035093-8236-4628-a424-ef55e34e6c5d",
+        "key": "S07_PREREGISTRATION.zip",
+        "size": 10808,
+        "checksum": "md5:aad928ca1e1c24c1d502f38ece1aef26",
+        "links": {
+          "self": "https://zenodo.org/api/records/23404802/files/S07_PREREGISTRATION.zip/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "1926973"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 1,
+      "unique_downloads": 1,
+      "views": 9,
+      "unique_views": 9,
+      "version_downloads": 1,
+      "version_unique_downloads": 1,
+      "version_unique_views": 9,
+      "version_views": 9
+    },
+    "state": "done",
+    "submitted": true
+  },
+  "23406120": {
+    "created": "2026-10-15T22:55:14.737485+00:00",
+    "modified": "2026-10-15T22:55:14.897820+00:00",
+    "id": 23406120,
+    "conceptrecid": "23406119",
+    "doi": "10.5281/zenodo.23406120",
+    "conceptdoi": "10.5281/zenodo.23406119",
+    "doi_url": "https://doi.org/10.5281/zenodo.23406120",
+    "metadata": {
+      "title": "S07 Results \u2014 Post-registration Deposit",
+      "doi": "10.5281/zenodo.23406120",
+      "publication_date": "2026-10-16",
+      "description": "<p>Complete S07 output. This deposit contains all results, analyses, and forensic audit records of the S07 study on benchmark-practice inflation.</p>\n<p>Contents:<br>- Locked protocol (SHA-256: c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525)<br>- 131-dataset cohort manifest<br>- Case-level results for 7 confirmatory arms (A1&ndash;A7) across 98 datasets, 10 splits each<br>- 7 confirmatory tests with Holm correction (H1, H2&times;3, H4&times;3)<br>- H3 win-flip descriptive analysis<br>- Moderator HC3 OLS regression<br>- Sensitivity analyses (Wilcoxon, trimmed means)<br>- Arm L (Logistic Regression) &mdash; exploratory<br>- Arm B (SRDF threshold re-reading on S04 and S06 cohorts) &mdash; interpretive<br>- Forensic audit: 12 tests, all PASS<br>- Merkle root: a332c6b281737079ad3f00e78083efd8195e1a9e5409d1bd1b5f9af741c4e2a6</p>\n<p>Key findings:<br>- H1 SUPPORTED: threshold inflation = +9.76 bAcc (CI95 [8.24, 11.32], p &lt; 1e-4)<br>- H2_CSRF INFERIOR: &minus;10.71 bAcc<br>- H2_EE EQUIVALENT: +0.74 bAcc<br>- H4_* EQUIVALENT (AUC): the effect disappears under a threshold-free metric<br>- Scenario A of the pre-registered plan achieved<br>- All 12 forensic validation tests passed</p>\n<p>Pre-registration DOI: 10.5281/zenodo.23404802</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Al-Athwary, Mohammed Qaid",
+          "affiliation": null,
+          "orcid": "0009-0006-9075-072X"
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "10.5281/zenodo.23404802",
+          "relation": "isSupplementTo",
+          "resource_type": "other",
+          "scheme": "doi"
+        }
+      ],
+      "language": "eng",
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23406119"
+            }
+          }
+        ]
+      }
+    },
+    "title": "S07 Results \u2014 Post-registration Deposit",
+    "links": {
+      "self": "https://zenodo.org/api/records/23406120",
+      "self_html": "https://zenodo.org/records/23406120",
+      "preview_html": "https://zenodo.org/records/23406120?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.23406120",
+      "self_doi": "https://doi.org/10.5281/zenodo.23406120",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23406120",
+      "reserve_doi": "https://zenodo.org/api/records/23406120/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/23406119",
+      "parent_html": "https://zenodo.org/records/23406119",
+      "parent_doi": "https://doi.org/10.5281/zenodo.23406119",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23406119",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23406120/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23406120/sequence/default",
+      "files": "https://zenodo.org/api/records/23406120/files",
+      "media_files": "https://zenodo.org/api/records/23406120/media-files",
+      "latest": "https://zenodo.org/api/records/23406120/versions/latest",
+      "latest_html": "https://zenodo.org/records/23406120/latest",
+      "versions": "https://zenodo.org/api/records/23406120/versions",
+      "draft": "https://zenodo.org/api/records/23406120/draft",
+      "access_links": "https://zenodo.org/api/records/23406120/access/links",
+      "access_grants": "https://zenodo.org/api/records/23406120/access/grants",
+      "access_users": "https://zenodo.org/api/records/23406120/access/users",
+      "access_request": "https://zenodo.org/api/records/23406120/access/request",
+      "access": "https://zenodo.org/api/records/23406120/access",
+      "communities": "https://zenodo.org/api/records/23406120/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/23406120/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/23406120/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/23406120/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/23406120/quota-increase",
+      "requests": "https://zenodo.org/api/records/23406120/requests"
+    },
+    "updated": "2026-10-15T22:55:14.897820+00:00",
+    "recid": "23406120",
+    "revision": 3,
+    "files": [
+      {
+        "id": "30c7cb4d-e72a-4bea-b027-7fdb851af295",
+        "key": "S07_OUTPUT .zip",
+        "size": 486616,
+        "checksum": "md5:bfa49c6df6299b0f8c8a7409277df274",
+        "links": {
+          "self": "https://zenodo.org/api/records/23406120/files/S07_OUTPUT%20.zip/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "1926973"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 2,
+      "unique_downloads": 2,
+      "views": 8,
+      "unique_views": 8,
+      "version_downloads": 2,
+      "version_unique_downloads": 2,
+      "version_unique_views": 8,
+      "version_views": 8
+    },
+    "state": "done",
+    "submitted": true
+  }
+}

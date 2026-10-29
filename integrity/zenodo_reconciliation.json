@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "zenodo_id": "23252916",
+      "status": "FETCHED",
+      "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+      "publication_date": "2026-10-09",
+      "created": "2026-10-09T03:06:43.417670+00:00",
+      "version": "v1.0.0",
+      "n_files": 1,
+      "conceptdoi": "10.5281/zenodo.23252916",
+      "files": [
+        [
+          "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+          934113,
+          "md5:b28cf5a5413e97650fa2ecdeeaedcd1b"
+        ]
+      ],
+      "creators": [
+        "Al-Athwary, Mohammed Qaid"
+      ],
+      "license": "apache2.0"
+    },
+    {
+      "zenodo_id": "23252917",
+      "status": "FETCHED",
+      "title": "NeuroCortex \u2014 Self-Reinforcing Development Framework (SRDF)",
+      "publication_date": "2026-10-09",
+      "created": "2026-10-09T03:06:43.417670+00:00",
+      "version": "v1.0.0",
+      "n_files": 1,
+      "conceptdoi": "10.5281/zenodo.23252916",
+      "files": [
+        [
+          "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+          934113,
+          "md5:b28cf5a5413e97650fa2ecdeeaedcd1b"
+        ]
+      ],
+      "creators": [
+        "Al-Athwary, Mohammed Qaid"
+      ],
+      "license": "apache2.0"
+    },
+    {
+      "zenodo_id": "23308347",
+      "status": "FETCHED",
+      "title": "Confirmatory evaluation of SRDF v2 (tie-break + balanced-accuracy utility) on an independent cohort",
+      "publication_date": "2026-10-12",
+      "created": "2026-10-12T03:51:04.733005+00:00",
+      "version": "1.0.0",
+      "n_files": 1,
+      "conceptdoi": "10.5281/zenodo.23308346",
+      "files": [
+        [
+          "S06_registration_bundle.zip",
+          12067,
+          "md5:b03ba48d3715b9b12f77f38e9c7fbcba"
+        ]
+      ],
+      "creators": [
+        "Al-Athwary, Mohammed Qaid"
+      ],
+      "license": "cc-by-4.0"
+    },
+    {
+      "zenodo_id": "23404802",
+      "status": "FETCHED",
+      "title": "S07 Pre-registration \u2014 Protocol for the Benchmark-Practice Inflation Study",
+      "publication_date": "2026-10-15",
+      "created": "2026-10-15T20:44:11.081973+00:00",
+      "version": null,
+      "n_files": 1,
+      "conceptdoi": "10.5281/zenodo.23404801",
+      "files": [
+        [
+          "S07_PREREGISTRATION.zip",
+          10808,
+          "md5:aad928ca1e1c24c1d502f38ece1aef26"
+        ]
+      ],
+      "creators": [
+        "Al-Athwary, Mohammed Qaid"
+      ],
+      "license": "cc-by-4.0"
+    },
+    {
+      "zenodo_id": "23406120",
+      "status": "FETCHED",
+      "title": "S07 Results \u2014 Post-registration Deposit",
+      "publication_date": "2026-10-16",
+      "created": "2026-10-15T22:55:14.737485+00:00",
+      "version": null,
+      "n_files": 1,
+      "conceptdoi": "10.5281/zenodo.23406119",
+      "files": [
+        [
+          "S07_OUTPUT .zip",
+          486616,
+          "md5:bfa49c6df6299b0f8c8a7409277df274"
+        ]
+      ],
+      "creators": [
+        "Al-Athwary, Mohammed Qaid"
+      ],
+      "license": "cc-by-4.0"
+    }
+  ],
+  "files": [
+    {
+      "zenodo_id": "23252916",
+      "file": "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+      "size": 934113,
+      "md5": "b28cf5a5413e97650fa2ecdeeaedcd1b",
+      "status": "NOT_IN_REPO (may be a zip/bundle or Zenodo-only file)",
+      "repo_matches": []
+    },
+    {
+      "zenodo_id": "23252917",
+      "file": "mohammedqaidalathwary/neurocortex-srdf-v1.0.0.zip",
+      "size": 934113,
+      "md5": "b28cf5a5413e97650fa2ecdeeaedcd1b",
+      "status": "NOT_IN_REPO (may be a zip/bundle or Zenodo-only file)",
+      "repo_matches": []
+    },
+    {
+      "zenodo_id": "23308347",
+      "file": "S06_registration_bundle.zip",
+      "size": 12067,
+      "md5": "b03ba48d3715b9b12f77f38e9c7fbcba",
+      "status": "NOT_IN_REPO (may be a zip/bundle or Zenodo-only file)",
+      "repo_matches": []
+    },
+    {
+      "zenodo_id": "23404802",
+      "file": "S07_PREREGISTRATION.zip",
+      "size": 10808,
+      "md5": "aad928ca1e1c24c1d502f38ece1aef26",
+      "status": "NOT_IN_REPO (may be a zip/bundle or Zenodo-only file)",
+      "repo_matches": []
+    },
+    {
+      "zenodo_id": "23406120",
+      "file": "S07_OUTPUT .zip",
+      "size": 486616,
+      "md5": "bfa49c6df6299b0f8c8a7409277df274",
+      "status": "NOT_IN_REPO (may be a zip/bundle or Zenodo-only file)",
+      "repo_matches": []
+    }
+  ]
+}

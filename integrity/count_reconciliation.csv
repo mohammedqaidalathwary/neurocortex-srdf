@@ -1,0 +1,23 @@
+label,claimed,actual,status,source
+S04 cases,1125,1125,PASS,README.md / S04 README
+S04 datasets,45,45,PASS,README.md / S04 README
+S04 triggered cases,375,375,PASS,CHANGELOG.md
+S04 valid-delta cases,373,373,PASS,CHANGELOG.md / S07 report
+S05 reused SRDF cases,1125,1125,PASS,S05 README
+S05 baseline smote_rf records,1125,1125,PASS,S05 README
+S05 baseline cost_sensitive_rf records,1125,1125,PASS,S05 README
+S05 baseline adasyn_rf records,1125,1125,PASS,S05 README
+S05 baseline easyensemble records,1125,1125,PASS,S05 README
+S06 stage198 datasets,198,198,PASS,S06_confirmatory_decision.json
+S06 triggered datasets (EE standalone),24,24,PASS,S06_confirmatory_decision.json
+S06 triggered cases (EE standalone),600,600,PASS,S06_confirmatory_decision.json
+S07 cohort candidates,131,131,PASS,S07 report
+S07 analysed datasets,98,98,PASS,S07 report
+S07 fully lost datasets,33,33,PASS,S07 addendum v1.2
+S07 lost: no_numeric_runtime,13,13,PASS,S07 addendum v1.2
+S07 lost: cardinality_exceeded,15,15,PASS,S07 addendum v1.2
+S07 lost: download_failure,5,5,PASS,S07 addendum v1.2
+S07 A3 applicable datasets,40,40,PASS,S07 addendum v1.2
+S07 A3 not-applicable datasets,58,58,PASS,S07 addendum v1.2
+S07 logged deviation rows,38,38,PASS,S07 addendum v1.1
+S07 reported n in confirmatory table (H1),98,98,PASS,S07 report

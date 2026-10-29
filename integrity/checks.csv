@@ -1,0 +1,58 @@
+check_id,status,detail
+GIT_HISTORY_AVAILABLE,PASS,commits=80 tags=1
+NO_RAW_THIRD_PARTY_DATA,PASS,raw_like=0
+PHASE_MATRIX_BUILT,PASS,6 phases
+ALL_RECORDED_HASHES_MATCH,FAIL,93/99
+HASH_REFERENCE_GRAPH,REVIEW,unresolved=628
+SINGLE_EMAIL,FAIL,"['mohammedqaid.amanlift@gmail.com', 'mohammedqaidalathwary@gmail.com']"
+SINGLE_REPO_URL,PASS,['mohammedqaidalathwary/neurocortex-srdf']
+ENGLISH_ONLY,FAIL,3 files
+VERSION_CONSISTENCY,REVIEW,"{'pyproject.toml': '0.4.0', 'setup.py': '0.4.0', 'CITATION.cff': '1.0.0', 'src/__init__.py': '0.1.0', 'src_v2/__init__.py': '0.1.0', 'src_v3/__init__.py': '0.3.0', 'src_v4/__init__.py': '0.4.0'}"
+MARKDOWN_PATHS_RESOLVE,FAIL,broken=6
+NO_SECRETS_FOUND,PASS,hits=0
+FILE_PRESENT_LICENSE,PASS,
+FILE_PRESENT_CITATION.cff,PASS,
+FILE_PRESENT_README.md,PASS,
+FILE_PRESENT_CHANGELOG.md,PASS,
+FILE_PRESENT_SECURITY.md,PASS,
+FILE_PRESENT_CONTRIBUTING.md,PASS,
+FILE_PRESENT_CODE_OF_CONDUCT.md,PASS,
+FILE_PRESENT_AUTHORS.md,PASS,
+S07_N_MEAN_SD_DZ_EXACT,PASS,"n, mean, sd and Hedges g (4n-9) reproduced to 1e-9"
+S07_CI_WITHIN_MC_TOLERANCE,PASS,max |CI diff| = 0.00060 (tolerance 0.002; CIs are Monte-Carlo)
+S07_DECISIONS_REPRODUCE_FROM_CI,PASS,decision labels re-derived from the reported CIs and SESOI=0.020
+S07_SOURCE_LEVEL_DECISION_H1,PASS,decision at source level equals reported: SUPPORTED
+S07_SOURCE_LEVEL_DECISION_H2_CSRF,PASS,decision at source level equals reported: INFERIOR
+S07_SOURCE_LEVEL_DECISION_H2_EE,PASS,decision at source level equals reported: EQUIVALENT
+S07_SOURCE_LEVEL_DECISION_H2_SMOTE,PASS,decision at source level equals reported: INFERIOR
+S07_SOURCE_LEVEL_DECISION_H4_CSRF,PASS,decision at source level equals reported: EQUIVALENT
+S07_SOURCE_LEVEL_DECISION_H4_EE,PASS,decision at source level equals reported: EQUIVALENT
+S07_SOURCE_LEVEL_DECISION_H4_SMOTE,PASS,decision at source level equals reported: EQUIVALENT
+COUNT_S04_cases,PASS,claimed=1125 actual=1125
+COUNT_S04_datasets,PASS,claimed=45 actual=45
+COUNT_S04_triggered_cases,PASS,claimed=375 actual=375
+COUNT_S04_valid_delta_cases,PASS,claimed=373 actual=373
+COUNT_S05_reused_SRDF_cases,PASS,claimed=1125 actual=1125
+COUNT_S05_baseline_smote_rf_records,PASS,claimed=1125 actual=1125
+COUNT_S05_baseline_cost_sensitive_rf_records,PASS,claimed=1125 actual=1125
+COUNT_S05_baseline_adasyn_rf_records,PASS,claimed=1125 actual=1125
+COUNT_S05_baseline_easyensemble_records,PASS,claimed=1125 actual=1125
+COUNT_S06_stage198_datasets,PASS,claimed=198 actual=198
+COUNT_S06_triggered_datasets_EE_standalone_,PASS,claimed=24 actual=24
+COUNT_S06_triggered_cases_EE_standalone_,PASS,claimed=600 actual=600
+COUNT_S07_cohort_candidates,PASS,claimed=131 actual=131
+COUNT_S07_analysed_datasets,PASS,claimed=98 actual=98
+COUNT_S07_fully_lost_datasets,PASS,claimed=33 actual=33
+COUNT_S07_lost_no_numeric_runtime,PASS,claimed=13 actual=13
+COUNT_S07_lost_cardinality_exceeded,PASS,claimed=15 actual=15
+COUNT_S07_lost_download_failure,PASS,claimed=5 actual=5
+COUNT_S07_A3_applicable_datasets,PASS,claimed=40 actual=40
+COUNT_S07_A3_not_applicable_datasets,PASS,claimed=58 actual=58
+COUNT_S07_logged_deviation_rows,PASS,claimed=38 actual=38
+COUNT_S07_reported_n_in_confirmatory_table_H1_,PASS,claimed=98 actual=98
+S04_RESULTS_AFTER_PROTOCOL_LOCK,PASS,first result 2026-10-09T00:50:28.177947+00:00 vs lock 2026-10-09T00:10:17.938173+00:00
+S07_NO_EXECUTION_BEFORE_LOCK,REVIEW,environment.json run_started_utc 2026-10-15T20:14:34.858215+00:00 precedes protocol lock 2026-10-15T20:24:37.570068+00:00 and deposit 2026-10-15T20:44:11.081973+00:00.
+S07_FIRST_LOGGED_EVENT_AFTER_DEPOSIT,PASS,2026-10-15T20:49:26.806307+00:00 vs deposit 2026-10-15T20:44:11.081973+00:00
+S06_V2_RESULTS_PRECEDE_CONFIRMATORY_FREEZE,REVIEW,expected for exploratory S06a; confirmatory cohort run must follow the freeze
+ZENODO_RECONCILIATION,PASS,records fetched=5
+S07_ZENODO_CREATED_AFTER_LOCK,PASS,zenodo created=2026-10-15 20:44:11.081973+00:00 lock=2026-10-15 20:24:37.570068+00:00
