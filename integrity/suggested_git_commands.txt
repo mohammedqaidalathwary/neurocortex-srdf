@@ -1,7 +1,7 @@
 # Suggested, NOT executed. Review, then run manually in a full clone:
 git status --porcelain                      # must be empty (apart from integrity/)
 git add integrity/ && git commit -m 'Phase 1: integrity verification, issue register and freeze manifest'
-git tag -a phase1-audit -m 'Phase 1 audit (S01-S07), Merkle root bfa495c03768ecad...'
+git tag -a phase1-audit -m 'Phase 1 audit (S01-S07), Merkle root 3f5b9e59984b6e63...'
 # Optional historical tags (use the commit hashes recorded in the S04/S05/S06/S07 locks):
 # git tag -a s06-protocol <commit> -m 'S06 pre-registered protocol (DOI 10.5281/zenodo.23308347)'
 # git tag -a s07-prereg <commit> -m 'S07 pre-registration (DOI 10.5281/zenodo.23404802)'

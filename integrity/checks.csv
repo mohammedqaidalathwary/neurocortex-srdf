@@ -1,5 +1,5 @@
 check_id,status,detail
-GIT_HISTORY_AVAILABLE,PASS,commits=80 tags=1
+GIT_HISTORY_AVAILABLE,PASS,commits=83 tags=2
 NO_RAW_THIRD_PARTY_DATA,PASS,raw_like=0
 PHASE_MATRIX_BUILT,PASS,6 phases
 ALL_RECORDED_HASHES_MATCH,FAIL,93/99
@@ -7,8 +7,8 @@ HASH_REFERENCE_GRAPH,REVIEW,unresolved=628
 SINGLE_EMAIL,FAIL,"['mohammedqaid.amanlift@gmail.com', 'mohammedqaidalathwary@gmail.com']"
 SINGLE_REPO_URL,PASS,['mohammedqaidalathwary/neurocortex-srdf']
 ENGLISH_ONLY,FAIL,3 files
-VERSION_CONSISTENCY,REVIEW,"{'pyproject.toml': '0.4.0', 'setup.py': '0.4.0', 'CITATION.cff': '1.0.0', 'src/__init__.py': '0.1.0', 'src_v2/__init__.py': '0.1.0', 'src_v3/__init__.py': '0.3.0', 'src_v4/__init__.py': '0.4.0'}"
-MARKDOWN_PATHS_RESOLVE,FAIL,broken=6
+VERSION_CONSISTENCY,REVIEW,"{'pyproject.toml': '0.4.0', 'setup.py': '0.4.0', 'CITATION.cff': '0.4.0', 'src/__init__.py': '0.1.0', 'src_v2/__init__.py': '0.1.0', 'src_v3/__init__.py': '0.3.0', 'src_v4/__init__.py': '0.4.0'}"
+MARKDOWN_PATHS_RESOLVE,FAIL,broken=3
 NO_SECRETS_FOUND,PASS,hits=0
 FILE_PRESENT_LICENSE,PASS,
 FILE_PRESENT_CITATION.cff,PASS,

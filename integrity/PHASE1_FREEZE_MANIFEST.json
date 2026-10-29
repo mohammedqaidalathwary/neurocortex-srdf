@@ -1,13 +1,13 @@
 {
   "freeze_id": "NC-PHASE1-FREEZE",
-  "generated_utc": "2026-10-29T02:31:55.289374+00:00",
+  "generated_utc": "2026-10-29T04:08:53.409613+00:00",
   "repo_root_name": "neurocortex-srdf",
-  "n_files": 247,
-  "total_bytes": 16777307,
-  "repo_merkle_root_excluding_integrity_dir": "bfa495c03768ecad2f77da1f956b95530fcc35648c503cd8b2a2ad3a38c2f54a",
+  "n_files": 251,
+  "total_bytes": 16782127,
+  "repo_merkle_root_excluding_integrity_dir": "3f5b9e59984b6e6395cf099e38624b54f26b9455cc302e993f6fbac05cc8dcc7",
   "merkle_method": "leaf=sha256(path+NUL+file_sha256), sorted by path, pairwise sha256, last node duplicated on odd levels",
   "environment": {
-    "captured_utc": "2026-10-29T02:31:49.696617+00:00",
+    "captured_utc": "2026-10-29T04:06:12.130359+00:00",
     "python": "3.13.18",
     "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
     "packages": {
@@ -21,12 +21,13 @@
   },
   "git": {
     "has_git_dir": true,
-    "head": "5bfce5329cb6733f97fe499651511b597ae45db0",
-    "n_commits": "80",
+    "head": "dffd0f8e428381ad3c736d4d83185ba7bee32984",
+    "n_commits": "83",
     "tags": [
+      "phase1-audit",
       "v1.0.0"
     ],
-    "status_porcelain": ""
+    "status_porcelain": "D integrity/PHASE1_FREEZE_MANIFEST.json\n D integrity/PHASE1_OUTPUT_HASHES.json\n D integrity/POST_LOCK_MODIFICATIONS.md\n D integrity/ZENODO_BYTE_VERIFICATION.md\n D integrity/broken_references.csv\n D integrity/checks.csv\n D integrity/count_reconciliation.csv\n D integrity/issue_register.csv\n D integrity/lock_verification.csv\n D integrity/repo_inventory.csv\n D integrity/s07_recomputation.csv\n D integrity/s07_source_level_posthoc_sensitivity.csv\n D integrity/suggested_git_commands.txt\n D integrity/timeline.csv\n D integrity/unresolved_hash_references.csv\n D integrity/zenodo_api_snapshots.json\n D integrity/zenodo_byte_verification.csv\n D integrity/zenodo_original_bytes_presence.csv\n D integrity/zenodo_reconciliation.json"
   },
   "counts": {
     "checks": {
@@ -36,8 +37,8 @@
     },
     "issues_by_severity": {
       "BLOCKER": 1,
-      "MAJOR": 9,
-      "MINOR": 8,
+      "MAJOR": 10,
+      "MINOR": 6,
       "INFO": 1
     }
   },
