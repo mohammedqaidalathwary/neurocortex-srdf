@@ -39,7 +39,24 @@
       </a>
     </td>
   </tr>
-</table>
+
+  <tr>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23753561">
+        <img src="https://img.shields.io/badge/S08-Protocol%20DOI-blue?logo=zenodo" alt="S08 Protocol DOI">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23755582">
+        <img src="https://img.shields.io/badge/S08-Results%20DOI-blue?logo=zenodo" alt="S08 Results DOI">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://orcid.org/0009-0006-9075-072X">
+        <img src="https://img.shields.io/badge/Research-S08-blue" alt="S08 Study">
+      </a>
+    </td>
+  </tr></table>
 
 # NeuroCortex SRDF
 
@@ -61,7 +78,7 @@ NeuroCortex is a research framework built around the Self-Reinforcing Developmen
 
 The design separates candidate generation from evaluation and authorization. A generated candidate is not automatically considered beneficial: its acceptance depends on predefined evaluation criteria and system constraints. The framework emphasizes traceable decisions, inspectable execution records, and evidence-bounded claims.
 
-The research program includes prototype validation, generator–arbiter experiments, OpenML-based evaluation, extended evaluation, arbiter revision, and S07, a study of threshold-corrected controls and benchmark-practice bias in imbalanced classification.
+The research program includes prototype validation, generator–arbiter experiments, OpenML-based evaluation, extended evaluation, arbiter revision, S07, a study of threshold-corrected controls and benchmark-practice bias in imbalanced classification, and S08, a confirmatory generalization study of decision-threshold correction and imbalance-treatment comparisons.
 
 This repository is an evolving research program. Each conclusion must be interpreted according to its protocol, cohort, implementation, experimental unit, and recorded results. The studies do not by themselves establish general intelligence or universal self-improvement.
 
@@ -73,11 +90,13 @@ This repository is an evolving research program. Each conclusion must be interpr
 4. [Research Program](#research-program)
 5. [S07 Study](#s07-study)
 6. [S07 Reported Results](#s07-reported-results)
-7. [Repository Organization](#repository-organization)
-8. [Reproducibility](#reproducibility)
-9. [Claim Boundaries](#claim-boundaries)
-10. [Citation](#citation)
-11. [License](#license)
+7. [S08 Study](#s08-study)
+8. [S08 Reported Results](#s08-reported-results)
+9. [Repository Organization](#repository-organization)
+10. [Reproducibility](#reproducibility)
+11. [Claim Boundaries](#claim-boundaries)
+12. [Citation](#citation)
+13. [License](#license)
 
 ## Research Overview
 
@@ -155,6 +174,7 @@ flowchart LR
     S4 --> S5["S05: Extended evaluation"]
     S5 --> S6["S06: Arbiter revision"]
     S6 --> S7["S07: Benchmark-practice study"]
+    S7 --> S8["S08: Threshold-correction generalization study"]
 ```
 
 ### S01 — Prototype validation
@@ -262,12 +282,92 @@ The A1–A2 comparison evaluates the effect of threshold correction on the basel
 
 The findings concern the methods, datasets, metrics, and analysis used in S07. They do not automatically generalize to every classifier, dataset, resampling method, or evaluation protocol, and they do not establish overall superiority or inferiority of NeuroCortex SRDF.
 
+## S08 Study
+
+### Study focus
+
+S08 is a confirmatory generalization study of decision-threshold correction
+and imbalance-treatment comparisons. It examines whether the apparent
+performance change associated with threshold correction persists across
+the evaluated models and datasets, and whether imbalance treatments provide
+additional benefit against a threshold-corrected control.
+
+### Protocol and result records
+
+- **Protocol DOI:** [10.5281/zenodo.23753561](https://doi.org/10.5281/zenodo.23753561)
+- **Results DOI:** [10.5281/zenodo.23755582](https://doi.org/10.5281/zenodo.23755582)
+- **Execution closure record:** [`S08_FINAL_CLOSURE.md`](S08_FINAL_CLOSURE.md)
+
+The execution record identifies an initial eligible cohort of 87 datasets,
+comprising 77 OpenML datasets and 10 external datasets. The results summary
+records a final confirmatory sample of 85 datasets, comprising 75 OpenML
+datasets and 10 external datasets. Two OpenML datasets were excluded at
+runtime because too few predictors remained after the specified feature
+removal steps:
+
+- OpenML dataset **43051**, `art_daily_nojump4`: too few predictors after
+  dropping `timestamp`.
+- OpenML dataset **44708**,
+  `Amazon_employee_access_seed_0_nrows_2000_nclasses_10_ncols_100_stratify_True`:
+  too few predictors after dropping high-cardinality categorical variables.
+
+SMOTE contrasts used **77 datasets**. Sample sizes therefore vary by
+contrast and should be read from the corresponding result row.
+
+The closure note reports 87 datasets analysed, whereas the contrast-level
+results summary distinguishes the initial eligible cohort from the final
+confirmatory sample. The figures above preserve that distinction rather
+than treating the initial cohort and the final contrast samples as identical.
+
+### Scope
+
+S08 is a distinct confirmatory phase. Its conclusions should be interpreted
+according to its registered protocol, model definitions, cohort, exclusions,
+statistical procedures, and deposited result artifacts. Its findings do not
+by themselves establish universal superiority of any classifier or universal
+self-improvement by NeuroCortex SRDF.
+
+## S08 Reported Results
+
+The following table transcribes the reported estimates, confidence intervals,
+adjusted p-values, and conclusion labels from the S08 results summary.
+
+| Hypothesis | Model | Comparison | n | Mean difference / coefficient | 95% CI | Holm-adjusted p | Reported conclusion |
+|---|---|---|---:|---:|---|---:|---|
+| H1 | HistGradientBoosting (HGB) | Threshold-corrected vs conventional threshold | 85 | +0.0550978 | [+0.0456646, +0.0648267] | 0.0000899991 | SUPPORTED |
+| H2 | HGB | Weighting vs corrected control | 85 | -0.0209012 | [-0.0257264, -0.0162479] | 1.000000 | INCONCLUSIVE |
+| H2 | HGB | SMOTE vs corrected control | 77 | -0.0243715 | [-0.0314379, -0.0178514] | 1.000000 | INCONCLUSIVE |
+| H2 | HGB | Random undersampling vs corrected control | 85 | +0.0061743 | [-0.0038761, +0.0159035] | 0.0124399 | EQUIVALENT |
+| H1 | Logistic Regression (LR) | Threshold-corrected vs conventional threshold | 85 | +0.1048138 | [+0.0894404, +0.1206114] | 0.0000899991 | SUPPORTED |
+| H2 | LR | Weighting vs corrected control | 85 | +0.00134355 | [-0.00142679, +0.00400239] | 0.0000899991 | EQUIVALENT |
+| H2 | LR | SMOTE vs corrected control | 77 | -0.0105868 | [-0.0167986, -0.00483344] | 0.00689993 | EQUIVALENT |
+| H2 | LR | Random undersampling vs corrected control | 85 | -0.00709924 | [-0.0119894, -0.00292603] | 0.0000900000 | EQUIVALENT |
+| H3 | — | Imbalance-ratio coefficient | — | +0.04363 | Not reported here | 0.22953 | NOT SUPPORTED |
+
+For H3, the recorded raw p-value was **0.07651** and the Holm-adjusted
+p-value was **0.22953**; the hypothesis was reported as NOT SUPPORTED.
+
+The conclusion labels above are retained as reported. Equivalence conclusions
+depend on the prespecified equivalence margin and the registered test
+procedure; they should not be inferred from a small observed difference
+alone.
+
+The threshold-correction comparisons address a different question from the
+imbalance-treatment comparisons. The former compare a conventional threshold
+with a threshold-corrected control; the latter evaluate treatment methods
+against that corrected control. These comparisons should not be conflated.
+
+The findings apply to the models, datasets, protocol, and statistical
+procedures used in S08. They do not establish that a method will perform
+better on every dataset or under every evaluation protocol.
+
 ## Repository Organization
 
 ```text
 neurocortex-srdf/
 ├── README.md
 ├── CITATION.cff
+├── S08_FINAL_CLOSURE.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
@@ -420,6 +520,8 @@ Use the DOI and version corresponding to the specific code, protocol, or results
 
 Consult `CITATION.cff` and the archived records for canonical bibliographic metadata. A repository citation, protocol citation, and results citation identify different research artifacts.
 
+- **S08 protocol:** https://doi.org/10.5281/zenodo.23753561
+- **S08 results:** https://doi.org/10.5281/zenodo.23755582
 ## License
 
 Consult the repository `LICENSE` file for the authoritative licensing terms. The license badge identifies the repository as Apache-2.0; the license file governs. Third-party datasets, libraries, and external assets may have separate terms.
