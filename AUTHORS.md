@@ -4,7 +4,7 @@
 
 **Mohammed Qaid Al-Athwary**
 ORCID: [0009-0006-9075-072X](https://orcid.org/0009-0006-9075-072X)
-Email: mohammedqaid.amanlift@gmail.com
+Email: mohammedqaidalathwary@gmail.com
 
 ### Contributions (CRediT taxonomy)
 

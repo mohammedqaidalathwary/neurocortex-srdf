@@ -49,7 +49,7 @@ in public spaces.
 Instances of abusive, harassing, or otherwise unacceptable behavior
 may be reported to the maintainer at:
 
-**mohammedqaid.amanlift@gmail.com**
+**mohammedqaidalathwary@gmail.com**
 
 All complaints will be reviewed and investigated promptly and fairly.
 

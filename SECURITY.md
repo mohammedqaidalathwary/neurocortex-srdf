@@ -14,7 +14,7 @@ This is a research framework. If you discover a security issue:
 
 1. **Do not** open a public issue.
 2. Contact the maintainer directly:
-   - Email: mohammedqaid.amanlift@gmail.com
+   - Email: mohammedqaidalathwary@gmail.com
 3. Include:
    - Description of the issue
    - Steps to reproduce
