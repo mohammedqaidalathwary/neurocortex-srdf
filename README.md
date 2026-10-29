@@ -39,6 +39,19 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23753561"><img src="https://img.shields.io/badge/S08-Protocol%20DOI-blue?logo=zenodo" alt="S08 Protocol DOI"></a>
+    </td>
+    <td align="center">
+      <a href="https://doi.org/10.5281/zenodo.23755582"><img src="https://img.shields.io/badge/S08-Results%20DOI-blue?logo=zenodo" alt="S08 Results DOI"></a>
+    </td>
+    <td align="center">
+      <a href="https://orcid.org/0009-0006-9075-072X">
+        <img src="https://img.shields.io/badge/Research-S08-blue" alt="S08 Study">
+      </a>
+    </td>
+  </tr>
 </table>
 
 # NeuroCortex SRDF
@@ -61,7 +74,7 @@ NeuroCortex is a research framework built around the Self-Reinforcing Developmen
 
 The design separates candidate generation from evaluation and authorization. A generated candidate is not automatically considered beneficial: its acceptance depends on predefined evaluation criteria and system constraints. The framework emphasizes traceable decisions, inspectable execution records, and evidence-bounded claims.
 
-The research program includes prototype validation, generator–arbiter experiments, OpenML-based evaluation, extended evaluation, arbiter revision, and S07, a study of threshold-corrected controls and benchmark-practice bias in imbalanced classification.
+The research program includes prototype validation, generator–arbiter experiments, OpenML-based evaluation, extended evaluation, arbiter revision, S07, a study of threshold-corrected controls and benchmark-practice bias in imbalanced classification, and S08, a confirmatory generalization study of decision-threshold correction and imbalance-treatment comparisons.
 
 This repository is an evolving research program. Each conclusion must be interpreted according to its protocol, cohort, implementation, experimental unit, and recorded results. The studies do not by themselves establish general intelligence or universal self-improvement.
 
@@ -73,11 +86,13 @@ This repository is an evolving research program. Each conclusion must be interpr
 4. [Research Program](#research-program)
 5. [S07 Study](#s07-study)
 6. [S07 Reported Results](#s07-reported-results)
-7. [Repository Organization](#repository-organization)
-8. [Reproducibility](#reproducibility)
-9. [Claim Boundaries](#claim-boundaries)
-10. [Citation](#citation)
-11. [License](#license)
+7. [S08 Study](#s08-study)
+8. [S08 Reported Results](#s08-reported-results)
+9. [Repository Organization](#repository-organization)
+10. [Reproducibility](#reproducibility)
+11. [Claim Boundaries](#claim-boundaries)
+12. [Citation](#citation)
+13. [License](#license)
 
 ## Research Overview
 
@@ -155,6 +170,7 @@ flowchart LR
     S4 --> S5["S05: Extended evaluation"]
     S5 --> S6["S06: Arbiter revision"]
     S6 --> S7["S07: Benchmark-practice study"]
+    S7 --> S8["S08: Threshold-correction generalization study"]
 ```
 
 ### S01 — Prototype validation
@@ -261,6 +277,49 @@ The table below transcribes the available reported summary. It is not a substitu
 The A1–A2 comparison evaluates the effect of threshold correction on the baseline under the study procedure. Comparisons between A2 and the correction arms examine whether those methods provide an additional benefit beyond the threshold-corrected control. AUC provides a complementary ranking-oriented measure, distinct from threshold-dependent measures.
 
 The findings concern the methods, datasets, metrics, and analysis used in S07. They do not automatically generalize to every classifier, dataset, resampling method, or evaluation protocol, and they do not establish overall superiority or inferiority of NeuroCortex SRDF.
+
+## S08 Study
+
+### Study focus
+
+S08 extends the research program's investigation of evaluation-induced performance
+differences under class imbalance. The study examines decision-threshold correction
+and compares imbalance-treatment methods against a threshold-corrected control.
+The confirmatory design uses predefined procedures and dataset-level analysis to
+distinguish threshold-related changes from differences associated with the learning
+or imbalance-treatment method.
+
+### Protocol and result records
+
+- **Protocol DOI:** [10.5281/zenodo.23753561](https://doi.org/10.5281/zenodo.23753561)
+- **Results DOI:** [10.5281/zenodo.23755582](https://doi.org/10.5281/zenodo.23755582)
+- **Study closure record:** [`S08_FINAL_CLOSURE.md`](S08_FINAL_CLOSURE.md)
+
+The S08 closure record documents a completed confirmatory run following protocol
+registration. It reports **87 analyzed datasets** across the OpenML and external
+strata and identifies **Scenario A** as the primary result. The registered protocol
+and deposited results are the authoritative records for the study's exact methods,
+statistical outputs, and interpretation.
+
+S08 is a distinct study phase. Its claims should be interpreted from its own
+protocol and result artifacts rather than inferred from S07 or from the framework's
+earlier experiments.
+
+## S08 Reported Results
+
+The final closure record identifies **Scenario A** as the primary study outcome.
+The study's central comparison concerns the change produced by threshold correction
+and whether imbalance-treatment methods provide an additional benefit when evaluated
+against that corrected control.
+
+The protocol and results deposits provide the canonical evidence for the confirmatory
+analysis. Numerical estimates, confidence intervals, multiplicity-adjusted tests,
+and method-specific conclusions should be cited from those deposited artifacts rather
+than reconstructed from a summary description.
+
+- **Protocol:** [S08 preregistration](https://doi.org/10.5281/zenodo.23753561)
+- **Results:** [S08 results deposit](https://doi.org/10.5281/zenodo.23755582)
+- **Closure record:** [`S08_FINAL_CLOSURE.md`](S08_FINAL_CLOSURE.md)
 
 ## Repository Organization
 
