@@ -49,3 +49,9 @@ references:
   authors:
   - family-names: Al-Athwary
     given-names: Mohammed Qaid
+- type: dataset
+  title: S08 Results — Post-registration Deposit
+  doi: 10.5281/zenodo.23755582
+  authors:
+  - family-names: Al-Athwary
+    given-names: Mohammed Qaid
