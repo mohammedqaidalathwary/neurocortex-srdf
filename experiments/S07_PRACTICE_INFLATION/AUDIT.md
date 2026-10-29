@@ -1,7 +1,7 @@
 # S07 — Final Forensic Audit
 
 
-> **ملاحظة مسارات:** المسارات المذكورة أدناه (`S07_PREREGISTRATION/...`) تصف بنية حزمة Zenodo (DOI: `10.5281/zenodo.23406120`)، وليست مسارات هذا المستودع. الملفان `PACKAGE_MANIFEST.json` و`PRE_REGISTRATION_README.md` موجودان في Zenodo فقط. الملفات الأخرى موجودة هنا تحت `experiments/S07_PRACTICE_INFLATION/` ببصمات مطابقة.
+> **ملاحظة مسارات:** المسارات المذكورة أدناه (`S07_PREREGISTRATION/...`) تصف بنية حزمة Zenodo (DOI: `10.5281/zenodo.23406120`)، وليست مسارات هذا المستودع. الملفان `PACKAGE_MANIFEST.json` (Zenodo bundle only) و`PRE_REGISTRATION_README.md` (Zenodo bundle only) موجودان في Zenodo فقط. الملفات الأخرى موجودة هنا تحت `experiments/S07_PRACTICE_INFLATION/` ببصمات مطابقة.
 
 **Audit UTC:** 2026-10-15T23:08:33.829469+00:00
 **Protocol SHA-256:** `c78b78ed48ea3e00d1e1c9f63ace246485fff8657164061aded5fdeb8febd525`

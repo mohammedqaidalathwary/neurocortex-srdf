@@ -7,10 +7,10 @@ name = "neurocortex"
 version = "0.4.0"
 description = "NeuroCortex SRDF prototype framework for bounded runtime structural adaptation."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [
-    { name = "Mohammed Qaid Al-Athwary", email = "mohammedqaid.amanlift@gmail.com" }
+    { name = "Mohammed Qaid Al-Athwary", email = "mohammedqaidalathwary@gmail.com" }
 ]
 keywords = [
     "ai",

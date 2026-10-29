@@ -31,7 +31,7 @@ long_description = (
 
 setup(
     name="neurocortex",
-    version="0.4.0",
+    version='0.4.0',
     description=(
         "NeuroCortex SRDF prototype framework "
         "for bounded runtime structural adaptation."
@@ -39,7 +39,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Mohammed Al-Athwary",
-    author_email="mohammedqaid.amanlift@gmail.com",
+    author_email="mohammedqaidalathwary@gmail.com",
     url="https://github.com/mohammedqaidalathwary/neurocortex-srdf",
     packages=find_packages(),
     install_requires=requirements,

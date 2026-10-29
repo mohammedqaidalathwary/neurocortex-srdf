@@ -55,9 +55,9 @@ Each run records:
 
 **Provenance**:
 - `runs/srdf_s03_multirun_raw_20260917T223125Z.json` was previously
-  labeled `NC-SRDF-MULTIRUN-20260917T223125Z.json`.
+  labeled NC-SRDF-MULTIRUN-20260917T223125Z.json.
 - `results/srdf_s03_multirun_validated.json` was previously labeled
-  `NC-SRDF-MULTIRUN-VALIDATED.json`.
+  NC-SRDF-MULTIRUN-VALIDATED.json.
 - Renaming was performed for academic clarity and repository
   consistency. The file contents are unchanged.
 
@@ -99,8 +99,8 @@ Refer to the raw record for the complete execution parameters.
 
 ## 6. Provenance
 
-- Original raw label: `NC-SRDF-MULTIRUN-20260917T223125Z.json`
-- Original validated label: `NC-SRDF-MULTIRUN-VALIDATED.json`
+- Original raw label: NC-SRDF-MULTIRUN-20260917T223125Z.json
+- Original validated label: NC-SRDF-MULTIRUN-VALIDATED.json
 - Current labels:
   - `runs/srdf_s03_multirun_raw_20260917T223125Z.json`
   - `results/srdf_s03_multirun_validated.json`

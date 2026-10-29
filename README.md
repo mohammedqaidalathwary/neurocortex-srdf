@@ -440,3 +440,13 @@ For empirical discrepancies, identify the protocol version and exact result arti
 **NeuroCortex SRDF**  
 *Controlled adaptation. Traceable decisions. Evidence-bounded claims.*
 </div>
+
+
+## Phase 1c Disclosures (Added 2026-10-29)
+
+As part of my continuous integrity audit, I have added explicit disclosures for historical design choices:
+- **S06 Adaptive Design:** `experiments/S06_ARBITER_REVISION/ADAPTIVE_DESIGN_DISCLOSURE.md`
+- **S07 Source-Level Deduplication:** `experiments/S07_PRACTICE_INFLATION/SOURCE_LEVEL_ANALYSIS.md`
+- **S07 Execution Timing:** `experiments/S07_PRACTICE_INFLATION/TIMING_DISCLOSURE.md`
+- **S07 English Summary:** `experiments/S07_PRACTICE_INFLATION/S07_REPORT_ENGLISH_SUMMARY.md`
+

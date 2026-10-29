@@ -31,7 +31,7 @@
 ## F. Execution
 - [ ] One run per variant; resumable JSONL; timeouts on
 - [ ] Every record carries `test_used_before_selection = false`
-- [ ] Failures logged by status; `deviations.json` created (empty list if none)
+- [ ] Failures logged by status; `../logs/deviations.csv` created (empty list if none)
 
 ## G. Reporting rules
 - [ ] H1/H2 reported exactly per the decision rules; failures written as null findings

@@ -91,7 +91,7 @@ inside it.
 
 ## 6. Provenance
 
-- Original label: `NeuroCortex_SRDF_Toy_Prototype_v2.0.ipynb`
+- Original label: `srdf_s01_foundational_prototype.ipynb`
 - Current label: `srdf_s01_foundational_prototype.ipynb`
 - Renaming rationale: academic clarity and repository consistency.
 - Content status: unchanged from the original executed version.
